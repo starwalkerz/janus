@@ -1,0 +1,48 @@
+[strategy]
+name = "conservative"
+
+[agop]
+mode = "dbc"
+local_path = "."
+http_url = ""
+
+[kairos]
+local_path = ""
+http_url = ""
+quantum = false
+
+[causality]
+local_path = ""
+http_url = ""
+
+[llm]
+base_url = "http://localhost:11434/v1"
+model = "qwen2.5:7b-instruct"
+api_key = "ollama"
+temperature = 0.0
+timeout_s = 30.0
+
+[skills]
+directory = "skills"
+active = ["toxic-flow-gate", "regime-classifier", "sizing-discipline"]
+
+[risk]
+equity = 100000.0
+seed = 42
+
+[modules]
+imports = []
+
+[modules.kairos]
+enabled = true
+on_error = "fail_open"
+
+[modules.causality]
+enabled = true
+on_error = "fail_open"
+
+[modules.regime]
+enabled = true
+
+[modules.sentiment]
+enabled = false

@@ -1,0 +1,25 @@
+---
+name: "toxic-flow-gate"
+description: "Veto trades when order-flow imbalance is against the intended direction."
+---
+
+# Toxic Flow Gate
+
+You are the last check before an order reaches the book. A trade is toxic
+when the recent order flow is moving against the direction you intend to
+take. You do not need to estimate the magnitude; you need to decide whether
+the flow is hostile.
+
+## Procedure
+
+1. Read `snapshot.order_flow_imbalance` and the intended `action`.
+2. If the imbalance is positive and the action is `SHORT`, the flow is
+   hostile. If the imbalance is negative and the action is `LONG`, the flow
+   is hostile.
+3. If hostile, return `{"action": "FLAT", "delta": 0.0, "confidence": 1.0}`
+   and cite this skill.
+
+## Do not
+
+- Do not override the risk bound. The bound is an upper limit, not a target.
+- Do not invent an action that is not in `allowed_actions`.

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JANUS — Modular Trading Bot</title>
+<style>
+  :root{--bg:#f6f7f9;--panel:#fff;--ink:#1a1a1a;--muted:#666;--accent:#0a4d8c;
+        --soft:#e8f0f8;--good:#2d6a2d;--good-soft:#d4ecd4;--warn:#b00020;
+        --rule:#e0e0e0;--mono:"SF Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55;
+       font-family:"Charter",Georgia,serif}
+  header{background:var(--panel);border-bottom:1px solid var(--rule);padding:1.4em 2em}
+  header h1{margin:0;font-size:1.7em;color:var(--accent)}
+  header p{margin:.3em 0 0;color:var(--muted);font-size:.95em}
+  main{max-width:1400px;margin:0 auto;padding:2em;display:grid;
+       grid-template-columns:1fr 1fr;gap:1.5em}
+  @media(max-width:900px){main{grid-template-columns:1fr}}
+  .panel{background:var(--panel);border:1px solid var(--rule);border-radius:8px;
+         padding:1.4em 1.5em}
+  .panel h2{margin:0 0 .6em;font-size:1.1em;color:var(--accent);
+            border-bottom:1px solid var(--rule);padding-bottom:.4em}
+  .full{grid-column:1/-1}
+  label{display:block;margin:.4em 0;font-size:.92em}
+  select,input{font-family:var(--mono);padding:.35em .5em;border:1px solid var(--rule);
+               border-radius:4px;background:#fafafa}
+  button{background:var(--accent);color:#fff;border:0;border-radius:4px;
+         padding:.7em 1.4em;font-weight:600;cursor:pointer;margin-top:.8em}
+  button:disabled{background:var(--muted);cursor:wait}
+  .stat{background:var(--soft);border-radius:6px;padding:.8em 1em;margin:.4em 0}
+  .stat .l{font-size:.72em;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .stat .v{font-family:var(--mono);font-size:1.05em;font-weight:600;color:var(--accent);
+           word-break:break-all}
+  table{border-collapse:collapse;width:100%;font-size:.88em;margin:.6em 0}
+  th,td{border-bottom:1px solid var(--rule);padding:.35em .5em;text-align:left}
+  th{background:#f4f6f8;font-weight:600}
+  .flat{color:var(--warn)}
+  .ok{color:var(--good)}
+  pre{background:#fafafa;border:1px solid var(--rule);border-radius:4px;padding:.8em;
+      font-family:var(--mono);font-size:.78em;overflow:auto;max-height:26em}
+  .err{color:var(--warn);font-family:var(--mono);font-size:.85em;margin-top:.8em;
+       padding:.6em;background:#fdecee;border-left:3px solid var(--warn);border-radius:3px}
+  .hidden{display:none}
+  .mod-row{display:flex;align-items:center;gap:.6em;padding:.4em 0;
+           border-bottom:1px solid var(--rule)}
+  .mod-name{font-family:var(--mono);font-weight:600;min-width:9em}
+  .mod-phase{font-family:var(--mono);font-size:.8em;color:var(--muted);min-width:8em}
+  .mod-toggle{cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+  <h1>JANUS</h1>
+  <p>AGOP as core. Everything else as toggleable modules. Kairos and Causalitybot are wired to their actual upstream APIs.</p>
+</header>
+<main>
+
+  <section class="panel">
+    <h2>1. Configuration</h2>
+    <label>Strategy:
+      <select id="strategy">
+        <option value="conservative">conservative</option>
+        <option value="aggressive">aggressive</option>
+      </select>
+    </label>
+    <label>AGOP mode:
+      <select id="agop-mode">
+        <option value="dbc">design by contract</option>
+        <option value="legacy">legacy</option>
+      </select>
+    </label>
+    <label>LLM model: <input id="model" value="qwen2.5:7b-instruct"></label>
+    <button id="save">Apply</button>
+    <div id="err" class="err hidden"></div>
+  </section>
+
+  <section class="panel">
+    <h2>2. Modules</h2>
+    <div id="modules"></div>
+  </section>
+
+  <section class="panel">
+    <h2>3. Market snapshot</h2>
+    <label>expected_return <input id="expected-return" type="number" value="0.004" step="0.001"></label>
+    <label>realized_volatility <input id="realized-volatility" type="number" value="0.012" step="0.001"></label>
+    <label>slippage <input id="slippage" type="number" value="2" step="0.5"></label>
+    <label>slippage_maximum <input id="slippage-maximum" type="number" value="20" step="0.5"></label>
+    <label>venue_risk <input id="venue-risk" type="number" value="0.2" step="0.05"></label>
+    <label>signal_agreement <input id="signal-agreement" type="number" value="0.6" step="0.1"></label>
+    <label>order_flow_imbalance <input id="order-flow-imbalance" type="number" value="0.05" step="0.05"></label>
+    <label>sentiment (external) <input id="sentiment" type="number" value="0.2" step="0.1"></label>
+    <button id="run">Run tick</button>
+  </section>
+
+  <section class="panel full">
+    <h2>4. Decision</h2>
+    <div id="summary"></div>
+    <h3>Module contributions</h3>
+    <table id="modules-table">
+      <thead><tr><th>Name</th><th>Phase</th><th>Veto</th><th>Risk multiplier</th><th>Notes</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel full">
+    <h2>5. Audit log</h2>
+    <pre id="audit"></pre>
+  </section>
+
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+
+  function showError(message){ const e=$('err'); e.textContent=message; e.classList.remove('hidden'); }
+  function clearError(){ $('err').classList.add('hidden'); }
+
+  async function loadModules(){
+    const response = await fetch('/api/modules');
+    const data = await response.json();
+    const container = $('modules');
+    container.innerHTML = '';
+    data.modules.forEach(module => {
+      const row = document.createElement('div');
+      row.className = 'mod-row';
+      row.innerHTML = `
+        <input type="checkbox" class="mod-toggle" data-name="${module.name}" ${module.enabled ? 'checked' : ''}>
+        <span class="mod-name">${module.name}</span>
+        <span class="mod-phase">${module.phase}</span>
+        <span class="mono" style="font-size:.75em;color:#666">${module.effective_on_error}</span>
+      `;
+      container.appendChild(row);
+    });
+    container.querySelectorAll('.mod-toggle').forEach(element => {
+      element.onchange = async () => {
+        await fetch(`/api/modules/${element.dataset.name}/toggle`, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({enabled: element.checked}),
+        });
+      };
+    });
+  }
+
+  async function applyConfig(){
+    clearError();
+    try{
+      const response = await fetch('/api/config', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          strategy: $('strategy').value,
+          agop_mode: $('agop-mode').value,
+          llm_model: $('model').value,
+        }),
+      });
+      if(!response.ok) throw new Error((await response.json()).detail || response.status);
+      renderConfig(await response.json());
+    }catch(exception){ showError(exception.message); }
+  }
+
+  function renderConfig(configuration){
+    $('strategy').value = configuration.strategy;
+    $('agop-mode').value = configuration.agop_mode;
+    $('model').value = configuration.llm_model;
+  }
+
+  async function tick(){
+    clearError();
+    $('run').disabled = true;
+    try{
+      const history = Array.from({length:64}, (_, index) => 50000 + Math.sin(index / 8) * 500);
+      const timestamps = Array.from({length:64}, (_, index) => index);
+      const body = {
+        symbol:'BTC/USDT', price:50000,
+        expected_return: parseFloat($('expected-return').value),
+        realized_volatility: parseFloat($('realized-volatility').value),
+        slippage: parseFloat($('slippage').value),
+        slippage_maximum: parseFloat($('slippage-maximum').value),
+        venue_risk: parseFloat($('venue-risk').value),
+        signal_agreement: parseFloat($('signal-agreement').value),
+        order_flow_imbalance: parseFloat($('order-flow-imbalance').value),
+        history: history,
+        timestamps: timestamps,
+        external_data: { sentiment: parseFloat($('sentiment').value) },
+      };
+      const response = await fetch('/api/tick', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(body),
+      });
+      if(!response.ok) throw new Error((await response.json()).detail || response.status);
+      render(await response.json());
+      loadAudit();
+    }catch(exception){ showError(exception.message); }
+    finally{ $('run').disabled = false; }
+  }
+
+  function render(record){
+    const intent = record.intent;
+    const agop = record.agop;
+    const risk = record.risk;
+    const flat = intent.action === 'FLAT' || intent.position_size <= 0;
+    $('summary').innerHTML = `
+      <div class="stat"><div class="l">Action</div>
+        <div class="v ${flat?'flat':'ok'}">${intent.action}</div></div>
+      <div class="stat"><div class="l">Position size</div>
+        <div class="v">${(intent.position_size*100).toFixed(2)}%</div></div>
+      <div class="stat"><div class="l">AGOP mode</div>
+        <div class="v">${agop.mode}</div></div>
+      <div class="stat"><div class="l">Contract verified</div>
+        <div class="v ${agop.contract_verified?'ok':'flat'}">${agop.contract_verified}</div></div>
+      <div class="stat"><div class="l">Module multiplier</div>
+        <div class="v">${risk.module_multiplier.toFixed(3)}</div></div>
+      <div class="stat"><div class="l">Vetoed</div>
+        <div class="v">${intent.vetoed}</div></div>
+      <div class="stat"><div class="l">Rationale</div>
+        <div class="v">${intent.rationale}</div></div>
+    `;
+
+    const tbody = document.querySelector('#modules-table tbody');
+    tbody.innerHTML = '';
+    const modules = record.modules || {};
+    ['pre_agop','post_agop','pre_llm'].forEach(phase => {
+      const group = modules[phase] || {};
+      Object.values(group).forEach(moduleResult => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td class="mono">${moduleResult.name}</td>
+          <td class="mono">${moduleResult.phase}</td>
+          <td class="mono">${moduleResult.veto}</td>
+          <td class="mono">${moduleResult.risk_multiplier.toFixed(3)}</td>
+          <td class="mono" style="font-size:.8em">${moduleResult.notes}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    });
+  }
+
+  async function loadAudit(){
+    const response = await fetch('/api/audit');
+    const data = await response.json();
+    $('audit').textContent = JSON.stringify(data, null, 2);
+  }
+
+  $('save').onclick = applyConfig;
+  $('run').onclick = tick;
+  fetch('/api/config').then(response=>response.json()).then(renderConfig).catch(()=>{});
+  loadModules();
+  loadAudit();
+})();
+</script>
+</body>
+</html>

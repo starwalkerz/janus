@@ -1,0 +1,26 @@
+# JANUS dependencies.
+# Install with: pip install -r requirements.txt
+
+# Numerical and statistical primitives
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+
+# HTTP client for the LLM and for remote adapters
+httpx>=0.25
+
+# REST API and ASGI server
+fastapi>=0.104
+uvicorn[standard]>=0.24
+
+# Request and response schemas
+pydantic>=2.0
+
+# Configuration parsing
+tomli>=2.0
+
+# SKILL.md frontmatter parsing
+pyyaml>=6.0
+
+# Test suite
+pytest>=7.4
