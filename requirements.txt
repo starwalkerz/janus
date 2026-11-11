@@ -1,5 +1,9 @@
-# JANUS dependencies.
+# ─────────────────────────────────────────────────────────────────────
+# JANUS — Python dependencies
 # Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────
+
+# Core dependencies (required)
 
 # Numerical and statistical primitives
 numpy>=1.24
@@ -24,3 +28,23 @@ pyyaml>=6.0
 
 # Test suite
 pytest>=7.4
+
+# ─────────────────────────────────────────────────────────────────────
+# Optional quantum dependencies
+#
+# The econophysics modules (econophysics_tunneling, econophysics_herding)
+# run on IQM Resonance when the packages below are installed and a token
+# is configured. Without these packages, the modules fall back to exact
+# classical evolution via scipy.sparse.linalg.expm_multiply, which is
+# mathematically equivalent for the circuit sizes JANUS uses (up to 8
+# qubits). Installing the packages adds roughly 500 MB to the environment.
+#
+# To enable the quantum path:
+#
+#     pip install qiskit qiskit-aer iqm-client
+#
+# or uncomment the lines below.
+#
+# qiskit>=1.0
+# qiskit-aer>=0.14
+# iqm-client>=20.0
