@@ -656,6 +656,225 @@ MIT.
 
 ---
 
+## 12. Quantum econophysics modules
+
+JANUS ships two quantum econophysics modules that run on IQM Resonance
+when an API token is configured, fall back to Qiskit Aer when Qiskit is
+installed but IQM is not, and fall back to exact classical evolution when
+neither is available.
+
+### 12.1 Baaquie tunneling
+
+The `econophysics_tunneling` module runs in `PRE_AGOP`. It encodes the
+nearest heavy-volume support or resistance level as a potential barrier
+on a discretized Baaquie Hamiltonian, evolves the current log-price state
+through the barrier for a short evolution window, and measures the
+probability of finding the system strictly beyond the barrier.
+
+**Baaquie Hamiltonian.** On a log-price lattice of dimension \(N = 2^n\)
+with spacing \(h\), the discretized Black–Scholes Hamiltonian is
+
+\[
+H_{BS} = -\frac{\sigma^2}{2} \frac{\partial^2}{\partial x^2}
+       + \left(\frac{\sigma^2}{2} - r\right) \frac{\partial}{\partial x} + r.
+\]
+
+The kinetic term becomes tight-binding hopping \(-t_{\text{hop}} \sum_j
+(|j+1\rangle\langle j| + \text{h.c.})\). The drift term becomes a small
+asymmetric hopping correction. Adding a barrier potential
+\(V(x) = V_0 \exp(-(x - x_B)^2 / (2 w^2))\) gives
+
+\[
+H = H_{\text{kin}} + V, \qquad
+P_{\text{tunnel}}(t) = \|\Pi_{\text{out}} e^{-i H t} |x_0\rangle\|^2.
+\]
+
+**Theorem (Trotter approximation).** Let \(U(t) = e^{-i H t}\) and let
+\(U_S(t, m) = [e^{-i T t/m} e^{-i V t/m}]^m\) be the first-order
+Suzuki–Trotter product. Then
+
+\[
+\|U(t) - U_S(t, m)\| \leq \frac{t^2}{2m} \|[T, V]\|.
+\]
+
+*Proof.* The Baker–Campbell–Hausdorff expansion of \(e^{-i T \tau}
+e^{-i V \tau}\) is \(e^{-i(T+V)\tau - \frac{\tau^2}{2}[T,V] +
+O(\tau^3)}\). The leading error per step is \(\frac{\tau^2}{2}[T, V]\).
+Compounding \(m\) steps with \(\tau = t/m\) gives the stated bound after
+absorbing higher-order terms. The bound is standard and is the reason
+Qiskit's `PauliEvolutionGate` with `LieTrotter(reps=m)` produces a
+circuit whose output converges to the exact evolution as \(m\) grows. ∎
+
+**Axis patch.** The module patches AGOP's `barrier` axis. High tunneling
+probability means the wall is porous, so the effective barrier is set low:
+`barrier_effective = clip(1 - P_tunnel, 0.05, 0.95)`. The direction of
+the barrier (up for resistance, down for support) determines which of
+`LONG` or `SHORT` receives the patch; the other side keeps the neutral
+0.5. This replaces AGOP's static one-third constant with a genuine
+physical barrier-penetration probability.
+
+**Direction selection.** The module computes the nearest barrier above
+and the nearest support below the current price from the volume profile
+of the snapshot history. It selects the direction whose barrier is closer
+in log-price space. If neither exists, the module returns a neutral
+result and the pipeline proceeds without the patch.
+
+### 12.2 Ising herding
+
+The `econophysics_herding` module runs in `POST_AGOP`. It encodes the
+pairwise return correlation between assets (or, in the single-asset
+fallback, between overlapping history windows) as an Ising cost
+Hamiltonian, runs QAOA at shallow depth, and measures the magnetization
+order parameter \(M\).
+
+**Cost Hamiltonian.**
+
+\[
+H_C = -\sum_{i<j} J_{ij} Z_i Z_j - \sum_i h_i Z_i.
+\]
+
+\(J_{ij}\) is the clipped Pearson correlation of log-returns between
+asset \(i\) and asset \(j\). \(h_i\) is the hyperbolic tangent of the
+asset's mean log-return scaled by 100, which is a momentum drift proxy.
+The mixer is \(H_M = \sum_i X_i\).
+
+**Theorem (magnetization as herding measure).** Let
+\(|\psi(\beta, \gamma)\rangle = \prod_{k=1}^p e^{-i \beta_k H_M}
+e^{-i \gamma_k H_C} |+\rangle^n\) be the QAOA state at depth \(p\). The
+magnetization
+
+\[
+M(\beta, \gamma) = \frac{1}{n} \sum_{i=1}^n
+\langle \psi(\beta, \gamma) | Z_i | \psi(\beta, \gamma)\rangle
+\]
+
+satisfies \(|M| \leq 1\), with equality if and only if the state is a
+computational basis state (fully ferromagnetic) and \(M = 0\) if and only
+if the state is uniform over the computational basis (paramagnetic).
+
+*Proof.* Each \(Z_i\) has eigenvalues \(\pm 1\), so \(|\langle Z_i \rangle|
+\leq 1\) for any state. If the state is a single basis state \(|b\rangle\),
+then \(\langle Z_i \rangle = \pm 1\) for every \(i\), so \(|M| = 1\). If the
+state is uniform, each \(\langle Z_i \rangle = 0\) by symmetry, so \(M = 0\).
+The intermediate values interpolate. ∎
+
+**Risk multiplier.** The module returns \(1 - \alpha |M|\), with
+\(\alpha = 0.5\) for the conservative profile and \(\alpha = 0.2\) for the
+aggressive profile. In a herding phase (\(|M|\) close to one), position
+size shrinks; in a disordered phase (\(|M|\) close to zero), position size
+is unaffected.
+
+**Correlation source.** The module reads `snapshot.external_data["econophysics_assets"]`
+when present. The value must be a dict mapping asset name to a list of
+prices. When absent, the module splits the single-asset history into
+overlapping windows and computes correlations between windows. The
+fallback is a multi-horizon momentum alignment measure, not a cross-asset
+herding measure; the module records the distinction in its `notes` field
+so the LLM can interpret it correctly.
+
+### 12.3 Backend selection
+
+Each module queries the quantum runner with a preference order:
+
+1. **IQM Resonance** — when `quantum_iqm_token` is set, the circuit is
+   transpiled for the requested backend (the provider default if
+   `quantum_iqm_backend` is empty) and submitted via
+   `backend.run(circuit, shots=N)`.
+2. **Qiskit Aer** — when Qiskit is installed but no token is available,
+   the same circuit runs on the Aer statevector simulator.
+3. **Classical exact** — when Qiskit is not installed, the same
+   Hamiltonian is exponentiated via `scipy.sparse.linalg.expm_multiply`.
+
+Every path returns the same structural result: a probability vector for
+the tunneling circuit, and a `magnetization` plus `cost` for the QAOA
+circuit. The `backend` field in each result records which path was taken,
+so the audit log preserves provenance.
+
+The classical fallback is exact, not approximate, for both circuits: the
+tunneling probability is the exact modulus squared of the evolved
+amplitude, and the QAOA magnetization is the exact expectation value
+under the optimised (beta, gamma) parameters. The IQM and Aer paths
+introduce sampling noise (from shots) and Trotter error (from circuit
+depth). The `backend` field distinguishes the three cases so a reader can
+tell whether the reported number is exact or sampled.
+
+### 12.4 Two modules, not one
+
+The tunneling effect is a barrier patch, which JANUS permits only in
+`PRE_AGOP` (invariant I7). The herding effect is a risk multiplier, which
+JANUS permits only in `POST_AGOP` (invariant I9). A single module cannot
+legally do both. The two modules share the quantum runner and the
+correlation extractor but run in different phases, and each contributes
+its effect through the mechanism that the phase permits. This is the
+cleanest decomposition consistent with the invariants.
+
+### 12.5 Parameters and their meanings
+
+The two modules expose ten parameters, all with defaults that work on a
+four-qubit IQM processor:
+
+| Parameter | Default | Meaning |
+|---|---|---|
+| `quantum_iqm_token` | `""` | IQM Resonance API token; empty disables IQM path |
+| `quantum_iqm_server` | `"https://resonance.iqm.tech"` | IQM Resonance endpoint |
+| `quantum_iqm_backend` | `""` | Specific IQM backend; empty uses provider default |
+| `quantum_tunneling_qubits` | `4` | Lattice size is \(2^n\); 4 qubits = 16 price levels |
+| `quantum_tunneling_time` | `3.0` | Evolution window in circuit time units |
+| `quantum_tunneling_trotter_steps` | `3` | Suzuki–Trotter repetition count |
+| `quantum_herding_qubits` | `4` | Number of assets or history windows |
+| `quantum_herding_layers` | `1` | QAOA depth |
+| `quantum_herding_shots` | `4000` | Shots per QAOA cost evaluation |
+
+The default parameters produce a tunneling circuit of depth approximately
+30 with three Trotter steps, and a QAOA circuit of depth approximately 10
+per layer. Both are well within the coherence budget of the IQM Garnet
+processor (20 qubits) at current gate fidelities.
+
+### 12.6 Cost and latency
+
+The tunneling circuit runs once per tick. On IQM Resonance, that is one
+quantum job per tick, which is one to four credits depending on backend
+availability. On Aer, it is a fraction of a second of CPU. On classical
+exact, it is a matrix exponential of dimension 16, which is
+sub-millisecond.
+
+The QAOA circuit runs `optimizer_iterations` (default 60) times per tick
+for the classical optimisation loop, plus one final evaluation. On IQM
+Resonance, that is 61 quantum jobs per tick, which is 61 to 244 credits.
+**This is prohibitive for live trading on IQM Resonance without a
+research budget.** Aer and classical exact complete in seconds.
+
+For live deployment on IQM Resonance, the recommended configuration is:
+- Run the tunneling circuit on IQM per tick.
+- Run the herding circuit on Aer or classical exact per tick, with
+  periodic IQM validation at lower frequency (for example, once per
+  hour or once per day).
+- Set `quantum_herding_shots` to a lower value (1000) to keep the Aer
+  path fast.
+- Keep `quantum_herding_layers = 1`. Depth 2 multiplies the circuit
+  cost by four with diminishing returns on the magnetization estimate.
+
+### 12.7 Determinism
+
+The tunneling circuit is deterministic given a seed and a backend: the
+initial state is a basis state, the evolution is a fixed unitary, and the
+shots are reproducible under Aer's seeded simulator. On IQM hardware the
+shots are hardware-random, so the reported `P_tunnel` will vary slightly
+between runs. To make the full pipeline reproducible end-to-end, use
+`quantum_iqm_token = ""` (forcing the Aer path) with `random_seed = 42`,
+which is the default.
+
+The QAOA circuit is deterministic under Aer because the COBYLA optimiser
+starts from a seeded initial point (`random_seed = 42` in the runner) and
+the cost evaluations are seeded. Under IQM hardware, the shots are
+hardware-random and the optimiser follows a different trajectory on
+different runs.
+
+The `econophysics_tunneling` and `econophysics_herding` modules include
+the `backend` field in their context dict, so a downstream auditor can
+distinguish a hardware run from an Aer run from a classical run. The
+JANUS audit log preserves the context dict per tick.
+
 ## Appendix A: File tree
 
 ```
