@@ -1,19 +1,45 @@
+# JANUS configuration example.
+# Copy this file to config.toml and edit the sections that apply.
+#
+# Every section is optional. Omitting a section leaves the corresponding
+# Config fields at their defaults from janus/config.py.
+
 [strategy]
-name = "conservative"
+name = "conservative"          # "conservative" | "aggressive"
 
 [agop]
-mode = "dbc"
-local_path = "."
-http_url = ""
+mode = "dbc"                   # "dbc" (design-by-contract) | "legacy"
+local_path = "."               # directory containing agop_core*.py
+http_url = ""                  # optional; used if local import fails
 
 [kairos]
-local_path = ""
-http_url = ""
-quantum = false
+local_path = ""                # directory containing core.py, detect.py
+http_url = ""                  # optional
+quantum = false                # enable the KAIROS quantum path
 
 [causality]
-local_path = ""
-http_url = ""
+local_path = ""                # directory containing causalitybot.py
+http_url = ""                  # optional
+
+# ─────────────────────────────────────────────────────────────────────
+# Quantum econophysics.
+#
+# The two econophysics modules (econophysics_tunneling, econophysics_herding)
+# try IQM Resonance first, fall back to Qiskit Aer, and fall back to exact
+# classical evolution via scipy.sparse.linalg.expm_multiply. An empty
+# iqm_token disables the IQM path without disabling the modules.
+# ─────────────────────────────────────────────────────────────────────
+
+[quantum]
+iqm_token = ""                             # set via IQM_TOKEN env or here
+iqm_server = "https://resonance.iqm.tech"
+iqm_backend = ""                           # "" uses the provider default
+tunneling_qubits = 4                       # lattice size = 2^qubits
+tunneling_time = 3.0                       # evolution window in circuit units
+tunneling_trotter_steps = 3                # Suzuki-Trotter repetition count
+herding_qubits = 4                         # number of assets or windows
+herding_layers = 1                         # QAOA depth
+herding_shots = 4000                       # shots per QAOA evaluation
 
 [llm]
 base_url = "http://localhost:11434/v1"
@@ -24,14 +50,29 @@ timeout_s = 30.0
 
 [skills]
 directory = "skills"
-active = ["toxic-flow-gate", "regime-classifier", "sizing-discipline"]
+active = [
+  "toxic-flow-gate",
+  "regime-classifier",
+  "sizing-discipline",
+  "econophysics-analyst",
+]
 
 [risk]
 equity = 100000.0
 seed = 42
 
+# ─────────────────────────────────────────────────────────────────────
+# Module configuration.
+#
+# Every registered module may be toggled. The on_error policy determines
+# what happens when the module raises during execution:
+#   fail_open   → treat the module as absent (neutral contribution)
+#   fail_closed → force a flat trade (veto)
+# If on_error is omitted, the strategy's on_error_default applies.
+# ─────────────────────────────────────────────────────────────────────
+
 [modules]
-imports = []
+imports = []                   # custom module paths, e.g. ["my_modules.volatility"]
 
 [modules.kairos]
 enabled = true
@@ -46,3 +87,11 @@ enabled = true
 
 [modules.sentiment]
 enabled = false
+
+[modules.econophysics_tunneling]
+enabled = true
+on_error = "fail_open"
+
+[modules.econophysics_herding]
+enabled = true
+on_error = "fail_open"
