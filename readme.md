@@ -21,6 +21,10 @@ JANUS consumes four tools, each optional and each behind a stable adapter:
 JANUS never trades without AGOP. The LLM is advisory: it may downsize or
 veto a ranked action, never upsize it, never invent one.
 
+The stack also includes two optional quantum econophysics modules that run
+on IQM Resonance when configured, fall back to Qiskit Aer when Qiskit is
+installed, and fall back to exact classical evolution otherwise.
+
 ---
 
 ## Table of Contents
@@ -35,10 +39,11 @@ veto a ranked action, never upsize it, never invent one.
 8. API
 9. Integration patterns
 10. Limitations
-11. License
-12. Appendix A: File tree
-13. Appendix B: Glossary
-14. Appendix C: References
+11. Quantum econophysics modules
+12. License
+13. Appendix A: File tree
+14. Appendix B: Glossary
+15. Appendix C: References
 
 ---
 
@@ -122,6 +127,10 @@ FLAT receives 0.5, the neutral value.
     barrier(action) = clip(realized_volatility / (3.0 * realized_volatility), 0.0, 1.0)
 
 which evaluates to one third for every non-flat action. FLAT receives zero.
+
+The `econophysics_tunneling` module, when enabled, replaces the static
+one-third barrier with a physical barrier-penetration probability computed
+on a quantum circuit. See Section 11.
 
 In design-by-contract mode, capacity is derived inside AGOP from the
 Weisfeiler–Lehman class cardinality and the Shannon entropies of the two
@@ -235,6 +244,7 @@ Two profiles; every parameter that differs is named.
 | `causality_gain_coefficient` | 4.0 | 4.0 |
 | `llm_confidence_floor` | 0.65 | 0.45 |
 | `on_error_default` | fail_closed | fail_open |
+| `econophysics_herding_sensitivity` | 0.5 | 0.2 |
 
 The conservative profile is what the design-by-contract AGOP is for: a
 contract violation becomes a flat position, the Kelly coefficient is
@@ -311,7 +321,7 @@ patch axes only in the PRE_AGOP phase, may return a risk multiplier in
 `[0, 1]`, may veto from any phase, and may contribute structured context
 passed to the LLM.
 
-The four built-in modules are:
+The six built-in modules are:
 
 **kairos.** Runs in POST_AGOP. Calls the `starwalkerz/kairos` core via local
 import or HTTP. Contributes a risk multiplier equal to
@@ -336,6 +346,17 @@ accordingly.
 as a float in `[-1, 1]`. Patches the pain and readiness axes accordingly.
 No-op if the key is absent.
 
+**econophysics_tunneling.** Runs in PRE_AGOP. Encodes the nearest heavy-
+volume barrier as a potential on a discretized Baaquie Hamiltonian, evolves
+the price state through the barrier, and patches AGOP's `barrier` axis from
+the resulting tunneling probability. See Section 11.
+
+**econophysics_herding.** Runs in POST_AGOP. Encodes cross-asset return
+correlations as an Ising cost Hamiltonian and runs QAOA to measure the
+magnetization order parameter. Contributes a risk multiplier
+`1 - sensitivity * |M|`, where `sensitivity` is a strategy parameter. See
+Section 11.
+
 Custom modules are registered by importing a Python path specified in the
 configuration's `module_imports` list. The imported module must export a
 `module` variable that is a `Module` instance.
@@ -359,10 +380,10 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The dependencies are:
+The core dependencies are:
 
 - `numpy` for numerical operations
-- `scipy` for statistical functions
+- `scipy` for statistical functions and the classical quantum fallback
 - `pandas` for tabular data
 - `httpx` for HTTP calls to the LLM and to remote adapters
 - `fastapi` for the REST API
@@ -372,7 +393,24 @@ The dependencies are:
 - `pyyaml` for the SKILL.md frontmatter
 - `pytest` for the test suite
 
-### 6.3 Optional upstream tools
+### 6.3 Optional quantum dependencies
+
+The econophysics modules run on IQM Resonance when the following packages
+are installed and an API token is configured:
+
+```bash
+pip install qiskit qiskit-aer iqm-client
+```
+
+Without these packages, the modules fall back to exact classical evolution
+via `scipy.sparse.linalg.expm_multiply`, which is mathematically equivalent
+for the circuit sizes JANUS uses (up to 8 qubits). Installing the quantum
+packages adds roughly 500 MB to the environment. The classical fallback
+produces the same structural result, with the `backend` field in each
+module's context set to `classical-exact` instead of `iqm:*` or
+`qiskit-aer`.
+
+### 6.4 Optional upstream tools
 
 The AGOP engine, KAIROS anomaly detector, and Causalitybot signal generator
 are optional at the dependency level. Each is loaded via import; if the
@@ -380,7 +418,7 @@ corresponding directory is not on `PYTHONPATH`, or the corresponding HTTP
 endpoint is not configured, the adapter for that tool returns an
 unavailable result and the pipeline falls back to AGOP alone.
 
-### 6.4 The LLM
+### 6.5 The LLM
 
 Any OpenAI-compatible endpoint works. Ollama is the simplest:
 
@@ -403,7 +441,7 @@ timeout_s = 30.0
 vLLM, llama.cpp server, DeepSeek, and Qwen all expose the same
 `/v1/chat/completions` shape and work identically.
 
-### 6.5 Verification
+### 6.6 Verification
 
 Run the test suite:
 
@@ -412,7 +450,9 @@ python -m pytest tests/ -q
 ```
 
 The tests cover the verifier invariants, the AGOP bridge, the risk bound
-computation, the orchestrator pipeline, and the module lifecycle.
+computation, the orchestrator pipeline, the module lifecycle, and the
+econophysics modules' Hamiltonian symmetry, barrier detection, and risk
+multiplier bounds.
 
 ---
 
@@ -458,6 +498,8 @@ file has the following sections:
 - `[kairos]` — the KAIROS local path or HTTP URL, and whether to use the
   quantum path
 - `[causality]` — the Causalitybot local path or HTTP URL
+- `[quantum]` — the IQM token, server, backend, and per-circuit parameters
+  for the econophysics modules
 - `[llm]` — the OpenAI-compatible endpoint, model, key, temperature, and
   timeout
 - `[skills]` — the SKILL.md directory and the active skill names
@@ -506,6 +548,11 @@ Request body:
 }
 ```
 
+For the herding module to consume real cross-asset correlations, include
+`external_data["econophysics_assets"]` as a dict mapping asset name to a
+list of prices. Without it, the module falls back to a multi-horizon
+momentum alignment measure computed from the single-asset history.
+
 Response body:
 
 ```json
@@ -536,7 +583,48 @@ Response body:
     "vetoed": false,
     "contract_forced_flat": false
   },
-  "fill": {}
+  "fill": {},
+  "modules": {
+    "pre_agop": {
+      "econophysics_tunneling": {
+        "name": "econophysics_tunneling",
+        "phase": "pre_agop",
+        "axes_patch": { "barrier": { "LONG": 0.35, "SHORT": 0.5 } },
+        "risk_multiplier": 1.0,
+        "veto": false,
+        "context": {
+          "econophysics_tunneling": {
+            "direction": "up",
+            "barrier_price": 50500.0,
+            "tunneling_probability": 0.65,
+            "effective_barrier": 0.35,
+            "backend": "qiskit-aer"
+          }
+        },
+        "notes": "tunneling: direction=up P_tunnel=0.6500 barrier=0.3500 backend=qiskit-aer"
+      }
+    },
+    "post_agop": {
+      "econophysics_herding": {
+        "name": "econophysics_herding",
+        "phase": "post_agop",
+        "risk_multiplier": 0.75,
+        "veto": false,
+        "context": {
+          "econophysics_herding": {
+            "magnetization": 0.5,
+            "signed_magnetization": 0.5,
+            "cost": -1.25,
+            "risk_multiplier": 0.75,
+            "layers": 1,
+            "backend": "qiskit-aer",
+            "converged": true
+          }
+        },
+        "notes": "herding: |M|=0.5000 multiplier=0.7500 backend=qiskit-aer"
+      }
+    }
+  }
 }
 ```
 
@@ -574,9 +662,9 @@ message.
 
 ## 9. Integration patterns
 
-The adapter layer treats AGOP, KAIROS, and Causalitybot as opaque
-interfaces. Nothing in JANUS assumes their internals; the modules wrap
-their public surface.
+The adapter layer treats AGOP, KAIROS, Causalitybot, and the quantum
+econophysics modules as opaque interfaces. Nothing in JANUS assumes their
+internals; the modules wrap their public surface.
 
 **Pattern A — AGOP upstream of the pipeline.** The default: AGOP ranks the
 trading action set, and JANUS trades the top-ranked action under the risk
@@ -593,7 +681,14 @@ is strong, the multiplier approaches one. When it is weak, it approaches
 zero. The practical effect is that the pipeline trades only when both AGOP
 and the causal signal agree.
 
-**Pattern D — custom modules plug in without code changes.** A user can add
+**Pattern D — Econophysics patches the barrier and shrinks size.** The
+tunneling module replaces AGOP's static one-third barrier constant with a
+physical tunneling probability computed from the current volume profile.
+The herding module shrinks position size when cross-asset correlations
+indicate a ferromagnetic consensus. The two effects act in different
+phases and cannot collide under the current invariants.
+
+**Pattern E — custom modules plug in without code changes.** A user can add
 a module by placing its Python file anywhere on `PYTHONPATH`, adding the
 path to the `module_imports` list in `config.toml`, and exporting a
 `module` variable from that file. The new module is registered on the next
@@ -627,10 +722,22 @@ a neutral result and the pipeline runs on AGOP and the toxic-flow gate
 alone. The risk multipliers from the absent modules are set to one, which
 leaves the bound unchanged.
 
-**The quantum path in KAIROS is optional and off by default.** Enabling
-`kairos_quantum = true` requires a Qiskit installation and an IQM API
-token. Without those, the module uses the classical amplitude estimate and
-reports `backend = "classical"` in the KAIROS context.
+**The quantum path is optional and off by default in effect.** The
+econophysics modules run on IQM Resonance only when `quantum_iqm_token` is
+set and the `qiskit` and `iqm-client` packages are installed. Without
+those, the modules use Qiskit Aer (when Qiskit is installed) or exact
+classical evolution (always available), and record the backend in the
+context field.
+
+**The quantum path is slower than the classical fallback.** On the problem
+sizes JANUS handles (4 to 8 qubits), the classical exact fallback is
+faster than submitting to IQM hardware and produces the same result. The
+quantum path matters when the circuit size exceeds the reach of classical
+matrix exponentiation (roughly 12 qubits), which is beyond the current
+configuration and beyond the coherence budget of current NISQ hardware.
+The quantum path is provided for research and for the theoretical
+correctness of the algorithm's physical interpretation, not because it
+outperforms the classical fallback at these sizes.
 
 **Not investment advice.** JANUS is research software. It has been tested
 against synthetic snapshots and against the reference instances of the
@@ -650,20 +757,14 @@ consumes a real sentiment feed and returns a properly calibrated signal.
 
 ---
 
-## 11. License
-
-MIT.
-
----
-
-## 12. Quantum econophysics modules
+## 11. Quantum econophysics modules
 
 JANUS ships two quantum econophysics modules that run on IQM Resonance
 when an API token is configured, fall back to Qiskit Aer when Qiskit is
 installed but IQM is not, and fall back to exact classical evolution when
 neither is available.
 
-### 12.1 Baaquie tunneling
+### 11.1 Baaquie tunneling
 
 The `econophysics_tunneling` module runs in `PRE_AGOP`. It encodes the
 nearest heavy-volume support or resistance level as a potential barrier
@@ -719,7 +820,7 @@ of the snapshot history. It selects the direction whose barrier is closer
 in log-price space. If neither exists, the module returns a neutral
 result and the pipeline proceeds without the patch.
 
-### 12.2 Ising herding
+### 11.2 Ising herding
 
 The `econophysics_herding` module runs in `POST_AGOP`. It encodes the
 pairwise return correlation between assets (or, in the single-asset
@@ -772,7 +873,7 @@ fallback is a multi-horizon momentum alignment measure, not a cross-asset
 herding measure; the module records the distinction in its `notes` field
 so the LLM can interpret it correctly.
 
-### 12.3 Backend selection
+### 11.3 Backend selection
 
 Each module queries the quantum runner with a preference order:
 
@@ -798,7 +899,7 @@ introduce sampling noise (from shots) and Trotter error (from circuit
 depth). The `backend` field distinguishes the three cases so a reader can
 tell whether the reported number is exact or sampled.
 
-### 12.4 Two modules, not one
+### 11.4 Two modules, not one
 
 The tunneling effect is a barrier patch, which JANUS permits only in
 `PRE_AGOP` (invariant I7). The herding effect is a risk multiplier, which
@@ -808,7 +909,7 @@ correlation extractor but run in different phases, and each contributes
 its effect through the mechanism that the phase permits. This is the
 cleanest decomposition consistent with the invariants.
 
-### 12.5 Parameters and their meanings
+### 11.5 Parameters and their meanings
 
 The two modules expose ten parameters, all with defaults that work on a
 four-qubit IQM processor:
@@ -830,7 +931,7 @@ The default parameters produce a tunneling circuit of depth approximately
 per layer. Both are well within the coherence budget of the IQM Garnet
 processor (20 qubits) at current gate fidelities.
 
-### 12.6 Cost and latency
+### 11.6 Cost and latency
 
 The tunneling circuit runs once per tick. On IQM Resonance, that is one
 quantum job per tick, which is one to four credits depending on backend
@@ -845,6 +946,7 @@ Resonance, that is 61 quantum jobs per tick, which is 61 to 244 credits.
 research budget.** Aer and classical exact complete in seconds.
 
 For live deployment on IQM Resonance, the recommended configuration is:
+
 - Run the tunneling circuit on IQM per tick.
 - Run the herding circuit on Aer or classical exact per tick, with
   periodic IQM validation at lower frequency (for example, once per
@@ -854,7 +956,7 @@ For live deployment on IQM Resonance, the recommended configuration is:
 - Keep `quantum_herding_layers = 1`. Depth 2 multiplies the circuit
   cost by four with diminishing returns on the magnetization estimate.
 
-### 12.7 Determinism
+### 11.7 Determinism
 
 The tunneling circuit is deterministic given a seed and a backend: the
 initial state is a basis state, the evolution is a fixed unitary, and the
@@ -874,6 +976,14 @@ The `econophysics_tunneling` and `econophysics_herding` modules include
 the `backend` field in their context dict, so a downstream auditor can
 distinguish a hardware run from an Aer run from a classical run. The
 JANUS audit log preserves the context dict per tick.
+
+---
+
+## 12. License
+
+MIT.
+
+---
 
 ## Appendix A: File tree
 
@@ -907,17 +1017,21 @@ janus/
 │       ├── kairos.py
 │       ├── causality.py
 │       ├── regime.py
-│       └── sentiment.py
+│       ├── sentiment.py
+│       ├── quantum_runner.py
+│       └── econophysics.py
 ├── skills/
 │   ├── toxic-flow-gate/SKILL.md
 │   ├── regime-classifier/SKILL.md
-│   └── sizing-discipline/SKILL.md
+│   ├── sizing-discipline/SKILL.md
+│   └── econophysics-analyst/SKILL.md
 └── tests/
     ├── test_contracts.py
     ├── test_agop_bridge.py
     ├── test_risk.py
     ├── test_orchestrator.py
-    └── test_modules.py
+    ├── test_modules.py
+    └── test_econophysics.py
 ```
 
 ## Appendix B: Glossary
@@ -928,6 +1042,10 @@ topological, deductive, stochastic, and probabilistic operators into a
 single typed directed acyclic graph. Two modes: legacy (exogenous capacity)
 and design-by-contract (endogenous capacity with verification decorator).
 
+**Baaquie Hamiltonian** — The discretized Black–Scholes Hamiltonian
+expressed as a quantum operator on a log-price lattice. Basis for the
+tunneling module.
+
 **Causalitybot** — A non-chronological signal generator that identifies
 causal horizons and bottlenecks in order flow. Consumed by JANUS via the
 `causality` module.
@@ -936,6 +1054,15 @@ causal horizons and bottlenecks in order flow. Consumed by JANUS via the
 post-conditions enforced by the `verifies_theorem_5` decorator. In JANUS,
 the set of invariants I1 through I9 enforced by the `verify_trade_intent`
 decorator.
+
+**Econophysics** — The application of physics methods, including quantum
+mechanics and statistical mechanics, to economic and financial systems.
+The two modules `econophysics_tunneling` and `econophysics_herding` apply
+the Baaquie Hamiltonian and the Ising model respectively.
+
+**Ising Hamiltonian** — The cost Hamiltonian \(H_C = -\sum_{i<j} J_{ij} Z_i Z_j
+- \sum_i h_i Z_i\) used to encode cross-asset correlations. Basis for the
+herding module.
 
 **KAIROS** — A cyclical anomaly detector that identifies deviations from a
 declared cycle. Consumed by JANUS via the `kairos` module.
@@ -946,6 +1073,10 @@ computed as `f* = p - (1 - p) / b` and clamped to `[0, 1]`.
 **LLM** — Large language model. Served over an OpenAI-compatible endpoint.
 Consumed by JANUS as the analyst with downward-only sizing authority.
 
+**Magnetization** — The order parameter \(M = (1/n) \sum_i \langle Z_i \rangle\)
+of a QAOA state on the Ising cost Hamiltonian. Measures the ferromagnetic
+alignment (herding) of the system.
+
 **Module** — A deterministic function from a context to a result. Runs in
 one of three phases. May patch axes, contribute a risk multiplier, veto,
 or contribute context.
@@ -953,8 +1084,17 @@ or contribute context.
 **Phase** — One of PRE_AGOP, POST_AGOP, PRE_LLM. Determines when a module
 executes in the pipeline.
 
+**QAOA** — Quantum Approximate Optimisation Algorithm. A variational
+algorithm that alternates between a cost Hamiltonian and a mixer
+Hamiltonian to approximate the ground state of an optimisation problem.
+
 **Toxic flow** — An order-flow imbalance against the intended action
 direction. Forces a flat intent via invariant I4.
+
+**Tunneling probability** — The probability that a quantum state prepared
+at the current price level is found strictly beyond a potential barrier
+after a short evolution. Patches AGOP's barrier axis in the
+`econophysics_tunneling` module.
 
 **Verifier** — The `verify_trade_intent` decorator that enforces invariants
 I1 through I9 on every emitted intent.
@@ -969,11 +1109,29 @@ The KAIROS repository: `https://github.com/starwalkerz/kairos`
 
 The Causalitybot repository: `https://github.com/starwalkerz/Causalitybot`
 
-The Brassard–Høyer–Mosca–Tapp 2002 paper on quantum amplitude estimation,
-which the KAIROS quantum path implements.
+The JANUS repository: `https://github.com/starwalkerz/janus`
 
-The Kelly 1956 paper on optimal betting, from which the risk bound
-derivation in Section 2.3 follows.
+Belal E. Baaquie, *Quantum Finance: Path Integrals and Hamiltonians for
+Options and Interest Rates*. Cambridge University Press, 2004.
 
-The Nash 1950 paper on equilibrium points, which the AGOP ranking phase
-consumes.
+Belal E. Baaquie, *Quantum Field Theory for Economics and Finance*.
+Cambridge University Press, 2018.
+
+Eisert, Wilkens, and Lewenstein, "Quantum Games and Quantum Strategies",
+*Physical Review Letters* 83, 3077 (1999).
+
+Brassard, Høyer, Mosca, and Tapp, "Quantum Amplitude Amplification and
+Estimation", *Contemporary Mathematics* 305, 53–74 (2002). The KAIROS
+quantum path implements this algorithm.
+
+Farhi, Goldstone, and Gutmann, "A Quantum Approximate Optimization
+Algorithm", arXiv:1411.4028 (2014). The herding module implements QAOA
+on the Ising cost Hamiltonian.
+
+Kelly, "A New Interpretation of Information Rate", *Bell System Technical
+Journal* 35, 917–926 (1956). The risk bound derivation in Section 2.3
+follows this paper.
+
+Nash, "Equilibrium Points in N-Person Games", *Proceedings of the National
+Academy of Sciences* 36, 48–49 (1950). The AGOP ranking phase consumes
+this equilibrium concept.
