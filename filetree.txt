@@ -27,14 +27,18 @@ janus/
 │       ├── kairos.py
 │       ├── causality.py
 │       ├── regime.py
-│       └── sentiment.py
+│       ├── sentiment.py
+│       ├── quantum_runner.py
+│       └── econophysics.py
 ├── skills/
 │   ├── toxic-flow-gate/SKILL.md
 │   ├── regime-classifier/SKILL.md
-│   └── sizing-discipline/SKILL.md
+│   ├── sizing-discipline/SKILL.md
+│   └── econophysics-analyst/SKILL.md
 └── tests/
     ├── test_contracts.py
     ├── test_agop_bridge.py
     ├── test_risk.py
     ├── test_orchestrator.py
-    └── test_modules.py
+    ├── test_modules.py
+    └── test_econophysics.py
