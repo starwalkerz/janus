@@ -1,8 +1,14 @@
 """
 config.py — configuration model and strategy profiles.
 
-Capacity is not a configuration parameter. It is derived inside AGOP in
-DbC mode and is a legacy-only field in the theta profile.
+Capacity is not a configuration parameter in design-by-contract mode. It is
+derived inside AGOP. Legacy mode requires a fixed capacity override, which
+is named `legacy_capacity_override` to make its scope explicit.
+
+The quantum section configures the econophysics modules: the IQM Resonance
+token, server, and backend, plus the per-circuit parameters for the
+tunneling and herding circuits. When the token is empty, the modules fall
+back to Qiskit Aer and then to classical exact evolution.
 """
 
 from __future__ import annotations
@@ -18,24 +24,24 @@ from janus.contracts import AgopMode, StrategyName
 
 @dataclass(frozen=True)
 class ThetaProfile:
-    c_b: float = 10.0
-    c_s: float = 3.0
-    w: float = 15.0
-    ell: float = 2.0
-    v_bar: float = 20.0
-    theta_1: float = 0.5
-    theta_2: float = 0.5
-    theta_3: float = 0.5
-    sigma_R: float = 0.2
-    sigma_B: float = 0.2
-    alpha_1: float = 0.4
-    alpha_2: float = 0.4
-    alpha_3: float = 0.2
-    M: int = 5_000
-    alpha: float = 0.05
-    seed: int = 42
-    h: int = 3
-    K: int = 3
+    bespoke_cost: float = 10.0
+    standard_cost: float = 3.0
+    willingness_to_pay: float = 15.0
+    liability_exposure: float = 2.0
+    mean_client_value: float = 20.0
+    pain_threshold: float = 0.5
+    integration_threshold: float = 0.5
+    regulatory_threshold: float = 0.5
+    readiness_sigma: float = 0.2
+    barrier_sigma: float = 0.2
+    degree_weight: float = 0.4
+    betweenness_weight: float = 0.4
+    eigenvector_weight: float = 0.2
+    monte_carlo_draws: int = 5_000
+    confidence_level: float = 0.05
+    random_seed: int = 42
+    weisfeiler_lehman_depth: int = 3
+    legacy_capacity_override: int = 3
 
 
 @dataclass(frozen=True)
@@ -48,43 +54,56 @@ class StrategyProfile:
     position_cap: float
     toxicity_threshold: float
     kairos_dampening: float
-    causality_h0: float
-    causality_kappa: float
+    causality_reference_horizon: float
+    causality_gain_coefficient: float
     llm_confidence_floor: float
     require_contract: bool
     on_error_default: str
+    econophysics_herding_sensitivity: float
 
 
 CONSERVATIVE = StrategyProfile(
     name=StrategyName.CONSERVATIVE,
     default_agop_mode=AgopMode.DBC,
-    theta=ThetaProfile(theta_1=0.70, theta_2=0.70, theta_3=0.30, K=1),
+    theta=ThetaProfile(
+        pain_threshold=0.70,
+        integration_threshold=0.70,
+        regulatory_threshold=0.30,
+        legacy_capacity_override=1,
+    ),
     lower_confidence_bound_floor=0.00,
     kelly_coefficient=0.25,
     position_cap=0.10,
     toxicity_threshold=0.15,
     kairos_dampening=0.80,
-    causality_h0=0.60,
-    causality_kappa=4.0,
+    causality_reference_horizon=0.60,
+    causality_gain_coefficient=4.0,
     llm_confidence_floor=0.65,
     require_contract=True,
     on_error_default="fail_closed",
+    econophysics_herding_sensitivity=0.5,
 )
 
 AGGRESSIVE = StrategyProfile(
     name=StrategyName.AGGRESSIVE,
     default_agop_mode=AgopMode.LEGACY,
-    theta=ThetaProfile(theta_1=0.40, theta_2=0.50, theta_3=0.60, K=3),
+    theta=ThetaProfile(
+        pain_threshold=0.40,
+        integration_threshold=0.50,
+        regulatory_threshold=0.60,
+        legacy_capacity_override=3,
+    ),
     lower_confidence_bound_floor=-0.05,
     kelly_coefficient=0.60,
     position_cap=0.35,
     toxicity_threshold=0.30,
     kairos_dampening=0.00,
-    causality_h0=0.30,
-    causality_kappa=4.0,
+    causality_reference_horizon=0.30,
+    causality_gain_coefficient=4.0,
     llm_confidence_floor=0.45,
     require_contract=False,
     on_error_default="fail_open",
+    econophysics_herding_sensitivity=0.2,
 )
 
 PROFILES = {
@@ -110,6 +129,15 @@ class Config:
     kairos_quantum: bool = False
     causality_local_path: str = ""
     causality_http_url: str = ""
+    quantum_iqm_token: str = ""
+    quantum_iqm_server: str = "https://resonance.iqm.tech"
+    quantum_iqm_backend: str = ""
+    quantum_tunneling_qubits: int = 4
+    quantum_tunneling_time: float = 3.0
+    quantum_tunneling_trotter_steps: int = 3
+    quantum_herding_qubits: int = 4
+    quantum_herding_layers: int = 1
+    quantum_herding_shots: int = 4000
     llm_base_url: str = "http://localhost:11434/v1"
     llm_model: str = "qwen2.5:7b-instruct"
     llm_api_key: str = "ollama"
@@ -121,10 +149,11 @@ class Config:
             "toxic-flow-gate",
             "regime-classifier",
             "sizing-discipline",
+            "econophysics-analyst",
         ]
     )
     equity: float = 100_000.0
-    seed: int = 42
+    random_seed: int = 42
     module_configurations: dict[str, ModuleConfiguration] = field(
         default_factory=dict
     )
@@ -181,6 +210,47 @@ def load_config(path: str | Path) -> Config:
         configuration.causality_http_url = data["causality"].get(
             "http_url", configuration.causality_http_url
         )
+    if "quantum" in data:
+        configuration.quantum_iqm_token = data["quantum"].get(
+            "iqm_token", configuration.quantum_iqm_token
+        )
+        configuration.quantum_iqm_server = data["quantum"].get(
+            "iqm_server", configuration.quantum_iqm_server
+        )
+        configuration.quantum_iqm_backend = data["quantum"].get(
+            "iqm_backend", configuration.quantum_iqm_backend
+        )
+        configuration.quantum_tunneling_qubits = int(
+            data["quantum"].get(
+                "tunneling_qubits", configuration.quantum_tunneling_qubits
+            )
+        )
+        configuration.quantum_tunneling_time = float(
+            data["quantum"].get(
+                "tunneling_time", configuration.quantum_tunneling_time
+            )
+        )
+        configuration.quantum_tunneling_trotter_steps = int(
+            data["quantum"].get(
+                "tunneling_trotter_steps",
+                configuration.quantum_tunneling_trotter_steps,
+            )
+        )
+        configuration.quantum_herding_qubits = int(
+            data["quantum"].get(
+                "herding_qubits", configuration.quantum_herding_qubits
+            )
+        )
+        configuration.quantum_herding_layers = int(
+            data["quantum"].get(
+                "herding_layers", configuration.quantum_herding_layers
+            )
+        )
+        configuration.quantum_herding_shots = int(
+            data["quantum"].get(
+                "herding_shots", configuration.quantum_herding_shots
+            )
+        )
     if "llm" in data:
         configuration.llm_base_url = data["llm"].get(
             "base_url", configuration.llm_base_url
@@ -206,7 +276,9 @@ def load_config(path: str | Path) -> Config:
         )
     if "risk" in data:
         configuration.equity = data["risk"].get("equity", configuration.equity)
-        configuration.seed = data["risk"].get("seed", configuration.seed)
+        configuration.random_seed = data["risk"].get(
+            "seed", configuration.random_seed
+        )
     if "modules" in data:
         modules = data["modules"]
         configuration.module_imports = modules.get("imports", [])
