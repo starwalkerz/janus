@@ -983,6 +983,19 @@ JANUS audit log preserves the context dict per tick.
 
 MIT.
 
+
+# Remaining Technical Bottlenecks & Subtle Issues
+
+Even in this much stronger state, a rigorous code and math review highlights four concrete details to keep in mind:
+1. Unitary vs. Wick-Rotated Evolution in Baaquie's Hamiltonian (Section 11.1):
+	• In Baaquie’s quantum finance literature, the Black–Scholes equation maps to imaginary-time (Euclidean) evolution \(e^{-\^{H}_{BS}\tau }\) (which is dissipative and non-unitary), whereas your implementation uses real-time unitary Schrödinger evolution \(e^{-i\^{H}t}\) via Suzuki–Trotter gates so that it can execute natively on a gate-based IQM QPU.
+	• Technical takeaway: Real-time unitary evolution is completely valid for a gate-model quantum walk / barrier-scattering model, though strictly speaking it models conservative wave-packet scattering rather than dissipative Black–Scholes diffusion. Noting that distinction in a single sentence in Section 11.1 will prevent physics/quant purists from nitpicking the missing Wick rotation.
+2. Default Barrier Fallback When Econophysics Is Disabled (Section 2.2):
+	• If a user runs JANUS without econophysics_tunneling enabled, features.py still falls back to clip(realized_volatility / (3.0 * realized_volatility), 0.0, 1.0) = 1/3. Making the base fallback dynamic (e.g., clip(realized_volatility / baseline_volatility, 0.0, 1.0)) ensures AGOP's barrier axis remains meaningful even in minimal configurations.
+3. Single-Asset Fallback in econophysics_herding:
+	• As documented in Section 11.2, when external_data["econophysics_assets"] is omitted, the herding module slices a single asset's price history into overlapping windows and computes correlations between windows. Overlapping rolling windows naturally exhibit mechanical autocorrelation even on a pure random walk, which can bias |M| upward compared to true cross-asset correlations. Your notes field transparently flags this for the LLM, which is good practice.
+4. Upstream Causalitybot Import Target:
+	• Ensure janus/modules/causality.py imports from causalitybot_fixed (from your updated Causalitybot repo) so that the causality module receives active-horizon signals rather than empty lookaheads.
 ---
 
 ## Appendix A: File tree
