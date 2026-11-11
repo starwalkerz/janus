@@ -25,7 +25,7 @@ The stack also includes two optional quantum econophysics modules that run
 on IQM Resonance when configured, fall back to Qiskit Aer when Qiskit is
 installed, and fall back to exact classical evolution otherwise.
 
-The skills used, apart from econophysics, are examples from here: https://github.com/janestreet/agent_skills
+The trading skills (toxic-flow-gate, regime-classifier, sizing-discipline) and the econophysics skill are custom domain instructions structured using the SKILL.md specification from: https://github.com/janestreet/agent_skills
 
 ---
 
