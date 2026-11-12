@@ -25,7 +25,17 @@ The stack also includes two optional quantum econophysics modules that run
 on IQM Resonance when configured, fall back to Qiskit Aer when Qiskit is
 installed, and fall back to exact classical evolution otherwise.
 
-The trading skills (toxic-flow-gate, regime-classifier, sizing-discipline) and the econophysics skill are custom domain instructions structured using the SKILL.md specification from: https://github.com/janestreet/agent_skills
+The stack also includes **STIRPES**, an optional phylogenetic
+classification module that groups JANUS solutions by structural type and
+commits class and clade hashes to a settlement layer. STIRPES is
+unidirectional: it reads from the orchestrator and writes to the chain,
+never the reverse. Its output is a queryable public record of what kind of
+decision JANUS made, independent of what the decision was. See Section 12.
+
+The trading skills (toxic-flow-gate, regime-classifier, sizing-discipline)
+and the econophysics skill are custom domain instructions structured using
+the SKILL.md specification from:
+[https://github.com/janestreet/agent_skills](https://github.com/janestreet/agent_skills)
 
 ---
 
@@ -42,10 +52,11 @@ The trading skills (toxic-flow-gate, regime-classifier, sizing-discipline) and t
 9. Integration patterns
 10. Limitations
 11. Quantum econophysics modules
-12. License
-13. Appendix A: File tree
-14. Appendix B: Glossary
-15. Appendix C: References
+12. Phylogenetic classification (STIRPES)
+13. License
+14. Appendix A: File tree
+15. Appendix B: Glossary
+16. Appendix C: References
 
 ---
 
@@ -420,6 +431,19 @@ corresponding directory is not on `PYTHONPATH`, or the corresponding HTTP
 endpoint is not configured, the adapter for that tool returns an
 unavailable result and the pipeline falls back to AGOP alone.
 
+STIRPES is also optional. Its core (fingerprint extraction, distance
+computation, tree construction, clade hashing) requires no additional
+packages beyond NumPy and SciPy. Its on-chain settlement layer requires
+`web3`:
+
+```bash
+pip install web3
+```
+
+Without `web3`, the `TezosChainClient` raises `ImportError` on
+construction, but the `MockChainClient` works and the rest of STIRPES is
+fully functional.
+
 ### 6.5 The LLM
 
 Any OpenAI-compatible endpoint works. Ollama is the simplest:
@@ -509,6 +533,9 @@ file has the following sections:
 - `[modules]` — per-module enabled flag and on_error policy, plus the list
   of custom module imports
 
+STIRPES is not configured through `config.toml`. Its parameters are passed
+to the `StirpesRecorder` constructor at instantiation time. See Section 12.8.
+
 ---
 
 ## 8. API
@@ -528,6 +555,8 @@ noted.
 | POST | `/api/tick` | Run one tick on a supplied snapshot |
 | GET | `/api/audit` | Recent intents with rationales |
 | WS | `/ws/stream` | Continuous ticks |
+
+STIRPES adds a separate router at `/api/stirpes`. See Section 12.9.
 
 ### 8.1 `POST /api/tick`
 
@@ -696,6 +725,14 @@ path to the `module_imports` list in `config.toml`, and exporting a
 `module` variable from that file. The new module is registered on the next
 startup and appears in the web interface's module panel.
 
+**Pattern F — STIRPES classifies and attests without feedback.** STIRPES
+reads the orchestrator's `last_agop_result`, `last_module_contexts`, and
+`last_intent` after every tick, computes the fingerprint, and commits the
+class and clade hashes to a settlement layer. It never reads from the
+settlement layer, never feeds the clade structure back into the
+orchestrator, and never alters the trade pipeline. The unidirectionality is
+proven in Section 12.7.
+
 ---
 
 ## 10. Limitations
@@ -736,10 +773,16 @@ sizes JANUS handles (4 to 8 qubits), the classical exact fallback is
 faster than submitting to IQM hardware and produces the same result. The
 quantum path matters when the circuit size exceeds the reach of classical
 matrix exponentiation (roughly 12 qubits), which is beyond the current
-configuration and beyond the coherence budget of current NISQ hardware.
-The quantum path is provided for research and for the theoretical
-correctness of the algorithm's physical interpretation, not because it
-outperforms the classical fallback at these sizes.
+configuration and beyond the coherence budget of current NISQ hardware. The
+quantum path is provided for research and for the theoretical correctness
+of the algorithm's physical interpretation, not because it outperforms the
+classical fallback at these sizes.
+
+**STIRPES is optional and additive.** STIRPES does not affect the trade
+pipeline. Its core requires no additional packages; its on-chain settlement
+layer requires `web3`. The `TezosChainClient` is a stub and must be
+extended for a real deployment. See Section 12 and the STIRPES README for
+the full limitations.
 
 **Not investment advice.** JANUS is research software. It has been tested
 against synthetic snapshots and against the reference instances of the
@@ -913,7 +956,7 @@ cleanest decomposition consistent with the invariants.
 
 ### 11.5 Parameters and their meanings
 
-The two modules expose ten parameters, all with defaults that work on a
+The two modules expose nine parameters, all with defaults that work on a
 four-qubit IQM processor:
 
 | Parameter | Default | Meaning |
@@ -981,23 +1024,258 @@ JANUS audit log preserves the context dict per tick.
 
 ---
 
-## 12. License
+## 12. Phylogenetic classification (STIRPES)
+
+STIRPES is an optional module that groups JANUS solutions by structural
+type and commits the groupings to a settlement layer. It does not affect
+trading. It reads from the orchestrator, writes to a chain, and never
+writes back to the orchestrator. Its purpose is to make the *shape* of
+JANUS's decisions externally auditable, queryable, and comparable across
+deployments.
+
+### 12.1 What STIRPES does
+
+Every JANUS tick produces a solution. STIRPES extracts a fingerprint from
+that solution — a canonical tuple of the AGOP ranking, the survivor set,
+the topological classes, the lower-confidence bounds, the composite
+scores, the Nash strategies, the module contributions, and the verifier
+verdict. It hashes the canonical form into a class identifier, builds a
+phylogenetic tree over the accumulated leaf set, assigns the tick to a
+clade, and commits the class hash and clade hash to a settlement layer
+alongside the tick identifier.
+
+The chain is queryable by either hash. The full solution remains off-chain,
+encrypted, and revealed against payment of a token.
+
+### 12.2 The fingerprint
+
+**Definition.** Let `AgopResult` be the normalised AGOP output after
+phase 11. Let `module_contexts` be the flattened module contributions
+from `Orchestrator.last_module_contexts`. The fingerprint is
+
+    f = (ranking, survivor_set, topology, depth, capacity,
+         lower_confidence_bound, composite_score,
+         nash_pair, nash_entropy, modules, verdict)
+
+with every floating-point component rounded to six decimals. The canonical
+form `κ(f)` is the UTF-8 encoded JSON with sorted keys, no whitespace, and
+the pre-rounded values. The class hash is `SHA256(κ(f))`.
+
+The fingerprint is a deterministic function of `(snapshot, configuration,
+random_seed, llm_output, verdict)`. Two ticks with identical AGOP output,
+identical module contributions, and identical verdicts produce identical
+fingerprints.
+
+### 12.3 The distance
+
+The moduli-space distance between two fingerprints is a weighted sum of
+three components:
+
+    d(f, g) = w₁ · D_interleave(f, g)
+            + w₂ · D_WL(f, g)
+            + w₃ · D_Wasserstein(f, g)
+
+with default weights `w₁ = w₂ = w₃ = 1 / σ`, where `σ` is the sample
+standard deviation of each component over the leaf set. The interleaving
+component is a bottleneck-style proxy over the persistence diagrams of the
+lower-confidence-bound and composite-score functions. The Weisfeiler–
+Lehman component is the kernel distance between the cliff graphs of the
+topology and survivor-set structures. The Wasserstein component is the
+Wasserstein-2 distance on the module-contribution distributions.
+
+All three components are *approximate* in the sense documented in
+`janus/stirpes/distance.py`. They capture the qualitative structure of the
+fingerprint space without implementing the full sublevel-set filtration
+or the exact optimal-transport computation.
+
+### 12.4 The phylogenetic tree
+
+**Theorem (four-point condition).** A metric space `(L, d)` is
+isometrically embeddable into a weighted tree if and only if, for every
+four distinct elements `a, b, c, e ∈ L`,
+
+    d(a,b) + d(c,e) ≤ max( d(a,c) + d(b,e),  d(a,e) + d(b,c) )
+
+The proof is due to Buneman (1974). STIRPES uses the Neighbor-Joining
+algorithm of Saitou and Nei (1987), whose correctness under bounded
+perturbation is due to Atteson (1999):
+
+**Theorem (Atteson bound).** Let `d_true` be a tree-additive metric with
+minimum internal edge weight `w_min > 0`. Let `d` be any metric with
+`|d(x,y) - d_true(x,y)| < ε` for all pairs. If `ε < w_min / 2`, the
+Neighbor-Joining algorithm recovers the topology of the true tree.
+
+The tree is rebuilt over the full leaf set on every flush. The recorder
+maintains a persistent leaf set (`_leaf_fingerprints`) capped at
+`MAX_LEAF_SET_SIZE = 2000` with FIFO eviction, so tree topology is stable
+across batches while memory remains bounded.
+
+### 12.5 Clade hashes and on-chain attestation
+
+For any clade `C ⊆ L`, the clade hash is
+
+    clade_hash(C) = SHA256( ∥_{ℓ ∈ sort(C)} class_hash(ℓ) )
+
+where `∥` denotes concatenation and `sort` is lexicographic ordering of
+the 32-byte hashes. The clade hash is invariant to insertion order and to
+internal node labels.
+
+The on-chain record per tick is
+
+    TickRecord(
+        H_t,                    // SHA256(class_hash ‖ session_id ‖ tick_index ‖ snapshot_hash)
+        class_hash,             // bytes32
+        historical_clade_hash,  // bytes32
+        session_id,             // bytes32
+        tick_index,             // uint256
+        blocktime,              // uint256
+        H_payload               // SHA256(ciphertext)
+    )
+
+The `historical_clade_hash` records the clade at the time of commit; the
+current clade may differ as the tree evolves. Both are queryable. The
+`H_payload` commits to the encrypted fingerprint plus module contexts;
+the payload remains off-chain and is revealed against payment of a token.
+
+The settlement layer is abstracted behind `AbstractChainClient`, with
+three implementations: `MockChainClient` (in-memory, for testing),
+`TezosChainClient` (stub for Etherlink or a private Tezos rollup; requires
+`pip install web3`), and user-extended subclasses for real deployments.
+The Solidity contract is `contracts/StirpesRegistry.sol`.
+
+### 12.6 The signal tests
+
+Two phylogenetic signal tests report whether the tree structure is
+informative:
+
+**Pagel's λ** is the maximum-likelihood estimate of the parameter in
+`V_λ = λ C + (1 - λ) diag(C)`, where `C` is the Brownian-motion
+variance-covariance matrix. `λ ≈ 1` indicates strong phylogenetic signal;
+`λ ≈ 0` indicates no signal.
+
+**Blomberg's K** is the ratio `(MSE_observed / MSE_BM) / (MSE_observed /
+MSE_star)`. `K ≈ 1` indicates expected signal; `K > 1` indicates
+conservatism; `K < 1` indicates convergence or noise.
+
+Both are heuristics, not exact likelihood-ratio tests. The Blomberg's K
+approximation uses sample variance rather than the exact BM/star expected
+MSE. The signal tests are documented as approximate in `signal.py`.
+
+### 12.7 Unidirectionality
+
+**Theorem (unidirectionality).** There is no data path in the STIRPES
+implementation from the clade structure, the tree, the clade hashes, or
+the settlement records back into the JANUS orchestrator, the AGOP state,
+or the fingerprint extractor.
+
+**Proof.** The `StirpesRecorder` class has exactly four public methods:
+`record(agop_result, module_contexts, snapshot, verdict) -> ClassHash`,
+`flush() -> SettlementBatch`, `query_*` methods returning
+`list[SettlementRecord]`, and `settle(batch) -> TxHash`. Only `record`
+accepts the AGOP output and module contexts, and its return type is
+`ClassHash`, which is a `bytes` value with no reference to the inputs. The
+remaining methods do not accept the AGOP output and do not return anything
+the orchestrator consumes. The module's `__init__.py` does not import any
+JANUS module outside `janus.contracts` (which is a primitive type module),
+and no JANUS module imports anything from `stirpes` except
+`StirpesRecorder` and its return types. The import graph is therefore
+acyclic with STIRPES as a sink. ∎
+
+The practical consequence is that JANUS's own development is not driven by
+its phylogenetic self-classification. The clade structure is a record of
+where the strategy has been, not a prescription for where it should go.
+The strategy retains its exploration budget.
+
+### 12.8 Installation and usage
+
+STIRPES requires no additional packages for its core (fingerprint
+extraction, distance, tree, clade, signal tests). Its on-chain settlement
+layer requires `web3`:
+
+```bash
+pip install web3
+```
+
+The minimal integration is:
+
+```python
+from janus.config import Config
+from janus.orchestrator import Orchestrator
+from janus.stirpes import StirpesRecorder, MockChainClient, XorCipher
+
+configuration = Config()
+orchestrator = Orchestrator(configuration)
+
+chain = MockChainClient(blocktime_seconds=1)
+cipher = XorCipher(seed=b"my-stirpes-seed")
+recorder = StirpesRecorder(
+    chain=chain,
+    cipher=cipher,
+    tree_method="neighbor_joining",
+    flush_threshold=100,
+)
+
+# After each tick:
+tick_record = orchestrator.tick(snapshot)
+recorder.record(
+    agop_result=orchestrator.last_agop_result,
+    module_contexts=orchestrator.last_module_contexts,
+    snapshot=snapshot,
+    verdict=tick_record["intent"].get("verdict", "pass"),
+)
+
+# Periodically:
+batch = recorder.flush()
+if batch is not None:
+    recorder.settle(batch)
+```
+
+The `StirpesRecorder` constructor takes the chain client, the payload
+cipher, the tree method, the flush threshold, and the session identifier.
+The recorder is not configured through `config.toml`; it is instantiated
+with explicit parameters. This is deliberate: STIRPES is a separate
+subsystem with its own lifecycle, and its configuration belongs to its
+caller, not to the trade pipeline.
+
+### 12.9 The STIRPES API
+
+STIRPES ships a separate FastAPI router at `/api/stirpes`:
+
+| Method | Path | Description |
+|---|---|---|
+| POST | `/api/stirpes/flush` | Flush pending ticks and settle. |
+| GET | `/api/stirpes/clade/{clade_hash_hex}` | Return tick hashes in a clade. |
+| GET | `/api/stirpes/tick/{tick_hash_hex}` | Return settlement record for a tick. |
+| GET | `/api/stirpes/session/{session_id}` | Return settlement records for a session. |
+| POST | `/api/stirpes/reveal` | Reveal a payload against payment. |
+
+The reveal endpoint is gated by a `RevealGate` backed by a `TokenLedger`.
+The ledger is abstract; the deployment wires it to the actual token
+contract. The reveal checks the caller's balance or transfers against the
+configured thresholds, verifies the ciphertext hash against the committed
+`payload_hash`, and returns the decrypted plaintext.
+
+### 12.10 Dedicated documentation
+
+STIRPES has four dedicated documents in `janus/stirpes/`:
+
+- `README.md` — the formal specification, the theorems, the architecture,
+  and the limitations.
+- `USAGE.md` — the tutorial: installation, basic flow, recording,
+  flushing, querying, signal tests, encryption, integration patterns,
+  configuration, testing, troubleshooting.
+- `API_REFERENCE.md` — the complete API surface with types, invariants,
+  complexity bounds, and every public function, class, and method.
+- `TEZOS_CHAIN.md` — the deployment guide: prerequisites, compile and
+  deploy steps, contract interface, how to extend the client,
+  configuration, gas costs, reorg handling, and limitations.
+
+---
+
+## 13. License
 
 MIT.
 
-
-# Remaining Technical Bottlenecks & Subtle Issues
-
-Even in this much stronger state, a rigorous code and math review highlights four concrete details to keep in mind:
-1. Unitary vs. Wick-Rotated Evolution in Baaquie's Hamiltonian (Section 11.1):
-	• In Baaquie’s quantum finance literature, the Black–Scholes equation maps to imaginary-time (Euclidean) evolution \(e^{-\^{H}_{BS}\tau }\) (which is dissipative and non-unitary), whereas your implementation uses real-time unitary Schrödinger evolution \(e^{-i\^{H}t}\) via Suzuki–Trotter gates so that it can execute natively on a gate-based IQM QPU.
-	• Technical takeaway: Real-time unitary evolution is completely valid for a gate-model quantum walk / barrier-scattering model, though strictly speaking it models conservative wave-packet scattering rather than dissipative Black–Scholes diffusion. Noting that distinction in a single sentence in Section 11.1 will prevent physics/quant purists from nitpicking the missing Wick rotation.
-2. Default Barrier Fallback When Econophysics Is Disabled (Section 2.2):
-	• If a user runs JANUS without econophysics_tunneling enabled, features.py still falls back to clip(realized_volatility / (3.0 * realized_volatility), 0.0, 1.0) = 1/3. Making the base fallback dynamic (e.g., clip(realized_volatility / baseline_volatility, 0.0, 1.0)) ensures AGOP's barrier axis remains meaningful even in minimal configurations.
-3. Single-Asset Fallback in econophysics_herding:
-	• As documented in Section 11.2, when external_data["econophysics_assets"] is omitted, the herding module slices a single asset's price history into overlapping windows and computes correlations between windows. Overlapping rolling windows naturally exhibit mechanical autocorrelation even on a pure random walk, which can bias |M| upward compared to true cross-asset correlations. Your notes field transparently flags this for the LLM, which is good practice.
-4. Upstream Causalitybot Import Target:
-	• Ensure janus/modules/causality.py imports from causalitybot_fixed (from your updated Causalitybot repo) so that the causality module receives active-horizon signals rather than empty lookaheads.
 ---
 
 ## Appendix A: File tree
@@ -1025,28 +1303,50 @@ janus/
 │   ├── orchestrator.py
 │   ├── api.py
 │   ├── ui.html
-│   └── modules/
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── registry.py
+│   │   ├── kairos.py
+│   │   ├── causality.py
+│   │   ├── regime.py
+│   │   ├── sentiment.py
+│   │   ├── quantum_runner.py
+│   │   └── econophysics.py
+│   └── stirpes/
 │       ├── __init__.py
-│       ├── base.py
-│       ├── registry.py
-│       ├── kairos.py
-│       ├── causality.py
-│       ├── regime.py
-│       ├── sentiment.py
-│       ├── quantum_runner.py
-│       └── econophysics.py
+│       ├── contracts.py
+│       ├── fingerprint.py
+│       ├── distance.py
+│       ├── tree.py
+│       ├── clade.py
+│       ├── signal.py
+│       ├── recorder.py
+│       ├── chain.py
+│       ├── reveal.py
+│       ├── query.py
+│       ├── api.py
+│       ├── README.md
+│       ├── USAGE.md
+│       ├── API_REFERENCE.md
+│       └── TEZOS_CHAIN.md
+├── contracts/
+│   └── StirpesRegistry.sol
 ├── skills/
 │   ├── toxic-flow-gate/SKILL.md
 │   ├── regime-classifier/SKILL.md
 │   ├── sizing-discipline/SKILL.md
-│   └── econophysics-analyst/SKILL.md
+│   ├── econophysics-analyst/SKILL.md
+│   └── stirpes-analyst/
+│       └── SKILL.md
 └── tests/
     ├── test_contracts.py
     ├── test_agop_bridge.py
     ├── test_risk.py
     ├── test_orchestrator.py
     ├── test_modules.py
-    └── test_econophysics.py
+    ├── test_econophysics.py
+    └── test_stirpes.py
 ```
 
 ## Appendix B: Glossary
@@ -1065,6 +1365,14 @@ tunneling module.
 causal horizons and bottlenecks in order flow. Consumed by JANUS via the
 `causality` module.
 
+**Class hash** — The SHA-256 hash of a fingerprint's canonical form.
+Identifies the cell a fingerprint occupies in the stratified solution
+space. Stable within the rounding equivalence, differentiable across
+cells.
+
+**Clade hash** — The SHA-256 hash of a clade's leaf set. Invariant to
+insertion order and internal node labels.
+
 **Contract** — In the design-by-contract AGOP mode, the set of
 post-conditions enforced by the `verifies_theorem_5` decorator. In JANUS,
 the set of invariants I1 through I9 enforced by the `verify_trade_intent`
@@ -1074,6 +1382,11 @@ decorator.
 mechanics and statistical mechanics, to economic and financial systems.
 The two modules `econophysics_tunneling` and `econophysics_herding` apply
 the Baaquie Hamiltonian and the Ising model respectively.
+
+**Fingerprint** — The canonical tuple of a JANUS solution: the AGOP
+ranking, survivor set, topology, depth, capacity, lower-confidence bounds,
+composite scores, Nash strategies, module contributions, and verifier
+verdict. The input to STIRPES's classification.
 
 **Ising Hamiltonian** — The cost Hamiltonian \(H_C = -\sum_{i<j} J_{ij} Z_i Z_j
 - \sum_i h_i Z_i\) used to encode cross-asset correlations. Basis for the
@@ -1096,12 +1409,25 @@ alignment (herding) of the system.
 one of three phases. May patch axes, contribute a risk multiplier, veto,
 or contribute context.
 
+**Pagel's λ** — A phylogenetic signal test. `λ ≈ 1` indicates strong
+signal; `λ ≈ 0` indicates no signal.
+
 **Phase** — One of PRE_AGOP, POST_AGOP, PRE_LLM. Determines when a module
 executes in the pipeline.
+
+**Phylogenetic tree** — A weighted rooted tree over a leaf set, in which
+internal nodes represent common ancestors. STIRPES uses Neighbor-Joining
+to build the tree over fingerprints.
 
 **QAOA** — Quantum Approximate Optimisation Algorithm. A variational
 algorithm that alternates between a cost Hamiltonian and a mixer
 Hamiltonian to approximate the ground state of an optimisation problem.
+
+**STIRPES** — The phylogenetic classification and on-chain attestation
+module. Reads from the orchestrator, writes to a settlement layer, never
+reads back. Its name is the Latin *stirps* (lineage, stock, family), the
+philological root of "stirpes" and the taxonomic use of the word in
+biology.
 
 **Toxic flow** — An order-flow imbalance against the intended action
 direction. Forces a flat intent via invariant I4.
@@ -1110,6 +1436,10 @@ direction. Forces a flat intent via invariant I4.
 at the current price level is found strictly beyond a potential barrier
 after a short evolution. Patches AGOP's barrier axis in the
 `econophysics_tunneling` module.
+
+**Unidirectionality** — The STIRPES property that no data path exists from
+the classification output back into the trade pipeline. Proven in
+Section 12.7.
 
 **Verifier** — The `verify_trade_intent` decorator that enforces invariants
 I1 through I9 on every emitted intent.
@@ -1150,3 +1480,22 @@ follows this paper.
 Nash, "Equilibrium Points in N-Person Games", *Proceedings of the National
 Academy of Sciences* 36, 48–49 (1950). The AGOP ranking phase consumes
 this equilibrium concept.
+
+Buneman, "A Note on the Metric Properties of Trees", *Journal of
+Combinatorial Theory, Series B* 17, 48–50 (1974). The four-point condition
+in Section 12.4.
+
+Saitou and Nei, "The Neighbor-Joining Method: A New Method for
+Reconstructing Phylogenetic Trees", *Molecular Biology and Evolution* 4,
+406–425 (1987). The tree-construction algorithm in STIRPES.
+
+Atteson, "The Performance of Neighbor-Joining Methods of Phylogenetic
+Reconstruction", *Algorithmica* 25, 251–278 (1999). The correctness bound
+in Section 12.4.
+
+Pagel, "Inferring the Historical Patterns of Biological Evolution",
+*Nature* 401, 877–884 (1999). The λ signal test in Section 12.6.
+
+Blomberg, Garland, and Ives, "Testing for Phylogenetic Signal in
+Comparative Data: Behavioral Traits Are More Labile", *Evolution* 57,
+717–745 (2003). The K signal test in Section 12.6.
