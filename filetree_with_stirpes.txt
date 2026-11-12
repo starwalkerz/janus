@@ -1,0 +1,66 @@
+janus/
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── config.example.toml
+├── run.py
+├── cli.py
+├── janus/
+│   ├── __init__.py
+│   ├── contracts.py                              [CHANGED]
+│   ├── config.py
+│   ├── skills.py
+│   ├── llm.py
+│   ├── agop_bridge.py                            [CHANGED]
+│   ├── features.py
+│   ├── strategies.py
+│   ├── risk.py
+│   ├── execution.py
+│   ├── bootstrap.py
+│   ├── orchestrator.py                           [CHANGED]
+│   ├── api.py
+│   ├── ui.html
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── registry.py
+│   │   ├── kairos.py
+│   │   ├── causality.py
+│   │   ├── regime.py
+│   │   ├── sentiment.py
+│   │   ├── quantum_runner.py
+│   │   └── econophysics.py
+│   └── stirpes/                                  [NEW]
+│       ├── __init__.py                           [NEW]
+│       ├── contracts.py                          [NEW]
+│       ├── fingerprint.py                        [NEW, CHANGED]
+│       ├── distance.py                           [NEW]
+│       ├── tree.py                               [NEW]
+│       ├── clade.py                              [NEW]
+│       ├── signal.py                             [NEW]
+│       ├── recorder.py                           [NEW, CHANGED]
+│       ├── chain.py                              [NEW]
+│       ├── reveal.py                             [NEW]
+│       ├── query.py                              [NEW]
+│       ├── api.py                                [NEW]
+│       ├── README.md                             [NEW, CHANGED]
+│       ├── USAGE.md                              [NEW, CHANGED]
+│       ├── API_REFERENCE.md                      [NEW, CHANGED]
+│       └── TEZOS_CHAIN.md                        [NEW, UNCHANGED]
+├── contracts/                                    [NEW]
+│   └── StirpesRegistry.sol                       [NEW]
+├── skills/
+│   ├── toxic-flow-gate/SKILL.md
+│   ├── regime-classifier/SKILL.md
+│   ├── sizing-discipline/SKILL.md
+│   ├── econophysics-analyst/SKILL.md
+│   └── stirpes-analyst/
+│       └── SKILL.md                              [NEW]
+└── tests/
+    ├── test_contracts.py
+    ├── test_agop_bridge.py
+    ├── test_risk.py
+    ├── test_orchestrator.py
+    ├── test_modules.py
+    ├── test_econophysics.py
+    └── test_stirpes.py                           [NEW, CHANGED]
