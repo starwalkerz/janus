@@ -1,0 +1,256 @@
+# JANUS configuration example.
+#
+# This file is the complete configuration surface. Every section below
+# corresponds to a field group on the Config dataclass in janus/config.py.
+# Omitting a section leaves its fields at their defaults.
+#
+# Three subsystems are represented:
+#
+#   1. The trading pipeline (AGOP, KAIROS, Causalitybot, the LLM).
+#   2. The quantum econophysics modules (optional; three-backend fallback).
+#   3. STIRPES, the optional phylogenetic classification and on-chain
+#      attestation subsystem. STIRPES is disabled by default. When
+#      enabled, bootstrap.build_stirpes_recorder constructs a
+#      StirpesRecorder from the [stirpes] section and the caller may
+#      inject it into the orchestrator.
+#
+# The strategy profile determines the default trade behavior. The
+# module enable flags determine which phase-based modules fire. The
+# two axes interact: the OPPORTUNITY strategy is designed to run with
+# the dampening modules disabled and the opportunity modules enabled,
+# as shown below.
+
+# ─────────────────────────────────────────────────────────────────────
+# Strategy selection
+# ─────────────────────────────────────────────────────────────────────
+#
+# "conservative"  — DbC mode, tight thresholds, small caps
+# "aggressive"    — Legacy mode, loose thresholds, larger caps
+# "opportunity"   — Legacy mode, opportunity modules enabled, aggressive
+#                   caps. Assumes dampening modules are disabled.
+
+[strategy]
+name = "opportunity"
+
+# ─────────────────────────────────────────────────────────────────────
+# AGOP decision engine
+# ─────────────────────────────────────────────────────────────────────
+#
+# mode:        "legacy" (exogenous capacity K) or "dbc" (endogenous K
+#              derived from Weisfeiler–Lehman class count and Nash entropy)
+# local_path:  directory containing agop_core*.py
+# http_url:    optional HTTP fallback when local import fails
+
+[agop]
+mode = "legacy"
+local_path = "."
+http_url = ""
+
+# ─────────────────────────────────────────────────────────────────────
+# KAIROS cyclical anomaly detector
+# ─────────────────────────────────────────────────────────────────────
+#
+# local_path:  directory containing core.py and detect.py
+# http_url:    optional HTTP fallback
+# quantum:     enable the KAIROS quantum amplitude estimation path
+
+[kairos]
+local_path = ""
+http_url = ""
+quantum = false
+
+# ─────────────────────────────────────────────────────────────────────
+# Causalitybot non-chronological signal generator
+# ─────────────────────────────────────────────────────────────────────
+#
+# local_path:  directory containing causalitybot.py
+# http_url:    optional HTTP fallback
+
+[causality]
+local_path = ""
+http_url = ""
+
+# ─────────────────────────────────────────────────────────────────────
+# Quantum econophysics modules
+# ─────────────────────────────────────────────────────────────────────
+#
+# Both modules (econophysics_tunneling, econophysics_herding) try IQM
+# Resonance first, fall back to Qiskit Aer, and fall back to exact
+# classical evolution. An empty iqm_token disables the IQM path without
+# disabling the modules.
+
+[quantum]
+iqm_token = ""
+iqm_server = "https://resonance.iqm.tech"
+iqm_backend = ""
+tunneling_qubits = 4
+tunneling_time = 3.0
+tunneling_trotter_steps = 3
+herding_qubits = 4
+herding_layers = 1
+herding_shots = 4000
+
+# ─────────────────────────────────────────────────────────────────────
+# STIRPES phylogenetic classification and on-chain attestation
+# ─────────────────────────────────────────────────────────────────────
+#
+# STIRPES is optional and additive. It reads from the orchestrator,
+# writes to a settlement layer, and never writes back into the trade
+# pipeline. Unidirectionality is the design property.
+#
+# enabled:               master switch. When false, no recorder is built,
+#                        the orchestrator's stirpes_recorder is None, and
+#                        the pipeline runs identically to the no-STIRPES
+#                        configuration. When true, the caller may build a
+#                        recorder via bootstrap.build_stirpes_recorder and
+#                        inject it into the orchestrator.
+#
+# chain_type:            "mock" (in-memory, for testing) or "tezos"
+#                        (Etherlink or private Tezos rollup via web3).
+#
+# tezos_rpc_url:         RPC endpoint. Required when chain_type = "tezos".
+# tezos_contract_address: deployed StirpesRegistry.sol address. Required
+#                        when chain_type = "tezos".
+# tezos_private_key_env: name of the environment variable holding the
+#                        private key. The key is never written to the
+#                        configuration file.
+#
+# cipher_seed:           seed for the payload cipher. The default XorCipher
+#                        is a placeholder, not secure. Production
+#                        deployments substitute an AEAD cipher.
+#
+# tree_method:           "neighbor_joining" (default) or "upgma". The
+#                        phylogenetic tree construction algorithm.
+#
+# flush_threshold:       number of pending ticks accumulated before an
+#                        automatic flush is triggered.
+#
+# session_id:            session identifier for this deployment. The
+#                        tick hash includes it, so different sessions
+#                        produce different tick hashes even for the same
+#                        fingerprint.
+
+[stirpes]
+enabled = false
+chain_type = "mock"
+tezos_rpc_url = ""
+tezos_contract_address = ""
+tezos_private_key_env = "STIRPES_PRIVATE_KEY"
+cipher_seed = "stirpes-default-seed"
+tree_method = "neighbor_joining"
+flush_threshold = 100
+session_id = "default-session"
+
+# ─────────────────────────────────────────────────────────────────────
+# LLM analyst
+# ─────────────────────────────────────────────────────────────────────
+#
+# Any OpenAI-compatible endpoint. Temperature is pinned to 0.0 for
+# determinism; the LLM's role is bounded by the verifier.
+
+[llm]
+base_url = "http://localhost:11434/v1"
+model = "qwen2.5:7b-instruct"
+api_key = "ollama"
+temperature = 0.0
+timeout_s = 30.0
+
+# ─────────────────────────────────────────────────────────────────────
+# Skills
+# ─────────────────────────────────────────────────────────────────────
+#
+# The SKILL.md files loaded into the LLM's system prompt. The
+# opportunity-analyst skill is required for the OPPORTUNITY strategy
+# to be effective; the sizing-discipline and toxic-flow-gate skills
+# apply to all strategies.
+
+[skills]
+directory = "skills"
+active = [
+  "toxic-flow-gate",
+  "regime-classifier",
+  "sizing-discipline",
+  "econophysics-analyst",
+  "opportunity-analyst",
+]
+
+# ─────────────────────────────────────────────────────────────────────
+# Risk parameters
+# ─────────────────────────────────────────────────────────────────────
+
+[risk]
+equity = 100000.0
+seed = 42
+
+# ─────────────────────────────────────────────────────────────────────
+# Module configuration
+# ─────────────────────────────────────────────────────────────────────
+#
+# Every registered module can be toggled. The on_error policy determines
+# what happens when the module raises during execution:
+#
+#   fail_open   — treat the module as absent (neutral contribution)
+#   fail_closed — force a flat trade (veto)
+#
+# If on_error is omitted, the strategy's on_error_default applies.
+
+[modules]
+imports = []
+
+# Dampening modules — disabled under the OPPORTUNITY strategy so that
+# the opportunity modules are the sole interpretation of KAIROS and
+# Causalitybot signals. Enable these instead when running the
+# CONSERVATIVE or AGGRESSIVE strategy.
+
+[modules.kairos]
+enabled = false
+on_error = "fail_open"
+
+[modules.causality]
+enabled = false
+on_error = "fail_open"
+
+# Neutral modules — active in all strategies.
+
+[modules.regime]
+enabled = true
+
+[modules.sentiment]
+enabled = false
+
+# Quantum econophysics modules — active in all strategies.
+
+[modules.econophysics_tunneling]
+enabled = true
+on_error = "fail_open"
+
+[modules.econophysics_herding]
+enabled = true
+on_error = "fail_open"
+
+# Opportunity modules — risk-on interpretation. These are the
+# alternative to the dampening modules. When enabled, they patch
+# AGOP's axes to favor directional actions when opportunities
+# qualify, and the synthesizer informs the LLM about conviction.
+
+[modules.agop_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.causality_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.kairos_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.opportunity_synthesizer]
+enabled = true
+on_error = "fail_open"
+
+# Two things deliberately live outside the config file:
+
+# The STIRPES payload cipher. The cipher_seed configures the placeholder XorCipher, which is not secure. Production deployments substitute an AEAD cipher (AES-GCM or ChaCha20-Poly1305) by passing a custom cipher to StirpesRecorder directly, bypassing the bootstrap builder. This is a code-level substitution, not a configuration option, because the cipher implementation is not a value — it is a class.
+
+# The STIRPES chain client extension for real deployments. The TezosChainClient is a stub whose commit and query methods raise NotImplementedError. A real deployment subclasses it (as EtherlinkClient in janus/stirpes/TEZOS_CHAIN.md) and passes the subclass instance to StirpesRecorder. The bootstrap builder only knows how to construct the stub, because the stub's constructor signature is fixed but the subclass's is deployment-specific. This is also a code-level substitution.
