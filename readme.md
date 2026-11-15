@@ -1452,6 +1452,11 @@ STIRPES has four dedicated documents in `janus/stirpes/`:
   deploy steps, contract interface, how to extend the client,
   configuration, gas costs, reorg handling, and limitations.
 
+
+### 12.11 External analytics
+
+For post-hoc analysis of settled STIRPES records, see starwalkerz/stirpes_lens, an independent read-only observability package that consumes the STIRPES wire protocol over HTTP (/api/stirpes), EVM RPC (StirpesRegistry.sol), or exported JSONL logs without importing janus or stirpes. In public mode, it computes clade censuses, transition matrices, sliding-window Shannon entropy, and normalized Jensen–Shannon divergence drift scores from on-chain hashes; in privileged mode (with a decryption key or RevealGate settlement), it evaluates verdict distributions, LLM downsizing and veto rates, and trait-conditioned Pagel's λ and Blomberg's K tests.
+
 ---
 
 ## 13. Opportunity modules
