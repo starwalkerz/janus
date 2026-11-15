@@ -1,0 +1,407 @@
+# AI & robotics — trend calendar 2027Q1–2038Q4
+#
+# Axiom: AI downstream from energy & commodities. IP accrues to US;
+# silicon foundry to TW; memory to KR; robotics to JP (aging
+# substitution); services to IN.
+#
+# W1 EARLY (2027–2029): all layers favor.
+# W2 EXPANSION (2030–2032): IN services added.
+# W3 ROTATION (2033–2035): TW foundry saturates (US onshoring);
+#   KR memory saturates (commoditized). EU IP enters 2035.
+# W4 MATURITY (2036–2038): TW/KR dampens persist; EU IP continues.
+
+[2027Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+
+[2027Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+
+[2027Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+
+[2027Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+
+[2028Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2028Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2028Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2028Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2029Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2029Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2029Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2029Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2030Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2030Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2030Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2030Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2031Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2031Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2031Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2031Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2032Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2032Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2032Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2032Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+
+[2033Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2033Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2033Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2033Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2034Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2034Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2034Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2034Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2035Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2035Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2035Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2035Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2036Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2036Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2036Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2036Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2037Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2037Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2037Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2037Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2038Q1]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2038Q2]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2038Q3]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION
+
+[2038Q4]
+us | ai | none | favor_long | AI_IP_US
+tw | ai | none | favor_long | AI_SILICON_TW
+kr | ai | none | favor_long | AI_MEMORY_KR
+jp | ai | none | favor_long | AI_ROBOTICS_JP
+in | ai | none | favor_long | AI_SERVICES_IN
+eu | ai | none | favor_long | AI_IP_EU
+tw | ai | none | dampen_long | AI_TW_SATURATION
+kr | ai | none | dampen_long | AI_KR_SATURATION

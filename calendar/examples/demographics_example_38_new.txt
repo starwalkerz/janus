@@ -1,0 +1,396 @@
+# Frontier technology & deeptech — trend calendar 2027Q1–2038Q4
+#
+# Axiom: deeptech IP accrues to US/EU/UK (patents, labs, talent);
+# downstream commercialization runs through India services, then JP
+# (2030) and KR (2032).
+#
+# W1 EARLY (2027–2029): US, EU, UK; IN services added 2028.
+# W2 EXPANSION (2030–2032): all; JP 2030, KR 2032.
+# W3 ROTATION (2033–2035): US deeptech dampens (lab-to-market
+#   saturation; capital rotates to AI/quantum).
+# W4 MATURITY (2036–2038): US reverses on defense spending; IN
+#   services dampens (wage convergence erodes arbitrage).
+
+[2027Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+
+[2027Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+
+[2027Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+
+[2027Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+
+[2028Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2028Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2028Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2028Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2029Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2029Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2029Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2029Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+
+[2030Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2030Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2030Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2030Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2031Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2031Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2031Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2031Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+
+[2032Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+
+[2032Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+
+[2032Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+
+[2032Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+
+[2033Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2033Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2033Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2033Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2034Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2034Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2034Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2034Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2035Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2035Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2035Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2035Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | dampen_long | DEEPTECH_US_LAB_TO_MARKET
+
+[2036Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2036Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2036Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2036Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2037Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2037Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2037Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2037Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2038Q1]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2038Q2]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2038Q3]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE
+
+[2038Q4]
+us | deeptech | none | favor_long | DEEPTECH_US
+eu | deeptech | none | favor_long | DEEPTECH_EU
+uk | deeptech | none | favor_long | DEEPTECH_UK
+in | deeptech | none | favor_long | DEEPTECH_SERVICES_IN
+jp | deeptech | none | favor_long | DEEPTECH_JP
+kr | deeptech | none | favor_long | DEEPTECH_KR
+us | deeptech | none | favor_long | DEEPTECH_US_DEFENSE_REVIVAL
+in | deeptech | none | dampen_long | DEEPTECH_IN_WAGE_CONVERGENCE

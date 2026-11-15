@@ -1,0 +1,619 @@
+# Demographics on consumption: fashion and entertainment as drivers
+# (2027Q1–2038Q4, 6-field entries with demographics)
+#
+# AXIOM: demographic spending is driven by fashion and entertainment
+# until 2038. Three demographic profiles spend in structurally different
+# ways, and within each profile the drivers ROTATE across the window.
+#
+# Sector mapping (existing axis values, no software change):
+#   fashion       → sector = consumer
+#   entertainment → sector = tech
+#
+# Structure: baseline + override.
+#
+#   Baselines use `*` for geography and one demographic profile. They set
+#   the profile-wide direction and cover all 18 geographies.
+#
+#   Overrides use explicit geography and appear AFTER the baseline in the
+#   same quarter. Per the "later entry wins" merge rule, the override
+#   replaces the baseline's effect for that geography only. This lets one
+#   country saturate while its profile peers continue to favor.
+#
+# WINDOWS (thesis rotation, 12 quarters each):
+#
+#   W1 2027Q1–2029Q4  EARLY: all three profiles favor their lead drivers.
+#                     No dampens. Fast fashion, mobile gaming, streaming
+#                     bundles, heritage, film.
+#
+#   W2 2030Q1–2032Q4  EXPANSION: same baselines, no direction changes.
+#                     The thesis expands but does not rotate yet.
+#
+#   W3 2033Q1–2035Q4  ROTATION: first dampens. Youth fast fashion saturates
+#                     in India and Kenya. Youth mobile gaming saturates.
+#                     Working streaming unbundles. Aging streaming shrinks
+#                     as the cohort thins. Mid-premium (youth) and live
+#                     events (working) continue to favor via baseline.
+#
+#   W4 2036Q1–2038Q4  MATURITY: India reverses from dampen back to favor
+#                     as mid-premium replaces fast fashion. Kenya stays
+#                     dampened (fast fashion dominant longer). Working
+#                     premium fashion fades as the cohort ages out. Aging
+#                     heritage and film remain durable.
+#
+# Why each profile spends differently:
+#
+#   YOUTH (in, za, ng, ke, mx)
+#     Fast fashion: high volume, low ASP, trend-driven. Entertainment:
+#     mobile gaming, short-form video, streaming at low price points.
+#     The driver is mobile-penetration inflection; saturation arrives
+#     mid-window.
+#
+#   WORKING (us, uk, sh, ca, lk, br, ar)
+#     Premium fashion: mid ASP, brand-driven. Entertainment: streaming
+#     bundles, live events. The driver is disposable income; cohort
+#     aging-out starts ~2036.
+#
+#   AGING (eu, jp, kr, hk, tw, sg)
+#     Heritage/luxury fashion: high ASP, quality-driven. Entertainment:
+#     film, classic IP, heritage media. The driver is wealth stock; the
+#     subscription cohort thins post-2035.
+#
+# Axiom window: 2027Q1 through 2038Q4. After 2038 the global demographic
+# structure has shifted and the spending drivers evolve beyond this
+# calendar's scope.
+#
+# Format reference: calendar/readme.md.
+
+# ═══ W1  2027Q1–2029Q4  EARLY ═══
+
+[2027Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2027Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2027Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2027Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2028Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2028Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2028Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2028Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2029Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2029Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2029Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+[2029Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+
+# ═══ W2  2030Q1–2032Q4  EXPANSION ═══
+
+[2030Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2030Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2030Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2030Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2031Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2031Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2031Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2031Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2032Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2032Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2032Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+[2032Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_FASHION
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_ENTERTAINMENT
+* | tech | none | aging | favor_long | BASELINE_AGING_ENTERTAINMENT
+in | tech | none | youth | favor_long | YOUTH_IN_STREAMING_INFLECTION
+br | consumer | none | working | favor_long | WORKING_BR_MID_PREMIUM
+
+# ═══ W3  2033Q1–2035Q4  ROTATION ═══
+#
+# Baselines unchanged. Overrides AFTER baseline reverse the direction for
+# specific geographies where the thesis has saturated.
+
+[2033Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2033Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2033Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2033Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2034Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2034Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2034Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2034Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2035Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2035Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2035Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2035Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_ENTERTAINMENT
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | dampen_long | YOUTH_IN_FAST_FASHION_SATURATION
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+# ═══ W4  2036Q1–2038Q4  MATURITY ═══
+#
+# India reverses: mid-premium takes over from fast fashion. Working premium
+# fades as the cohort ages out. Aging heritage and film stay durable.
+
+[2036Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2036Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2036Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2036Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2037Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2037Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2037Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2037Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2038Q1]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2038Q2]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2038Q3]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT
+
+[2038Q4]
+* | consumer | none | youth | favor_long | BASELINE_YOUTH_MID_PREMIUM
+* | consumer | none | working | favor_long | BASELINE_WORKING_PREMIUM
+* | consumer | none | aging | favor_long | BASELINE_AGING_HERITAGE
+* | tech | none | youth | favor_long | BASELINE_YOUTH_STREAMING
+* | tech | none | working | favor_long | BASELINE_WORKING_LIVE_EVENTS
+* | tech | none | aging | favor_long | BASELINE_AGING_FILM_IP
+in | consumer | none | youth | favor_long | YOUTH_IN_MID_PREMIUM_TAKEOVER
+ke | consumer | none | youth | dampen_long | YOUTH_KE_FAST_FASHION_SATURATION
+in | tech | none | youth | dampen_long | YOUTH_IN_MOBILE_GAMING_SATURATION
+us | consumer | none | working | dampen_long | WORKING_US_PREMIUM_FADE
+us | tech | none | working | dampen_long | WORKING_US_STREAMING_UNBUNDLING
+eu | tech | none | aging | dampen_long | AGING_EU_STREAMING_COHORT

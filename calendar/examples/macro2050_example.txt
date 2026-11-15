@@ -1,0 +1,1054 @@
+# calendar/calendar.txt
+# Full example: MACRO_2050_V3 strategy calendar
+#
+# Reproduces the dated portfolio calendar from the MACRO_2050_V3 model as a
+# ready-to-use example. Covers 2027Q1 through 2046Q4 and encodes every event
+# whose (geography, sector, commodity) intersection falls within the axis
+# value sets of the ticker registry.
+#
+# Structure
+# ---------
+# Entries are grouped per quarter. Within each quarter, order is: A1 joule
+# favorites, A6 relocation favorites, A8 monetary favorites, chain favorites,
+# Regime V favorites, wave favorites, fusion favorites, book favorites, then
+# dampeners last. The ordering ensures that dampeners (INDIA_ELECTION,
+# KENYA_RELIEF_EXIT, NIGERIA_REDUCE) override earlier favorites on any axis
+# collision, per the "later entry wins" rule.
+#
+# Axis usage
+# ----------
+# `*` is used for geography in entries whose theme is global (joule,
+# monetary, fusion). Specific geographies are used for regional events
+# (India, Kenya, Nigeria, EU, South Africa, Sri Lanka, Brazil, Argentina).
+#
+# Events NOT encoded
+# ------------------
+# Two event families from the source model cannot be encoded because their
+# geographies are not in the axis value set:
+#
+#   PAKISTAN_PRE_WAVE, PAKISTAN_WAVE, PAKISTAN_POST_WAVE
+#     — require geography `pk`
+#
+#   EGYPT_TURKEY_CAUTION
+#     — requires geographies `eg` and `tr`
+#
+# To support these, extend GEOGRAPHY_VALUES in janus/portfolio/tickers.py
+# with `pk`, `eg`, `tr`, then add the corresponding entries below.
+#
+# Wildcard overlaps
+# -----------------
+# A6_SERVICES_INVISIBLE/VISIBLE use `in | * | none` which overlaps with
+# INDIA_BUILDOUT_PRE/POST. Both favor_long — merge benign. Same for
+# `ke | * | none` with KENYA_DEPLOY and `ng | * | none` with NIGERIA_REDUCE;
+# the dampeners are ordered after the favorites so they win on collision.
+#
+# Format reference: calendar/readme.md.
+
+# ═══ 2027 ═══
+
+[2027Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_ACCUMULATE
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_SMC_2027
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+ng | * | none | dampen_all | NIGERIA_REDUCE
+
+[2027Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_ACCUMULATE
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_SMC_2027
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2027Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_ACCUMULATE
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_SMC_2027
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+ke | * | none | favor_long | KENYA_DEPLOY
+
+[2027Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_ACCUMULATE
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_SMC_2027
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+ke | * | none | dampen_long | KENYA_RELIEF_EXIT
+
+# ═══ 2028 ═══
+
+[2028Q1]
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | silver | favor_long | A8_SILVER_RATIO
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2028Q2]
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | silver | favor_long | A8_SILVER_RATIO
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2028Q3]
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | silver | favor_long | A8_SILVER_RATIO
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2028Q4]
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | silver | favor_long | A8_SILVER_RATIO
+in | * | none | favor_long | INDIA_BUILDOUT_PRE
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+br | agriculture | agri | favor_long | BRAZIL_AGRICULTURE
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+* | metals | lithium | favor_long | LITHIUM_ACCUMULATE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2029 ═══
+
+[2029Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+in | * | none | dampen_all | INDIA_ELECTION
+
+[2029Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+in | * | none | dampen_all | INDIA_ELECTION
+
+[2029Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2029Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+ar | * | * | favor_long | ARGENTINA_POST_ELECTION
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_DESIGN_FREEZE
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2030 ═══
+
+[2030Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2030Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2030Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2030Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_INVISIBLE
+ke | * | none | favor_long | A6_SERVICES_INVISIBLE
+ng | * | none | favor_long | A6_SERVICES_INVISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | gold | favor_long | A8_GOLD_ACCUMULATE
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+* | metals | * | favor_long | JUNIOR_RESOURCES
+* | precious | * | favor_long | JUNIOR_RESOURCES
+lk | * | none | favor_long | SRI_LANKA_DFI
+eu | industrials | * | favor_long | EU_CAPEX
+eu | financials | * | favor_long | EU_BONDS_VS_OATS
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2031 ═══
+
+[2031Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2031Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2031Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2031Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2032 ═══
+
+[2032Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2032Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2032Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2032Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+in | * | none | favor_long | INDIA_BUILDOUT_POST
+eu | industrials | * | favor_long | EU_CAPEX
+* | fusion | none | favor_long | FUSION_ALPHA_CONSTRUCTION
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2033 ═══
+
+[2033Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2033Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2033Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2033Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2034 ═══
+
+[2034Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2034Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2034Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2034Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_ALPHA_FIRST_PLASMA
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2035 ═══
+
+[2035Q1]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2035Q2]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2035Q3]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2035Q4]
+* | nuclear | uranium | favor_long | A1_URANIUM_DEFICIT
+* | power | none | favor_long | A1_GRID_BUILDOUT
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | precious | * | favor_long | A8_PRECIOUS_HEDGE_PEAK
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2036 ═══
+
+[2036Q1]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2036Q2]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2036Q3]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2036Q4]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2037 ═══
+
+[2037Q1]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2037Q2]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2037Q3]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2037Q4]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2038 ═══
+
+[2038Q1]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2038Q2]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2038Q3]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2038Q4]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2039 ═══
+
+[2039Q1]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2039Q2]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2039Q3]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2039Q4]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+* | fusion | none | favor_long | FUSION_STELLARIS_COMMERCIAL
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2040 ═══
+
+[2040Q1]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2040Q2]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2040Q3]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+[2040Q4]
+* | metals | lithium | favor_long | A1_LITHIUM_DEFICIT
+* | metals | copper | favor_long | A1_COPPER_GRID
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+in | industrials | none | favor_long | A6_MANUFACTURING
+in | semis | none | favor_long | A6_MANUFACTURING
+za | financials | * | favor_long | SOUTH_AFRICA_SAGB
+
+# ═══ 2041 ═══
+
+[2041Q1]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2041Q2]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2041Q3]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2041Q4]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+# ═══ 2042 ═══
+
+[2042Q1]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2042Q2]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2042Q3]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2042Q4]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+# ═══ 2043 ═══
+
+[2043Q1]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2043Q2]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2043Q3]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2043Q4]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+# ═══ 2044 ═══
+
+[2044Q1]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2044Q2]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2044Q3]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2044Q4]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+# ═══ 2045 ═══
+
+[2045Q1]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2045Q2]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2045Q3]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+[2045Q4]
+in | * | none | favor_long | A6_SERVICES_VISIBLE
+ke | * | none | favor_long | A6_SERVICES_VISIBLE
+ng | * | none | favor_long | A6_SERVICES_VISIBLE
+
+# ═══ 2046 ═══
+# All events have ended by 2045Q4. No entries.
+
+[2046Q1]
+
+[2046Q2]
+
+[2046Q3]
+
+[2046Q4]

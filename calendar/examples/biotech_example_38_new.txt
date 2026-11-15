@@ -1,0 +1,383 @@
+# Biotechnology — trend calendar 2027Q1–2038Q4
+#
+# Axiom: biotech IP accrues to us/eu/uk; clinical trial and manufacturing
+# services chase the joule and labor cost (IN CRO/CMO). JP enters 2030.
+#
+# W1 EARLY (2027–2029): US/EU/UK IP, IN CRO favor.
+# W2 EXPANSION (2030–2032): + JP favor.
+# W3 ROTATION (2033–2035): US IP dampens (patent cliff on 2020s drugs),
+#   IN CRO dampens (cost inflation erodes arbitrage).
+# W4 MATURITY (2036–2038): US reverses to favor (new-modality IP),
+#   IN CRO stays dampened.
+
+[2027Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2027Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2027Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2027Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2028Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2028Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2028Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2028Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2029Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2029Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2029Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2029Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+
+[2030Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2030Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2030Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2030Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2031Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2031Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2031Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2031Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2032Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2032Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2032Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2032Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+
+[2033Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2033Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2033Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2033Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2034Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2034Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2034Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2034Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2035Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2035Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2035Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2035Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | dampen_long | BIOTECH_US_PATENT_CLIFF
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2036Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2036Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2036Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2036Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2037Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2037Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2037Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2037Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2038Q1]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2038Q2]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2038Q3]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION
+
+[2038Q4]
+us | biotech | none | favor_long | BIOTECH_IP_US
+eu | biotech | none | favor_long | BIOTECH_IP_EU
+uk | biotech | none | favor_long | BIOTECH_IP_UK
+in | biotech | none | favor_long | BIOTECH_CRO_IN
+jp | biotech | none | favor_long | BIOTECH_JP
+us | biotech | none | favor_long | BIOTECH_US_NEW_MODALITY
+in | biotech | none | dampen_long | BIOTECH_IN_COST_EROSION

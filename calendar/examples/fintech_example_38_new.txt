@@ -1,0 +1,588 @@
+# Fintech — trend calendar 2027Q1–2038Q4 (6-field with demographics)
+#
+# Axiom: fintech follows demographics. Youth markets = financial
+# inclusion growth. Aging markets = wealth management + retirement.
+# Working markets = consumer credit + mortgage refi.
+#
+# W1 EARLY (2027–2029): all profiles favor their lead drivers.
+# W2 EXPANSION (2030–2032): all favor.
+# W3 ROTATION (2033–2035): youth fintech dampens (IN/NG/KE banking
+#   penetration matured); UK working dampens (credit cohort aged).
+# W4 MATURITY (2036–2038): IN reverses (mid-premium finance);
+#   NG/KE stay dampened; UK stays dampened.
+
+[2027Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2027Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2027Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2027Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2028Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2028Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2028Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2028Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2029Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2029Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2029Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2029Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2030Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2030Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2030Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2030Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2031Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2031Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2031Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2031Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2032Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2032Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2032Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2032Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+
+[2033Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2033Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2033Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2033Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2034Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2034Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2034Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2034Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2035Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2035Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2035Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2035Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | dampen_long | FINTECH_IN_PENETRATION_MATURITY
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2036Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2036Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2036Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2036Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2037Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2037Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2037Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2037Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2038Q1]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2038Q2]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2038Q3]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING
+
+[2038Q4]
+us | fintech | none | working | favor_long | FINTECH_WORKING_US
+uk | fintech | none | working | favor_long | FINTECH_WORKING_UK
+br | fintech | none | working | favor_long | FINTECH_WORKING_BR
+eu | fintech | none | aging | favor_long | FINTECH_AGING_EU
+sg | fintech | none | aging | favor_long | FINTECH_AGING_SG
+in | fintech | none | youth | favor_long | FINTECH_YOUTH_IN
+ng | fintech | none | youth | favor_long | FINTECH_YOUTH_NG
+ke | fintech | none | youth | favor_long | FINTECH_YOUTH_KE
+in | fintech | none | youth | favor_long | FINTECH_IN_MID_PREMIUM_TAKEOVER
+ng | fintech | none | youth | dampen_long | FINTECH_NG_PENETRATION_MATURITY
+ke | fintech | none | youth | dampen_long | FINTECH_KE_PENETRATION_MATURITY
+uk | fintech | none | working | dampen_long | FINTECH_UK_CREDIT_AGING

@@ -1,0 +1,524 @@
+# Semiconductors & computing — trend calendar 2027Q1–2038Q4
+#
+# Axiom: semis is the most joule-sensitive niche per unit of revenue.
+# Design (us), litho (eu), equipment (jp), memory (kr), foundry (tw).
+# China (sh) catches up from 2028; quantum: US 2028, EU 2032.
+#
+# W1 EARLY (2027–2029): all layers favor, SH and US-quantum added 2028.
+# W2 EXPANSION (2030–2032): all favor, EU-quantum added 2032.
+# W3 ROTATION (2033–2035): KR memory dampens (commoditization),
+#   TW foundry dampens (US onshoring erodes TW monopoly).
+# W4 MATURITY (2036–2038): both persist; US design dampens (classical
+#   moat erodes as quantum matures).
+
+[2027Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+
+[2027Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+
+[2027Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+
+[2027Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+
+[2028Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2028Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2028Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2028Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2029Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2029Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2029Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2029Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2030Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2030Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2030Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2030Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2031Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2031Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2031Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2031Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+
+[2032Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+
+[2032Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+
+[2032Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+
+[2032Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+
+[2033Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONS HORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2033Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2033Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2033Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2034Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2034Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2034Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2034Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2035Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2035Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2035Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2035Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+
+[2036Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2036Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2036Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2036Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2037Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2037Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2037Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2037Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2038Q1]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2038Q2]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2038Q3]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
+
+[2038Q4]
+us | semis | none | favor_long | SEMIS_DESIGN_US
+tw | semis | none | favor_long | SEMIS_FOUNDRY_TW
+kr | semis | none | favor_long | SEMIS_MEMORY_KR
+jp | semis | none | favor_long | SEMIS_EQUIP_JP
+eu | semis | none | favor_long | SEMIS_LITHO_EU
+sh | semis | none | favor_long | SEMIS_CHINA_SH
+us | quantum | none | favor_long | QUANTUM_US
+eu | quantum | none | favor_long | QUANTUM_EU
+tw | semis | none | dampen_long | SEMIS_TW_ONSHORING
+kr | semis | none | dampen_long | SEMIS_KR_COMMODITIZATION
+us | semis | none | dampen_long | SEMIS_US_DESIGN_EROSION
