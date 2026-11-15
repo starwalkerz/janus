@@ -2904,3 +2904,43 @@ Pagel, "Inferring the Historical Patterns of Biological Evolution",
 Blomberg, Garland, and Ives, "Testing for Phylogenetic Signal in
 Comparative Data: Behavioral Traits Are More Labile", *Evolution* 57,
 717–745 (2003). The K signal test in Section 12.6.
+
+For training the LLM for energy & commodities -led market regime:
+
+### Biophysical Economics, Thermodynamics & Systems Dynamics (Portfolio & Macro Regime Layer)
+
+Howard T. Odum, *Environment, Power, and Society*. Wiley-Interscience, 1971 (revised ed. *Environment, Power, and Society for the Twenty-First Century*, Columbia University Press, 2007). Establishes energy flow, emergy, and maximum-power principles as the physical foundation of economic activity and sector allocation.
+
+Nicholas Georgescu-Roegen, *The Entropy Law and the Economic Process*. Harvard University Press, 1971. Formulates economic production and resource depletion as irreversible thermodynamic processes governed by low-entropy matter-energy availability.
+
+Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, and William W. Behrens III, *The Limits to Growth*. Universe Books, 1972. Models non-linear feedback loops, carrying capacity, and resource overshoot across industrial, agricultural, and energy systems.
+
+Jay W. Forrester, *Industrial Dynamics* (MIT Press, 1961) and *World Dynamics* (Wright-Allen Press, 1971). Introduces system-dynamics stock-and-flow modeling and reinforcing/balancing feedback loop analysis consumed by AGOP's systems-theoretic phase.
+
+M. King Hubbert, "Nuclear Energy and the Fossil Fuels", *Drilling and Production Practice*, American Petroleum Institute, 1956. Derives logistic depletion curves and peak production dynamics for finite energy resources.
+
+Charles A. S. Hall, Cutler J. Cleveland, and Robert Kaufmann, *Energy and Resource Quality: The Ecology of the Economic Process*. Wiley-Interscience, 1986 (see also Charles A. S. Hall, *Energy Return on Investment*, Springer, 2017). Formalizes Energy Return on Investment (EROI) as a primary constraint on capital surplus and sectoral leadership.
+
+Vaclav Smil, *Energy and Civilization: A History*. MIT Press, 2017. Empirically links energy density, power-conversion transitions, and prime-mover shifts to long-run macroeconomic regimes.
+
+Robert U. Ayres and Benjamin Warr, *The Economic Growth Engine: How Energy and Work Drive Material Prosperity*. Edward Elgar, 2009. Demonstrates exergy (useful work) conversion efficiency as the core physical driver of industrial output.
+
+E. F. Schumacher, *Small Is Beautiful: A Study of Economics As If People Mattered*. Blond & Briggs, 1973. Critiques scale-blind capital aggregation and distinguishes non-renewable natural capital from renewable income flows.
+
+Herman E. Daly, *Steady-State Economics*. W. H. Freeman, 1977. Establishes throughput bounds and biophysical scale limits within macroeconomic allocation.
+
+Stafford Beer, *Brain of the Firm* (Allen Lane, 1972) and *Platform for Change* (Wiley, 1975). Formulates the Viable System Model (VSM) of recursive autonomic regulation, homeostatic risk bounds, and algedonic anomaly escalation.
+
+### Formal Verification, Supervisory Control & Bounded ML Literature
+
+Bertrand Meyer, "Applying 'Design by Contract'", *IEEE Computer* 25(10), 40–51 (1992). Establishes the pre-condition, post-condition, and invariant boundary enforced by `verifies_theorem_5` and `verify_trade_intent` (`I1`–`I9`).
+
+Peter J. Ramadge and W. Murray Wonham, "Supervisory Control of a Class of Discrete-Event Processes", *SIAM Journal on Control and Optimization* 25(1), 206–230 (1987). Formalizes discrete-event supervisory control where an upper layer may disable/veto actions without forcing or inventing them, matching the LLM's downward-only authority.
+
+Lui Sha, "Using Simplicity to Control Complexity", *IEEE Software* 18(4), 20–28 (2001). Establishes the Simplex runtime-assurance architecture wrapping an unverified component inside a mathematically verified safety envelope.
+
+Stanley Bak, Taylor T. Johnson, Marco Caccamo, and Lui Sha, "The Black-Box Simplex Architecture for Runtime Assurance of Autonomous CPS", *arXiv:2102.12981* (2021). Extends Simplex containment to black-box machine learning models under strict invariant fallback guarantees.
+
+Nick Littlestone and Manfred K. Warmuth, "The Weighted Majority Algorithm", *Information and Computation* 108(2), 212–261 (1994). Grounds bounded consensus weighting across multiple signal sources in `opportunity_synthesizer`.
+
+
