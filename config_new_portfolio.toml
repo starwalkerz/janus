@@ -1,0 +1,257 @@
+# JANUS configuration.
+# Created by copying config.example_opportunity_stirpes.toml and adding the
+# portfolio_calendar module registration.
+#
+# Every section below corresponds to a field group on the Config dataclass
+# in janus/config.py. Omitting a section leaves its fields at their defaults.
+#
+# Four subsystems are represented:
+#
+#   1. The trading pipeline (AGOP, KAIROS, Causalitybot, the LLM).
+#   2. The quantum econophysics modules (optional; three-backend fallback).
+#   3. STIRPES, the optional phylogenetic classification and on-chain
+#      attestation subsystem. STIRPES is disabled by default.
+#   4. The portfolio_calendar module. Reads the tickers and calendar
+#      folders on every tick and patches AGOP's axes in PRE_AGOP.
+
+# ─────────────────────────────────────────────────────────────────────
+# Strategy selection
+# ─────────────────────────────────────────────────────────────────────
+#
+# "conservative"  — DbC mode, tight thresholds, small caps
+# "aggressive"    — Legacy mode, loose thresholds, larger caps
+# "opportunity"   — Legacy mode, opportunity modules enabled, aggressive
+#                   caps. Assumes dampening modules are disabled.
+
+[strategy]
+name = "opportunity"
+
+# ─────────────────────────────────────────────────────────────────────
+# AGOP decision engine
+# ─────────────────────────────────────────────────────────────────────
+#
+# mode:        "legacy" (exogenous capacity K) or "dbc" (endogenous K
+#              derived from Weisfeiler-Lehman class count and Nash entropy)
+# local_path:  directory containing agop_core*.py
+# http_url:    optional HTTP fallback when local import fails
+
+[agop]
+mode = "legacy"
+local_path = "."
+http_url = ""
+
+# ─────────────────────────────────────────────────────────────────────
+# KAIROS cyclical anomaly detector
+# ─────────────────────────────────────────────────────────────────────
+#
+# Under the OPPORTUNITY strategy, the dampening modules (kairos, causality)
+# are disabled, because the opportunity modules are the sole interpretation
+# of their signals. Enable these instead for CONSERVATIVE or AGGRESSIVE.
+
+[kairos]
+local_path = ""
+http_url = ""
+quantum = false
+
+# ─────────────────────────────────────────────────────────────────────
+# Causalitybot non-chronological signal generator
+# ─────────────────────────────────────────────────────────────────────
+
+[causality]
+local_path = ""
+http_url = ""
+
+# ─────────────────────────────────────────────────────────────────────
+# Quantum econophysics modules
+# ─────────────────────────────────────────────────────────────────────
+#
+# Both modules (econophysics_tunneling, econophysics_herding) try IQM
+# Resonance first, fall back to Qiskit Aer, and fall back to exact
+# classical evolution. An empty iqm_token disables the IQM path without
+# disabling the modules.
+
+[quantum]
+iqm_token = ""
+iqm_server = "https://resonance.iqm.tech"
+iqm_backend = ""
+tunneling_qubits = 4
+tunneling_time = 3.0
+tunneling_trotter_steps = 3
+herding_qubits = 4
+herding_layers = 1
+herding_shots = 4000
+
+# ─────────────────────────────────────────────────────────────────────
+# STIRPES phylogenetic classification and on-chain attestation
+# ─────────────────────────────────────────────────────────────────────
+#
+# STIRPES is optional and additive. It reads from the orchestrator,
+# writes to a settlement layer, and never writes back into the trade
+# pipeline. Unidirectionality is the design property.
+#
+# enabled:               master switch. When false, no recorder is built.
+# chain_type:            "mock" (in-memory, for testing) or "tezos".
+# tezos_rpc_url:         RPC endpoint. Required when chain_type = "tezos".
+# tezos_contract_address: deployed StirpesRegistry.sol address.
+# tezos_private_key_env: env var holding the private key.
+# cipher_seed:           seed for the payload cipher. The default XorCipher
+#                        is a placeholder, not secure.
+# tree_method:           "neighbor_joining" (default) or "upgma".
+# flush_threshold:       pending ticks before automatic flush.
+# session_id:            session identifier for this deployment.
+
+[stirpes]
+enabled = false
+chain_type = "mock"
+tezos_rpc_url = ""
+tezos_contract_address = ""
+tezos_private_key_env = "STIRPES_PRIVATE_KEY"
+cipher_seed = "stirpes-default-seed"
+tree_method = "neighbor_joining"
+flush_threshold = 100
+session_id = "default-session"
+
+# ─────────────────────────────────────────────────────────────────────
+# LLM analyst
+# ─────────────────────────────────────────────────────────────────────
+#
+# Any OpenAI-compatible endpoint. Temperature is pinned to 0.0 for
+# determinism; the LLM's role is bounded by the verifier.
+
+[llm]
+base_url = "http://localhost:11434/v1"
+model = "qwen2.5:7b-instruct"
+api_key = "ollama"
+temperature = 0.0
+timeout_s = 30.0
+
+# ─────────────────────────────────────────────────────────────────────
+# Skills
+# ─────────────────────────────────────────────────────────────────────
+#
+# The SKILL.md files loaded into the LLM's system prompt. The
+# opportunity-analyst skill is required for the OPPORTUNITY strategy
+# to be effective. The portfolio-calendar skill is added by this
+# integration.
+
+[skills]
+directory = "skills"
+active = [
+  "toxic-flow-gate",
+  "regime-classifier",
+  "sizing-discipline",
+  "econophysics-analyst",
+  "opportunity-analyst",
+  "portfolio-calendar",
+]
+
+# ─────────────────────────────────────────────────────────────────────
+# Risk parameters
+# ─────────────────────────────────────────────────────────────────────
+
+[risk]
+equity = 100000.0
+seed = 42
+
+# ─────────────────────────────────────────────────────────────────────
+# Module configuration
+# ─────────────────────────────────────────────────────────────────────
+#
+# Config.module_imports is a list of fully-qualified import paths. Each
+# imported module must export a `module` variable that is a Module
+# instance. Config.module_configurations maps the module name to
+# ModuleConfiguration (enabled: bool, on_error: "fail_open" |
+# "fail_closed" | None).
+#
+# The on_error policy determines what happens when the module raises
+# during execution:
+#
+#   fail_open   — treat the module as absent (neutral contribution)
+#   fail_closed — force a flat trade (veto)
+#
+# If on_error is omitted, the strategy's on_error_default applies.
+#
+# The portfolio_calendar module resolves its two folder paths in this
+# order, re-evaluated on every tick:
+#
+#   Tickers folder:
+#     1. JANUS_PORTFOLIO_TICKERS environment variable.
+#     2. configuration.portfolio_tickers_path attribute, if present.
+#     3. "tickers" in the current working directory.
+#
+#   Calendar folder:
+#     1. JANUS_PORTFOLIO_CALENDAR environment variable.
+#     2. configuration.portfolio_calendar_path attribute, if present.
+#     3. "calendar" in the current working directory.
+#
+# To run multiple sets of folders concurrently, run multiple Janus
+# processes with different environment variables.
+
+[modules]
+imports = [
+    "janus.portfolio.portfolio_calendar",
+]
+
+# Dampening modules — disabled under the OPPORTUNITY strategy so that the
+# opportunity modules are the sole interpretation of KAIROS and
+# Causalitybot signals. Enable these instead when running the
+# CONSERVATIVE or AGGRESSIVE strategy.
+
+[modules.kairos]
+enabled = false
+on_error = "fail_open"
+
+[modules.causality]
+enabled = false
+on_error = "fail_open"
+
+# Neutral modules — active in all strategies.
+
+[modules.regime]
+enabled = true
+
+[modules.sentiment]
+enabled = false
+
+# Quantum econophysics modules — active in all strategies.
+
+[modules.econophysics_tunneling]
+enabled = true
+on_error = "fail_open"
+
+[modules.econophysics_herding]
+enabled = true
+on_error = "fail_open"
+
+# Opportunity modules — risk-on interpretation. These are the alternative
+# to the dampening modules. When enabled, they patch AGOP's axes to favor
+# directional actions when opportunities qualify, and the synthesizer
+# informs the LLM about conviction.
+
+[modules.agop_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.causality_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.kairos_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.opportunity_synthesizer]
+enabled = true
+on_error = "fail_open"
+
+# Portfolio-calendar module — added by this integration.
+#
+# Reads the tickers and calendar folders on every tick. Resolves the
+# current symbol to its intersections, finds the active calendar entries
+# for the current Gregorian quarter, patches AGOP axes. Never sizes,
+# never executes, never overrides the risk bound. May veto only for the
+# veto_all effect.
+
+[modules.portfolio_calendar]
+enabled = true
+on_error = "fail_closed"
