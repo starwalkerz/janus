@@ -1,0 +1,106 @@
+cff-version: 1.2.0
+message: "If you use JANUS in academic or commercial work, please cite the software using the metadata below."
+type: software
+title: "JANUS: A Decision Pipeline with Bounded LLM Authority for Algorithmic Trading"
+abstract: >
+  JANUS is a modular trading-bot pipeline that ranks candidate actions
+  with the AGOP decision engine, gates candidate signals with KAIROS and
+  Causalitybot, and passes the result to an open-source LLM whose only
+  authority is to reduce or veto the position. Every emitted intent is
+  checked against nine formal invariants (I1-I9) enforced by a
+  design-by-contract verifier; a violation returns a flat intent at
+  size zero. Optional subsystems include quantum econophysics modules
+  (Baaquie tunneling, Ising herding) with exact classical fallbacks,
+  opportunity modules that invert the interpretation of signal sources,
+  and STIRPES, a unidirectional phylogenetic classifier that commits
+  decision fingerprints to a settlement layer. The package ships a
+  paper broker; live execution is out of scope.
+authors:
+  - family-names: starwalkerz
+    alias: starwalkerz
+repository-code: "https://github.com/starwalkerz/janus"
+url: "https://github.com/starwalkerz/janus"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-15"
+keywords:
+  - algorithmic trading
+  - decision engine
+  - AI safety
+  - design-by-contract
+  - bounded authority
+  - large language model
+  - phylogenetic classification
+  - quantum amplitude estimation
+  - risk management
+  - Kelly criterion
+references:
+  - type: software
+    title: "AGOP: Attributed-Graph Operator Pipeline"
+    authors:
+      - family-names: starwalkerz
+        alias: starwalkerz
+    repository-code: "https://github.com/starwalkerz/AGOP"
+    license: MIT
+  - type: software
+    title: "KAIROS: Cyclical Anomaly Detection"
+    authors:
+      - family-names: starwalkerz
+        alias: starwalkerz
+    repository-code: "https://github.com/starwalkerz/kairos"
+    license: MIT
+  - type: software
+    title: "Causalitybot: Causal Set Momentum"
+    authors:
+      - family-names: starwalkerz
+        alias: starwalkerz
+    repository-code: "https://github.com/starwalkerz/Causalitybot"
+    license: MIT
+  - type: article
+    title: "A New Interpretation of Information Rate"
+    authors:
+      - family-names: Kelly
+        given-names: J. L.
+    journal: "Bell System Technical Journal"
+    volume: 35
+    start: 917
+    end: 926
+    year: 1956
+  - type: article
+    title: "A Note on the Metric Properties of Trees"
+    authors:
+      - family-names: Buneman
+        given-names: Peter
+    journal: "Journal of Combinatorial Theory, Series B"
+    volume: 17
+    start: 48
+    end: 50
+    year: 1974
+  - type: article
+    title: "The Neighbor-Joining Method: A New Method for Reconstructing Phylogenetic Trees"
+    authors:
+      - family-names: Saitou
+        given-names: N.
+      - family-names: Nei
+        given-names: M.
+    journal: "Molecular Biology and Evolution"
+    volume: 4
+    start: 406
+    end: 425
+    year: 1987
+  - type: article
+    title: "Quantum Amplitude Amplification and Estimation"
+    authors:
+      - family-names: Brassard
+        given-names: Gilles
+      - family-names: Høyer
+        given-names: Peter
+      - family-names: Mosca
+        given-names: Michele
+      - family-names: Tapp
+        given-names: Alain
+    journal: "Contemporary Mathematics"
+    volume: 305
+    start: 53
+    end: 74
+    year: 2002
