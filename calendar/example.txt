@@ -1,0 +1,21 @@
+# calendar/example.txt
+#
+# Copy a section and its entries into calendar.txt, or rename this file to
+# end with .disabled to keep it out of the parser.
+#
+# The format:
+#   [<YYYY>Q<n>]
+#   <geography> | <sector> | <commodity> | <effect> | <event_id>
+#
+# Effects:
+#   favor_long favor_short dampen_all dampen_long dampen_short
+#   veto_long veto_short veto_all
+#
+# Wildcard '*' allowed in any axis field.
+
+# [2027Q1]
+# us | nuclear | uranium | favor_long | uranium_2027q1
+# us | energy | oil | favor_long | oil_2027q1
+
+# [2027Q2]
+# us | nuclear | uranium | favor_long | uranium_2027q2

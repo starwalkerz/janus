@@ -1,0 +1,58 @@
+# tickers/tickers.txt
+#
+# Classify tickers by (geography | sector | commodity).
+#
+# Format: [<geography> | <sector> | <commodity>]
+#         then one ticker per line until the next section header.
+#
+# Axis values:
+#
+#   geography: us eu uk jp kr hk sh in ca za lk ng ke br ar mx
+#
+#   sector:    energy power nuclear fusion metals precious industrials
+#              defence tech semis financials agriculture health consumer
+#              infra transport
+#
+#   commodity: oil gas coal uranium copper lithium gold silver pgm iron
+#              aluminium rare-earth agri cocoa none
+#
+# Add a section header for each intersection you want to populate.
+# Duplicate sections are merged. Duplicate tickers within a section are
+# deduplicated.
+#
+# ─── Example sections (commented out; uncomment and fill) ────────────────
+#
+# [us | nuclear | uranium]
+# CCJ
+# UEC
+# NXE
+#
+# [us | energy | oil]
+# XOM
+# CVX
+# COP
+#
+# [us | energy | gas]
+# EQT
+# CHK
+#
+# [us | power | none]
+# NEE
+# DUK
+#
+# [us | precious | gold]
+# NEM
+# AEM
+#
+# [us | precious | silver]
+# PAAS
+# HL
+#
+# [eu | nuclear | uranium]
+# ...
+#
+# [uk | energy | oil]
+# SHEL
+# BP
+#
+# ─── Add your sections below ─────────────────────────────────────────────

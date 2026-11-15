@@ -1,0 +1,31 @@
+# tickers/example.txt
+#
+# Copy a section header and its tickers into tickers.txt, or rename this
+# file to end with .disabled to keep it out of the registry.
+#
+# The format:
+#   [<geography> | <sector> | <commodity>]
+#   <ticker>
+#   <ticker>
+#
+# Axis values:
+#   geography: us eu uk jp kr hk sh in ca za lk ng ke br ar mx
+#   sector:    energy power nuclear fusion metals precious industrials
+#              defence tech semis financials agriculture health consumer
+#              infra transport
+#   commodity: oil gas coal uranium copper lithium gold silver pgm iron
+#              aluminium rare-earth agri cocoa none
+
+# [us | energy | oil]
+# XOM
+# CVX
+# COP
+
+# [us | nuclear | uranium]
+# CCJ
+# UEC
+# NXE
+
+# [us | precious | gold]
+# NEM
+# AEM
