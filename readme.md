@@ -2647,6 +2647,73 @@ MIT.
 
 ---
 
+### The skills layer
+
+In addition to the ten phase-based modules, JANUS loads a set of SKILL.md
+instruction files into the LLM's system prompt. Skills are not code; they
+are prose instructions that shape how the LLM interprets the pipeline's
+context. The LLM cites a skill by name in its `skills_cited` field when
+the skill's guidance determined the decision, and the citation flows into
+the `TradeIntent`, the audit log, and the STIRPES fingerprint.
+
+Seven skills ship with JANUS. They are listed in `Config.active_skills`
+and configured through the `[skills]` section of `config.toml`. Loading
+is by directory name; a skill that is configured but absent from disk is
+silently skipped.
+
+The seven skills, grouped by purpose:
+
+**Risk-gating skills.** These constrain the LLM's delta based on the
+state of the pipeline. They do not select an action; they cap its size.
+
+- `toxic-flow-gate`: rejects trades when the order-flow imbalance is
+  against the intended direction.
+- `sizing-discipline`: constrains the LLM's delta to the risk engine's
+  upper bound and reduces it further under low-confidence conditions.
+- `biophysical-regime`: classifies the tick into one of five biophysical
+  regimes (EXPANDING, MATURE, OVERSHOOT, CONTRACTING, AMBIGUOUS) using
+  EROI, feedback-loop, depletion-curve, and throughput-bound readings,
+  and caps delta accordingly. The thresholds trace to Odum, Hall,
+  Meadows, Forrester, Hubbert, Daly, Georgescu-Roegen, and Beer.
+- `civilizational-cycle`: classifies the tick into one of four
+  civilizational phases (SPRING, SUMMER, AUTUMN, WINTER) using virtù,
+  fortuna/asabiyyah, cycle position, and corruption readings, and caps
+  delta accordingly. The thresholds trace to Polybius' anacyclosis,
+  Spengler's seasonal morphology, Machiavelli's virtù/fortuna dyad,
+  and Ibn Khaldun's asabiyyah cycle.
+
+**Interpretation skills.** These shape how the LLM reads the module
+contexts. They do not cap delta; they change the LLM's understanding of
+what the signals mean.
+
+- `regime-classifier`: classifies the market into a trending, neutral,
+  or anomalous regime from the KAIROS and Causalitybot reports.
+- `econophysics-analyst`: interprets the Baaquie tunneling probability
+  and the Ising herding magnetization together.
+- `opportunity-analyst`: interprets the opportunity synthesizer's
+  consensus reading and translates it into a delta preference.
+
+The three risk-gating skills are independent; each computes its own cap
+and the LLM applies the minimum. The three interpretation skills are
+independent in the same way; each contributes context that the LLM
+weighs against the others.
+
+The regime skills (`biophysical-regime`, `civilizational-cycle`) are
+deliberately conservative. Each caps delta to a value no greater than the
+strategy cap already permits; neither can increase size beyond what the
+verifier would otherwise allow. If the cap binds, the LLM cites the skill
+in `skills_cited`. If the cap does not bind, the skill does not appear in
+the citation list, and the rationale does not mention it. This makes the
+audit trail precise: a citation of `biophysical-regime` means the regime
+cap actually reduced the intended delta, not merely that the regime was
+classified.
+
+The skills are documented in their own files under `skills/<name>/SKILL.md`.
+Each file follows the Jane Street agent-skills format: YAML frontmatter
+with `name` and `description`, followed by a Markdown body. The body is
+loaded verbatim into the system prompt. The seven files together form the
+prompt rubric that the LLM operates under.
+
 ## Appendix A: File tree
 
 ```
