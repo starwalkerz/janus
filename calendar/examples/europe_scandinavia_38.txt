@@ -1,0 +1,613 @@
+# Europe & Scandinavia — trend calendar 2027Q1–2038Q4
+#
+# Thesis: EU capex build-out (grid, nuclear, defence, LNG import) and
+# Scandinavian energy surplus drive W1–W2. Danish pharma and defence
+# persist. Rotation begins when EU capex completes (W3), and the
+# Scandinavian hydrocarbon premium erodes as the EU energy transition
+# displaces oil/gas (W4). New modalities in health and continuous
+# rearmament are the structural survivors.
+#
+# Nordic exposure sits inside `eu` (axis has no Nordic values).
+#
+# W1 EARLY (2027–2029): EU industrials, defence, energy, power,
+#   health, financials + UK industrials, defence.
+# W2 EXPANSION (2030–2032): same, steady state.
+# W3 ROTATION (2033–2035): EU industrials dampens (buildout done),
+#   EU health dampens (GLP-1 patent cliff), UK industrials dampens
+#   (follows EU).
+# W4 MATURITY (2036–2038): EU health reverses (gene-tech new
+#   modalities), EU energy dampens (hydrocarbon transition), EU
+#   financials dampens (aging demographics erode credit growth).
+
+# ═══ W1  2027Q1–2029Q4  EARLY ═══
+
+[2027Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2027Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2027Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2027Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2028Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2028Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2028Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2028Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2029Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2029Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2029Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2029Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+# ═══ W2  2030Q1–2032Q4  EXPANSION ═══
+
+[2030Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2030Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2030Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2030Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2031Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2031Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2031Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2031Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2032Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2032Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2032Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+[2032Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+
+# ═══ W3  2033Q1–2035Q4  ROTATION ═══
+#
+# EU industrial capex build-out completes. Danish GLP-1 patent cliff
+# hits health. UK industrials follow EU. Defence, Scandinavian energy,
+# power, and banking union persist.
+
+[2033Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2033Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2033Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2033Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2034Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2034Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2034Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2034Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2035Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2035Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2035Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+[2035Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+eu | health | none | dampen_long | EU_HEALTH_GLP1_PATENT_CLIFF
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+
+# ═══ W4  2036Q1–2038Q4  MATURITY ═══
+#
+# EU health reverses (gene-tech new modalities). EU energy dampens
+# (hydrocarbon transition erodes Scandinavian premium). EU financials
+# dampen (aging erodes credit growth). Defence persists (NATO 5%).
+# EU industrials dampens persist.
+
+[2036Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2036Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2036Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2036Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2037Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2037Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2037Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2037Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2038Q1]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2038Q2]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2038Q3]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS
+
+[2038Q4]
+eu | industrials | none | favor_long | EU_INDUSTRIALS_CAPEX
+eu | defence | none | favor_long | EU_DEFENCE_REARM
+eu | energy | none | favor_long | EU_ENERGY_SCANDI
+eu | power | none | favor_long | EU_POWER_GRID
+eu | health | none | favor_long | EU_HEALTH_PHARMA
+eu | financials | none | favor_long | EU_FIN_BANKING_UNION
+uk | industrials | none | favor_long | UK_INDUSTRIALS_INFRA
+uk | defence | none | favor_long | UK_DEFENCE_REARM
+eu | health | none | favor_long | EU_HEALTH_GENE_MODALITIES
+eu | industrials | none | dampen_long | EU_INDUSTRIALS_BUILDOUT_COMPLETE
+uk | industrials | none | dampen_long | UK_INDUSTRIALS_FOLLOWS_EU
+eu | energy | none | dampen_long | EU_ENERGY_HYDROCARBON_TRANSITION
+eu | financials | none | dampen_long | EU_FIN_AGING_DEMOGRAPHICS

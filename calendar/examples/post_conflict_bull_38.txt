@@ -1,0 +1,803 @@
+# Multi-theater geopolitical stress — 2027Q1–2038Q4
+# Supersedes 31_post_conflict_bottleneck.txt. Removes the "peace before
+# 2030" assumption. Models four concurrent theaters as sector-rotation
+# drivers.
+#
+# THEATERS (all four persist across the window; none is assumed to resolve):
+#   T1 UKRAINE / EASTERN EUROPE (active W1; reconstruction W2–W4)
+#   T2 MIDDLE EAST (active W1–W4; no peace assumed before 2030)
+#   T3 SOUTH CHINA SEA / PACIFIC (opens W2; peaks W3; structural W4)
+#   T4 CHINA–INDIA (opens W2; peaks W3; structural W4)
+#
+# TRANSMISSION CHANNELS (actuarial, not political):
+#   T1 → eu/uk/us defence; eu industrials/power (reconstruction);
+#        eu metals (reconstruction peak)
+#   T2 → eu/us energy-oil favour (price premium); eu/uk transport
+#        (Suez/Red Sea reroute); us/eu/uk defence
+#   T3 → pacific ally defence (us, jp, kr, tw); semis reshoring
+#        (tw silicon shield, kr memory, in new capacity); tech
+#        friendshoring (us, jp); transport (SCS/Malacca reroute)
+#   T4 → in defence; in industrials (China+1); in semis; rare-earth
+#        diversification (in/us/au favour, sh dampen); sh semis dampen
+#
+# FRAMING NOTE: China-related entries (sh dampen on semis and rare-earth)
+# are neutral supply-chain and trade-route assumptions, not political
+# judgments. The Chinese geography receives the "dampen" effect wherever
+# export-control friction, rare-earth supply weaponization, or trade-
+# route disruption would reduce expected returns for Chinese-listed
+# tickers in those sectors. Same actuarial treatment applied to any
+# constrained jurisdiction.
+#
+# PHASES:
+#   W1 (2027–2029)  DUAL THEATER: Ukraine + ME active
+#   W2 (2030–2032)  TRIPLE THEATER: Ukraine reconstruction + ME persists
+#                    + Pacific opens
+#   W3 (2033–2035)  PEAK MULTI-THEATER: + China–India; Ukraine peak
+#   W4 (2036–2038)  STRUCTURAL PERSISTENCE: reconstruction complete;
+#                    defence/energy/shipping/semis premium baked in
+
+# ═══ W1  2027Q1–2029Q4  DUAL THEATER ═══
+
+[2027Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2027Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2027Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2027Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2028Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2028Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2028Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2028Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2029Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2029Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2029Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+[2029Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_EU_TRANSPORT
+
+# ═══ W2  2030Q1–2032Q4  TRIPLE THEATER ═══
+#
+# ME persists (no peace before 2030 assumption). Pacific opens.
+# Ukraine reconstruction begins. Defence escalates across allied bloc.
+
+[2030Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+
+[2030Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+
+[2030Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+
+[2030Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+
+[2031Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+
+[2031Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+
+[2031Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+
+[2031Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+
+[2032Q1]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+
+[2032Q2]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+
+[2032Q3]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+
+[2032Q4]
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+us | defence | none | favor_long | T1_US_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+
+# ═══ W3  2033Q1–2035Q4  PEAK MULTI-THEATER ═══
+#
+# All four theaters active. China-India escalates. Rare-earth supply
+# weaponization mapped. Ukraine reconstruction peaks.
+
+[2033Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2033Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2033Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2033Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2034Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2034Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2034Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2034Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2035Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2035Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2035Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+[2035Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+tw | defence | none | favor_long | T3_TW_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+eu | industrials | none | favor_long | T1_EU_INDUSTRIALS
+eu | metals | none | favor_long | T1_EU_METALS
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | semis | none | favor_long | T4_IN_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+
+# ═══ W4  2036Q1–2038Q4  STRUCTURAL PERSISTENCE ═══
+#
+# Ukraine reconstruction completes (industrials and metals dampen).
+# All three theaters of geopolitical tension persist structurally.
+# Defence, energy, transport, semis premium remain baked in.
+
+[2036Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2036Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2036Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2036Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2037Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2037Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2037Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2037Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2038Q1]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2038Q2]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2038Q3]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
+
+[2038Q4]
+us | defence | none | favor_long | T1_T3_US_DEFENCE
+eu | defence | none | favor_long | T1_EU_DEFENCE
+uk | defence | none | favor_long | T1_UK_DEFENCE
+jp | defence | none | favor_long | T3_JP_DEFENCE
+kr | defence | none | favor_long | T3_KR_DEFENCE
+in | defence | none | favor_long | T4_IN_DEFENCE
+eu | energy | oil | favor_long | T2_EU_ENERGY
+us | energy | oil | favor_long | T2_US_ENERGY
+eu | transport | none | favor_long | T2_T3_EU_TRANSPORT
+tw | semis | none | favor_long | T3_TW_SEMIS
+kr | semis | none | favor_long | T3_KR_SEMIS
+in | industrials | none | favor_long | T4_IN_INDUSTRIALS
+au | metals | none | favor_long | T4_AU_RARE_EARTH
+sh | semis | none | dampen_long | T4_SH_SEMIS_FRICTION
+sh | rare-earth | none | dampen_long | T4_SH_RARE_EARTH_CONSTRAINT
+eu | industrials | none | dampen_long | T1_EU_RECON_COMPLETE
+eu | metals | none | dampen_long | T1_EU_METALS_NORMALIZED
