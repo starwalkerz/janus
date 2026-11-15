@@ -1,0 +1,27 @@
+janus/
+├── janus/
+│   ├── ... (existing files, unchanged)
+│   └── portfolio/
+│       ├── README.md
+│       ├── __init__.py
+│       ├── tickers.py
+│       ├── calendar.py
+│       ├── portfolio_calendar.py
+│       └── ibkr_broker.py
+├── tickers/
+│   ├── README.md
+│   ├── tickers.txt
+│   └── example.txt
+├── calendar/
+│   ├── README.md
+│   ├── calendar.txt
+│   └── example.txt
+├── skills/
+│   ├── ... (existing skills, unchanged)
+│   └── portfolio-calendar/
+│       └── SKILL.md
+├── tests/
+│   ├── ... (existing tests, unchanged)
+│   └── test_portfolio.py
+├── config.toml
+└── requirements.txt
