@@ -1150,6 +1150,52 @@ the `backend` field in their context dict, so a downstream auditor can
 distinguish a hardware run from an Aer run from a classical run. The
 JANUS audit log preserves the context dict per tick.
 
+### 11.8 Event gating
+
+The IQM hardware path costs credits. Burning credits on every tick that
+produces no actionable signal is wasteful. Both econophysics modules
+gate the IQM path on KAIROS and Causalitybot observations:
+
+    trigger = kairos_flagged OR causality_horizon_above_threshold
+
+The trigger is computed per tick by
+`janus.modules.quantum_trigger.should_trigger_quantum_hardware`. When
+the trigger is False, the quantum runner uses Qiskit Aer or
+classical-exact (both free) and never contacts IQM Resonance. When the
+trigger is True and `quantum_iqm_token` is set, the runner uses IQM.
+Every baseline tick is completely free of credit burn.
+
+The trigger can reuse signal results from prior phase modules to avoid
+invoking KAIROS or Causalitybot a second time. `econophysics_tunneling`
+(PRE_AGOP) reads `causality_opportunity` from `prior_results` because
+that module runs before it alphabetically, but must call KAIROS
+directly because `kairos_opportunity` runs after. `econophysics_herding`
+(POST_AGOP) reads both signals from `prior_results` because all PRE_AGOP
+results are accumulated by the time it runs.
+
+The trigger is a deterministic function of the snapshot, the
+configuration, and the prior_results, all of which are themselves
+deterministic per tick. Determinism (I6) is preserved.
+
+The gating is configured through five `[quantum]` fields:
+
+| Field | Default | Meaning |
+|---|---|---|
+| `gate_enabled` | `true` | Master switch for event gating |
+| `gate_on_kairos` | `true` | Use KAIROS flag as a trigger |
+| `gate_on_causality` | `true` | Use Causalitybot horizon as a trigger |
+| `gate_kairos_threshold` | `0.05` | KAIROS amplitude that triggers |
+| `gate_causality_threshold` | `0.20` | Causalitybot horizon that triggers |
+
+When `gate_enabled = false`, the trigger always returns True and every
+tick routes to IQM if a token is set, which is the pre-gating behavior.
+Users who want unconditional IQM execution set `gate_enabled = false`.
+
+Each econophysics module records the trigger decision in its context
+under `event_triggered` and `trigger_info`, and appends `gated=true` or
+`gated=false` to its `notes`. The audit log therefore shows exactly
+which ticks were gated and why.
+
 ---
 
 ## 12. Phylogenetic classification (STIRPES)
