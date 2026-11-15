@@ -2569,6 +2569,27 @@ patched axes or not; the calendar does not change the verdict codes.
 **With the IBKR broker adapter (§15.16).** The adapter is swapped into
 `Orchestrator(broker=...)`. The module has no awareness of the broker.
 
+**Session maintenance.** The Client Portal Gateway drops the session if
+`POST /tickle` is not received every ~5 minutes, and it requires manual
+browser re-authentication every 24 hours — the SSO token expires hard
+and no programmatic call can extend it. `IBKRClient` handles both as far
+as they can be automated: it sends `POST /tickle` on a 60-second interval,
+sends `POST /iserver/auth/status` on a 300-second interval, and performs
+both on the first request of every process. On a 401/403 response from a
+real request, it re-checks the session once and retries once; if the
+session is still unauthenticated, it raises `IBKRAuthError`. The broker
+adapter catches that error, logs at CRITICAL, and re-raises — a dead
+session stops the pipeline loudly rather than silently skipping trades
+for hours. The `maintain_session`, `tickle_interval`, and
+`auth_check_interval` constructor parameters allow tuning or disabling
+the maintenance (the last two for tests). The 24-hour browser
+re-authentication cannot be automated: when the SSO token expires, the
+operator must open `https://localhost:5000`, log in, and restart the
+trading loop. A pipeline that goes fully idle for more than ~5 minutes
+loses the session regardless of the intervals, because maintenance only
+runs when a request is made; a background tickle thread is required if
+the pipeline is expected to be idle for long periods.
+
 ## 16. License
 
 MIT.
