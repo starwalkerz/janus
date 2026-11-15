@@ -2069,7 +2069,507 @@ unidirectionality property observable from outside the system.
 
 ---
 
-## 15. License
+## 15. Portfolio calendar
+
+The portfolio calendar is an optional, shipped-with-the-repository PRE_AGOP
+module that patches AGOP's axes from two plaintext data sources the operator
+maintains by hand: a **ticker registry** that classifies tickers by three
+orthogonal axes, and a **calendar** that records, per Gregorian year and
+quarter, which axis-triples are favored or dampened. The module ships with
+the code but registers through `Config.module_imports` like any user-supplied
+custom module; it is not part of the ten built-in modules of Section 5.
+
+The module does not size, execute, or override the risk bound. It patches
+axes only in PRE_AGOP, never returns a risk multiplier, may veto for the
+`veto_all` effect, and **yields to the opportunity modules** (Section 13) on
+any `(axis, action)` collision. That last property is what makes the calendar
+a *baseline* — an already-occurring pre-set within which the opportunity
+modules observe opportunities — rather than a competing signal source.
+
+The module ships an optional companion broker adapter,
+`janus/portfolio/ibkr_broker.py`, that implements `PaperBroker.execute`
+against the IBKR Client Portal Web API. The adapter is not imported by the
+module; it is a drop-in replacement for `PaperBroker` when live execution is
+wanted. See §15.16.
+
+### 15.1 The two data folders
+
+The module reads from two folders:
+
+- **`tickers/`** — the ticker registry. Classifies tickers by
+  `(geography, sector, commodity)`.
+- **`calendar/`** — the calendar. Records quarter-by-quarter favor/dampen
+  instructions.
+
+The two folders are independent at parse time. The registry says *which
+ticker belongs to which intersection*; the calendar says *which intersection
+is favored in which quarter*. The module joins them at tick time by resolving
+`snapshot.symbol` to its intersections in the registry, then filtering
+calendar entries against those intersections.
+
+### 15.2 The three orthogonal axes
+
+Every ticker is classified by exactly one value on each of three axes. The
+axes are orthogonal: any combination is legal, though not all combinations
+are populated in practice. The full cartesian product has 16 × 16 × 15 =
+3,840 intersections. Only the populated ones exist in the registry.
+
+**Geography (16 values).** `us eu uk jp kr hk sh in ca za lk ng ke br ar mx`.
+The value names the market where the ticker's primary listing trades, or
+where the exposure is concentrated if the ticker is an ADR or an ETF.
+
+**Sector (16 values).** `energy power nuclear fusion metals precious
+industrials defence tech semis financials agriculture health consumer infra
+transport`. The value names the industry.
+
+**Commodity (15 values).** `oil gas coal uranium copper lithium gold silver
+pgm iron aluminium rare-earth agri cocoa none`. The value names the physical
+commodity the ticker is exposed to, or `none` if the ticker is not a
+commodity play.
+
+An **intersection** is a triple `(g, s, c)` with `g`, `s`, `c` drawn from
+their respective axes. Two tickers can share an intersection. A ticker can
+appear in more than one intersection if it spans categories (for example, a
+diversified energy company in both `(us, energy, oil)` and `(us, energy,
+gas)`).
+
+### 15.3 The ticker registry format
+
+The ticker registry is a plaintext section-based format. Each non-comment,
+non-blank line is either a section header or a ticker.
+
+**Section header:**
+
+    [<geography> | <sector> | <commodity>]
+
+All three fields must be specific values from their respective axes. No
+wildcards. The header opens a new section.
+
+**Ticker line:** a single ticker. One per line. Upper-cased on parse.
+
+**Comments:** lines whose first non-whitespace character is `#`. Blank lines
+are ignored.
+
+**Example:**
+
+    [us | nuclear | uranium]
+    CCJ
+    UEC
+    NXE
+
+    [us | energy | oil]
+    XOM
+    CVX
+
+Multiple `.txt` files in the `tickers/` folder are concatenated in
+lexicographic filename order. Duplicate sections are merged (accumulate).
+Duplicate tickers within a section are deduplicated.
+
+### 15.4 The calendar format
+
+The calendar is a plaintext section-based format. Each non-comment,
+non-blank line is either a section header or an entry.
+
+**Section header:**
+
+    [<YYYY>Q<n>]
+
+Where `YYYY` is a four-digit Gregorian year and `n` is `1` through `4`. The
+header opens a new quarter.
+
+**Entry line:** five pipe-separated fields.
+
+    <geography> | <sector> | <commodity> | <effect> | <event_id>
+
+- **`geography`**, **`sector`**, **`commodity`** — either a specific axis
+  value or `*` for wildcard. A wildcard matches any value on that axis.
+- **`effect`** — one of the eight effect tokens (§15.5).
+- **`event_id`** — non-empty identifier, used for LLM citation.
+
+**Example:**
+
+    [2027Q1]
+    us | nuclear | uranium | favor_long | uranium_2027q1
+    us | energy | oil | favor_long | oil_2027q1
+    * | fusion | none | favor_long | fusion_2027q1
+
+    [2027Q2]
+    us | nuclear | uranium | favor_long | uranium_2027q2
+
+The calendar covers 2027 through 2046. The shipped `calendar/calendar.txt`
+has empty sections for every year/quarter; the operator fills the entries.
+
+Multiple `.txt` files in the `calendar/` folder are concatenated in
+lexicographic filename order. Duplicate sections are merged. Within a
+quarter, if two entries patch the same `(axis, action)`, the later entry in
+file order wins.
+
+### 15.5 The effects
+
+The eight effect tokens are the same as in the opportunity modules (Section
+13) and the verifier (Section 4):
+
+| Effect | `pain` | `readiness` | `barrier` | `veto` |
+|---|---|---|---|---|
+| `favor_long` | `LONG=0.85` | `LONG=0.85` | `LONG=0.15` | — |
+| `favor_short` | `SHORT=0.85` | `SHORT=0.85` | `SHORT=0.15` | — |
+| `dampen_all` | — | — | `LONG=0.85`, `SHORT=0.85` | — |
+| `dampen_long` | — | — | `LONG=0.85` | — |
+| `dampen_short` | — | — | `SHORT=0.85` | — |
+| `veto_long` | `LONG=0.15` | `LONG=0.15` | `LONG=1.0` | — |
+| `veto_short` | `SHORT=0.15` | `SHORT=0.15` | `SHORT=1.0` | — |
+| `veto_all` | — | — | — | `True` |
+
+Every axis value lies in `[0, 1]`.
+
+### 15.6 The resolution pipeline
+
+On every tick, with `symbol` from `context.snapshot.symbol` and `today` from
+`datetime.now(timezone.utc).date()`:
+
+1. **Resolve symbol to intersections.** Look up `symbol.upper()` in the
+   reverse index built from the registry (§15.10). If the symbol is not
+   present, return a neutral `ModuleResult` (no patches, no veto,
+   `risk_multiplier = 1.0`).
+2. **Compute the current quarter.** `year = today.year`,
+   `quarter = (today.month - 1) // 3 + 1`.
+3. **Filter calendar entries.** Keep only entries whose `(year, quarter)`
+   matches. If empty, return neutral.
+4. **Match patterns.** For each entry, check whether its pattern (with
+   possible wildcards) matches *any* of the ticker's intersections. Keep
+   the matching entries.
+5. **Merge effects.** Apply `patch(effect)` for each matching entry. On any
+   `(axis, action)` collision, the later entry in file order wins.
+6. **Yield to opportunity.** Remove any `(axis, action)` pair already
+   patched by a prior opportunity module (§15.8).
+7. **Veto.** `veto = True` if any matching entry has effect `veto_all`.
+   Veto is not yielded.
+8. **Return** a `ModuleResult` with the merged `axes_patch`, the veto flag,
+   `risk_multiplier = 1.0`, and structured context (§15.11).
+
+### 15.7 The formal specification
+
+Let `T` be the reverse index: `symbol → tuple[Intersection, ...]`. Let `C` be
+the list of parsed calendar entries. Let `today = (Y, Q)`.
+
+Define the matching set:
+
+    M = [e ∈ C : e.year = Y ∧ e.quarter = Q ∧
+                 ∃ i ∈ T[symbol] : matches(e, i)]
+
+where
+
+    matches(e, i) = (e.geography ∈ {"*", i.geography})
+                  ∧ (e.sector    ∈ {"*", i.sector})
+                  ∧ (e.commodity ∈ {"*", i.commodity})
+
+Let `P` be the set of `(axis, action)` pairs already patched by any prior
+module whose name is in `_OPPORTUNITY_MODULE_NAMES` (the four opportunity
+modules of Section 13).
+
+Then:
+
+    raw_patch  = merge([patch(e.effect) for e in M])
+    axes_patch = raw_patch \ P
+    veto       = ∃ e ∈ M : e.effect = "veto_all"
+
+`merge` applies `dict.update` in sequence order (`M`'s order, which is file
+order). Every value in `axes_patch` lies in `[0, 1]`.
+
+### 15.8 Precedence over opportunity modules
+
+The calendar is the baseline. The opportunity modules observe opportunities
+*within* the calendar's already-occurring pre-set. This is enforced by
+invariant I-P6 (§15.9): the calendar yields on any `(axis, action)`
+collision.
+
+The operational consequence: if `agop_opportunity` has patched `pain[LONG]`
+to `0.90` and the calendar's active entries would patch `pain[LONG]` to
+`0.85`, the resulting `pain[LONG]` is `0.90`. If the opportunity module has
+not touched `barrier[LONG]` and the calendar patches it to `0.85`,
+`barrier[LONG]` is `0.85`.
+
+**Veto is not yielded.** A `veto_all` entry in the calendar always sets
+`veto = True`, regardless of what the opportunity modules say. Opportunity
+signals can favor or dampen within the calendar's window; they cannot
+override the calendar's explicit prohibition. This is the same precedence
+as the verifier's I8 (module veto supremacy): any veto, from any module,
+forces FLAT.
+
+The precedence is one-directional. The opportunity modules have no reference
+to the calendar. Their patches are computed from `snapshot`, `prior_results`
+from modules earlier in alphabetical order, and configuration. They never
+read the calendar. The calendar's only reference to the opportunity modules
+is the yield, which is a one-way removal of already-committed pairs.
+
+### 15.9 Formal invariants
+
+The module's output satisfies, in addition to the verifier's I1–I9:
+
+**I-P1 (parse strictness).** A section header matches `^\[(\d{4})Q([1-4])\]$`.
+An entry has exactly five pipe-separated fields. Each axis field is a value
+from its axis or `*`. The effect is one of the eight tokens. The event ID is
+non-empty. No entry appears before any section header. Any violation raises
+`ValueError` naming the source file, line, and offending token.
+
+**I-P2 (axis domain).** Every value in `axes_patch` lies in `[0, 1]`.
+
+**I-P3 (phase discipline).** `axes_patch` is populated only in PRE_AGOP.
+
+**I-P4 (veto semantics).** `veto` is `True` iff at least one matching entry
+has effect `veto_all`. No other effect sets `veto`.
+
+**I-P5 (risk neutrality).** `risk_multiplier` is exactly `1.0`. The module
+does not dampen or amplify the risk bound; it only patches axes.
+
+**I-P6 (opportunity precedence).** If a prior opportunity module has
+already patched `(axis, action)`, the calendar's value for that pair is
+dropped. Veto is not yielded.
+
+### 15.10 Theorems
+
+**Theorem (bounded patch).** Every value in `axes_patch` lies in `[0, 1]`.
+
+*Proof.* The base patches in §15.5 use only `0.15`, `0.85`, and `1.0`, each
+in `[0, 1]`. Merge is pointwise assignment, so it preserves the bound.
+`_drop_covered` removes pairs; it does not introduce values. The result
+therefore lies in `[0, 1]` by construction. ∎
+
+**Theorem (deterministic resolution).** Given the same tickers folder, the
+same calendar folder, and the same date, the module produces the same
+`ModuleResult` on every invocation.
+
+*Proof.* The ticker registry is parsed by concatenating files in `sorted()`
+filename order; within each file, sections appear in line order; within each
+section, tickers are sorted before storage; the reverse index is sorted by
+`(geography, sector, commodity)`. The calendar is parsed in the same
+sorted-file, line-order fashion, and `entries_for_quarter` preserves that
+order. `merge` applies updates in that deterministic order.
+`_covered_by_opportunity` iterates `prior_results.items()`, whose insertion
+order is deterministic because the orchestrator's `_run_phase` iterates
+modules alphabetically (invariant I9). Therefore the covered set is
+deterministic and the drop is deterministic. ∎
+
+**Theorem (precedence consistency).** The opportunity modules' patches
+survive unchanged through the calendar module's execution.
+
+*Proof.* `_covered_by_opportunity` collects every `(axis, action)` pair from
+every prior result whose module name is in `_OPPORTUNITY_MODULE_NAMES`.
+`_drop_covered` removes exactly those pairs from the calendar's merged
+patch. The calendar cannot reintroduce a removed pair (it never writes to
+`prior_results`). Therefore every pair in the covered set remains at the
+opportunity module's value. ∎
+
+**Theorem (calendar is baseline, opportunity is observation).** The
+calendar's contribution is fully determined before any opportunity module
+runs; the opportunity modules' contributions are fully determined before the
+calendar yields. Neither can override the other's already-committed pairs.
+
+*Proof.* The orchestrator's `_run_phase` executes PRE_AGOP modules
+alphabetically (invariant I9). `agop_opportunity` sorts before
+`causality_opportunity`, which sorts before `kairos_opportunity`, which
+sorts before `portfolio_calendar`. The opportunity modules patch axes
+without consulting the calendar (their inputs are `snapshot`,
+`prior_results`, and configuration). The calendar's patches are computed
+from the same `snapshot` and from the file-based registry, then reduced by
+§15.7. The calendar's only reference to the opportunity modules is the
+yield, which is a one-way removal. The opportunity modules have no reference
+to the calendar at all. ∎
+
+### 15.11 Structured context
+
+The module exposes, in `context["events"]`, one dict per matching entry:
+
+    {
+        "event_id": "uranium_2027q1",
+        "year": 2027,
+        "quarter": 1,
+        "geography": "us",
+        "sector": "nuclear",
+        "commodity": "uranium",
+        "effect": "favor_long",
+        "source_file": "calendar.txt"
+    }
+
+Plus `context["year"]`, `context["quarter"]`, and `context["intersections"]`
+(a list of dicts with `geography`, `sector`, `commodity` for the ticker).
+
+The LLM can cite any of these. The `portfolio-calendar` skill (in
+`skills/portfolio-calendar/SKILL.md`) instructs the LLM to cite the event ID
+and its axes in the rationale.
+
+### 15.12 Path resolution and caching
+
+Both folder paths are resolved on every tick.
+
+**Tickers folder:**
+
+1. `JANUS_PORTFOLIO_TICKERS` environment variable. Folder path or single
+   `.txt` file path.
+2. `configuration.portfolio_tickers_path` attribute, if present.
+3. `tickers` in the current working directory.
+
+**Calendar folder:**
+
+1. `JANUS_PORTFOLIO_CALENDAR` environment variable. Folder path or single
+   `.txt` file path.
+2. `configuration.portfolio_calendar_path` attribute, if present.
+3. `calendar` in the current working directory.
+
+If a path resolves to a single `.txt` file, the module reads that file
+directly. If neither path resolves to an existing file or folder, the module
+is a no-op: no patches, no veto, no error.
+
+**Caching.** The module caches the parsed reverse index and the parsed
+calendar entries in memory. On every tick it checks the modification time of
+each source file (or the maximum modification time across `.txt` files in a
+folder). If the maximum mtime has changed since the last parse, the module
+reloads. If the files are unchanged, the module performs only a `stat()` per
+tick.
+
+The cache is per-module-instance. A user who constructs two
+`PortfolioCalendarModule` instances gets two independent caches; a user who
+uses the module-level `module` singleton gets one cache, shared across all
+ticks of the process.
+
+### 15.13 Configuration
+
+The module is registered through `Config.module_imports`, like any
+user-supplied custom module:
+
+    [modules]
+    imports = ["janus.portfolio.portfolio_calendar"]
+
+    [modules.portfolio_calendar]
+    enabled = true
+    on_error = "fail_closed"
+
+The `[modules.portfolio_calendar]` block controls the enabled flag and the
+`on_error` policy. The `on_error` value `"fail_closed"` means a malformed
+ticker or calendar file raises `ValueError` and the orchestrator turns that
+into a veto for the tick rather than a silent skip.
+
+The module has no custom `Config` field. The folder paths come from the
+environment variables or the `Config` attributes (§15.12), not from a
+`[portfolio]` block.
+
+### 15.14 Design rationale
+
+**Why three axes, not a taxonomy.** A taxonomy would require a stable
+classification the user maintains; three orthogonal axes let the user
+classify independently and add tickers without reclassification. The 3,840
+possible intersections are more than any user will populate, but the registry
+only stores the populated ones.
+
+**Why the calendar is year/quarter, not date ranges.** Date ranges invite
+drift: the same event gets encoded as `2027-01-01 → 2028-06-30` in one file
+and `2027-03-15 → 2028-07-10` in another, and the module has to resolve
+overlapping intervals. Quarters are a fixed grid. Every entry snaps to a
+quarter. Overlap is impossible by construction.
+
+**Why cycles are outsourced to KAIROS.** Cyclic analysis (synodic periods,
+seasonal patterns, business-cycle phases) is a different function with its
+own inputs and outputs. KAIROS already performs it (Section 5). Encoding
+cycles in the calendar would create two sources of truth for the same
+signal, and the patches would conflict. The calendar holds only the
+Gregorian grid; KAIROS holds the cycles.
+
+**Why the calendar yields to opportunity.** The calendar sets the playing
+field; the opportunity modules call the plays. The precedence rule (§15.8)
+is the mechanical translation of that intent, and it is stated formally in
+invariant I-P6.
+
+**Why the ticker registry is not a database.** A JSON or SQLite file would
+work, but the user edits by hand, and hand-editing structured data invites
+format errors. The section-based plaintext format is the simplest schema
+that supports grouping without requiring a schema. The parser is strict
+because the module runs inside the trading pipeline.
+
+### 15.15 Limitations
+
+**The user maintains both folders.** The module does not fetch, scrape, or
+auto-classify tickers. The user supplies the classification and the calendar
+entries. The module validates the format and applies the patches; the
+content is the user's responsibility.
+
+**Sector and commodity values are a closed set.** A user who needs a sector
+not in the sixteen-value list must extend `SECTOR_VALUES` in `tickers.py` and
+re-deploy. The same applies to geography and commodity. This is deliberate:
+a closed set prevents silent drift in classification.
+
+**Wildcards are not minimized.** `* | * | *` matches every intersection,
+which may be a very large set of tickers. There is no warning when a
+wildcard expands to hundreds of tickers; the operator should read their own
+calendar before enabling it on a large universe.
+
+**The quarter grid is Gregorian.** A user whose calendar is anchored to a
+different fiscal year, to an astrological year, or to a market-specific
+cycle (for example, the four-year BTC cycle) must map the cycle to Gregorian
+quarters manually. The module does not do this mapping; KAIROS does.
+
+**The module does not enforce semantic consistency.** A calendar entry
+favoring `(us, nuclear, uranium)` in `[2027Q1]` and a ticker registry entry
+classifying `CCJ` as `(us, energy, oil)` produce a neutral result rather
+than a warning. The user is responsible for semantic consistency between the
+two folders.
+
+### 15.16 Optional IBKR broker adapter
+
+`janus/portfolio/ibkr_broker.py` implements the `PaperBroker` contract from
+`janus/execution.py`:
+
+    def execute(
+        self,
+        intent: TradeIntent,
+        symbol: str,
+        price: float,
+    ) -> Fill | None:
+
+Semantics match `PaperBroker.execute`:
+
+- `FLAT` — flatten the current position (long or short); return `None`.
+- `LONG` — buy `position_size × equity / price` shares; return a `Fill`.
+- `SHORT` — buy the inverse-ETF proxy listed in `SHORT_PROXIES`; log and
+  return `None` if no proxy is configured for the symbol.
+
+The adapter requires `requests` (listed in `requirements.txt`) and a running
+IBKR Client Portal Gateway at `https://localhost:5000`, authenticated in a
+browser. It is not imported by `portfolio_calendar.py`.
+
+**Known limitations.** `self.equity` is captured at construction; set
+`broker.equity` before `execute` if it has changed. `Fill.action` is set to
+`intent.action.value`; verify against `janus/execution.py` if `PaperBroker`
+uses the `Action` enum. On `SHORT`, the `Fill` records the intent symbol, not
+the proxy that was bought. Live deployment against IBKR is out of scope for
+the module itself (see also Section 10 for the general paper-only
+limitation).
+
+### 15.17 Interaction with other subsystems
+
+**With the opportunity modules (Section 13).** The calendar yields to them
+on any `(axis, action)` collision. This is the module's defining precedence
+property and is stated formally in §15.8 and I-P6.
+
+**With KAIROS and Causalitybot (Section 5).** The module does not call them.
+The calendar holds only Gregorian quarters; cycles are KAIROS's
+responsibility.
+
+**With the quantum econophysics modules (Section 11).** No interaction. The
+calendar patches `pain`, `readiness`, and `barrier`; `econophysics_tunneling`
+also patches `barrier`, in PRE_AGOP. Alphabetical order in PRE_AGOP:
+`econophysics_tunneling` (e) runs before `portfolio_calendar` (p), so the
+calendar's `barrier` patches override the tunneling module's by default. A
+user who wants the reverse must reverse the import order, or set the
+tunneling module's `enabled` flag to `false` for the affected symbols.
+
+**With STIRPES (Section 12).** No interaction. STIRPES reads the verdict from
+`last_intent` after every tick. The verdict is the same whether the calendar
+patched axes or not; the calendar does not change the verdict codes.
+
+**With the IBKR broker adapter (§15.16).** The adapter is swapped into
+`Orchestrator(broker=...)`. The module has no awareness of the broker.
+
+## 16. License
 
 MIT.
 
