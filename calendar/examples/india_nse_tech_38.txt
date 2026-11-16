@@ -1,0 +1,212 @@
+# India NSE-listed tech — deep value calendar 2027Q1–2038Q4
+#
+# Thesis: Indian NSE-listed tech is in late winter / early spring as of
+# November 2026. Target undervalued Indian tech: post-IPO trough names and
+# established but undervalued tech. Accumulate during deep value, harvest
+# as the spring matures.
+#
+# W1 DEEP VALUE / LATE WINTER (2027–2029): both post-IPO and established
+#   NSE tech deeply undervalued. Maximum accumulation.
+# W2 EARLY SPRING BLOOM (2030–2032): still undervalued; recognition begins.
+# W3 EXPANSION (2033–2035): value realized; hold / late accumulation.
+# W4 MATURITY / HARVEST (2036–2038): Indian NSE tech fully valued; harvest.
+
+# ═══ W1  2027Q1–2029Q4  DEEP VALUE / LATE WINTER ═══
+
+[2027Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2027Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2027Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2027Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2028Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2028Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2028Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2028Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2029Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2029Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2029Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2029Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+# ═══ W2  2030Q1–2032Q4  EARLY SPRING BLOOM ═══
+
+[2030Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2030Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2030Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2030Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2031Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2031Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2031Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2031Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2032Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2032Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2032Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2032Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+# ═══ W3  2033Q1–2035Q4  EXPANSION ═══
+
+[2033Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2033Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2033Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2033Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2034Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2034Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2034Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2034Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2035Q1]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2035Q2]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2035Q3]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+[2035Q4]
+in | tech | none | favor_long | IN_NSE_TECH_POST_IPO_DEEP_VALUE
+in | tech | none | favor_long | IN_NSE_TECH_ESTABLISHED_DEEP_VALUE
+
+# ═══ W4  2036Q1–2038Q4  MATURITY / HARVEST ═══
+
+[2036Q1]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2036Q2]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2036Q3]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2036Q4]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2037Q1]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2037Q2]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2037Q3]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2037Q4]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2038Q1]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2038Q2]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2038Q3]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
+
+[2038Q4]
+in | tech | none | dampen_long | IN_NSE_TECH_POST_IPO_HARVEST
+in | tech | none | dampen_long | IN_NSE_TECH_ESTABLISHED_HARVEST
