@@ -1,0 +1,457 @@
+# Africa — trend calendar 2027Q1–2038Q4
+#
+# Three main zones:
+#   West Africa led by Nigeria (ng)
+#   Southern Africa led by South Africa (za)
+#   Eastern Africa led by Kenya (ke)
+#
+# W1 EARLY ADOPTION (2027–2029): Southern Africa capital markets/tech first;
+#   West Africa fintech; East Africa mobile money.
+# W2 SCALE (2030–2032): South Africa IP; Nigeria listed; Kenya consumer.
+# W3 ROTATION (2033–2035): South Africa tech/listed saturate; Nigeria IP;
+#   Kenya listed.
+# W4 MATURITY (2036–2038): South Africa dampens persist; Nigeria/Kenya favor.
+
+[2027Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2027Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2027Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2027Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2028Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2028Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2028Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2028Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2029Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2029Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2029Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2029Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+
+[2030Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2030Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2030Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2030Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2031Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2031Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2031Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2031Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2032Q1]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2032Q2]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2032Q3]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2032Q4]
+za | tech | none | favor_long | AFR_ZA_TECH_EARLY
+za | listed | none | favor_long | AFR_ZA_LISTED_EARLY
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+ng | tech | none | favor_long | AFR_NG_FINTECH_EARLY
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_EARLY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+
+[2033Q1]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2033Q2]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2033Q3]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2033Q4]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2034Q1]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2034Q2]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2034Q3]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2034Q4]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2035Q1]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2035Q2]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2035Q3]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2035Q4]
+za | ip | none | favor_long | AFR_ZA_IP_SCALE
+za | tech | none | dampen_long | AFR_ZA_TECH_SATURATION
+za | listed | none | dampen_long | AFR_ZA_LISTED_SATURATION
+ng | tech | none | favor_long | AFR_NG_FINTECH_SCALE
+ng | listed | none | favor_long | AFR_NG_LISTED_SCALE
+ng | ip | none | favor_long | AFR_NG_IP_ROTATION
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_SCALE
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_SCALE
+ke | listed | none | favor_long | AFR_KE_LISTED_ROTATION
+
+[2036Q1]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2036Q2]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2036Q3]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2036Q4]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2037Q1]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2037Q2]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2037Q3]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2037Q4]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2038Q1]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2038Q2]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2038Q3]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
+
+[2038Q4]
+za | tech | none | dampen_long | AFR_ZA_TECH_MATURITY
+za | listed | none | dampen_long | AFR_ZA_LISTED_MATURITY
+za | ip | none | dampen_long | AFR_ZA_IP_MATURITY
+ng | tech | none | favor_long | AFR_NG_FINTECH_MATURITY
+ng | listed | none | favor_long | AFR_NG_LISTED_MATURITY
+ng | ip | none | favor_long | AFR_NG_IP_MATURITY
+ke | tech | none | favor_long | AFR_KE_MOBILE_MONEY_MATURITY
+ke | consumer | none | favor_long | AFR_KE_CONSUMER_MATURITY
+ke | listed | none | favor_long | AFR_KE_LISTED_MATURITY
