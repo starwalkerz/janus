@@ -1,0 +1,329 @@
+# Brazil — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Brazil is the regional anchor with a commodity tailwind and a
+# reindustrialization push, but a binding fiscal constraint. Growth is
+# structurally modest — ~2.0–2.5% through 2030 — because the primary surplus
+# path (0.5% of GDP in 2027 rising to 1.5% by 2030) is politically contested
+# and debt is on an upward trajectory (86.6% of GDP by end-2026). The upside
+# is not a China-style supercycle but a dual engine: oil production +80% by
+# 2029 (potentially 3mn b/d by 2034) and an agricultural super-cycle with
+# grain output +25%. Nova Indústria Brasil (NIB) and ENCTI 2024–2034 are the
+# reindustrialization/IP transmission channels, but they are slow-moving
+# relative to the commodity cycle.
+#
+# W1 (2027–2029): Commodity ramp; fiscal contestation; NIB early execution.
+# W2 (2030–2032): Oil/agri peak contribution; fiscal targets bind.
+# W3 (2033–2035): Commodity maturity; reindustrialization dividend visible.
+# W4 (2036–2038): Post-commodity equilibrium; IP/tech carries the line.
+
+# ═══ W1  2027Q1–2029Q4  COMMODITY RAMP / FISCAL CONTESTATION ═══
+
+[2027Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2027Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2027Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2027Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2028Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2028Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2028Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2028Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+
+[2029Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_OIL_80PCT_RAMP_2029
+
+[2029Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_OIL_80PCT_RAMP_2029
+
+[2029Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_OIL_80PCT_RAMP_2029
+
+[2029Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_OIL_80PCT_RAMP_2029
+
+# ═══ W2  2030Q1–2032Q4  PEAK CONTRIBUTION / FISCAL TARGETS BIND ═══
+
+[2030Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2030Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2030Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2030Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2031Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2031Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2031Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2031Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2032Q1]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2032Q2]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2032Q3]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+[2032Q4]
+br | consumer | none | favor_long | BR_AGRI_SUPERCYCLE
+br | tech | none | favor_long | BR_NIB_REINDUSTRIALIZATION
+br | ip | none | favor_long | BR_ENCTI_TECH_SOVEREIGNTY
+br | listed | none | favor_long | BR_OIL_RAMP_EXPORTERS
+br | listed | none | favor_long | BR_FISCAL_SURPLUS_1_5_2030
+
+# ═══ W3  2033Q1–2035Q4  COMMODITY MATURITY / REINDUSTRIALIZATION DIVIDEND ═══
+
+[2033Q1]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2033Q2]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2033Q3]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2033Q4]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2034Q1]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2034Q2]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2034Q3]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2034Q4]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2035Q1]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2035Q2]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2035Q3]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+[2035Q4]
+br | consumer | none | dampen_long | BR_AGRI_MATURITY
+br | tech | none | favor_long | BR_NIB_DIVIDEND
+br | ip | none | favor_long | BR_ENCTI_DIVIDEND
+br | listed | none | dampen_long | BR_OIL_MATURITY
+
+# ═══ W4  2036Q1–2038Q4  POST-COMMODITY EQUILIBRIUM ═══
+
+[2036Q1]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2036Q2]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2036Q3]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2036Q4]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2037Q1]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2037Q2]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2037Q3]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2037Q4]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2038Q1]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2038Q2]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2038Q3]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY
+
+[2038Q4]
+br | consumer | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | tech | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | ip | none | dampen_long | BR_POST_COMMODITY_MATURITY
+br | listed | none | dampen_long | BR_POST_COMMODITY_MATURITY

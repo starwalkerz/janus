@@ -1,0 +1,525 @@
+# Mercosur without Brazil (Argentina, Uruguay, Paraguay, Bolivia) —
+# trend calendar 2027Q1–2038Q4
+#
+# Thesis: The non-Brazil Mercosur bloc is a reform-and-integration trade, not
+# a commodity-volume trade. Four distinct engines:
+#
+#   Argentina (ar): Milei-continuity reform cycle. Growth accelerates from
+#     3.5–4.2% (2026–28) to 4.4–5.2% (2029–31) as Vaca Muerta and lithium/
+#     copper scale; inflation converges to single digits by 2029 with
+#     continuity. 2027 elections are the hinge.
+#
+#   Uruguay (uy): Stable, high-income institutional anchor. Tech/software is
+#     the fifth export sector and targets 10% of GDP by 2030.
+#
+#   Paraguay (py): Maquila manufacturing model. Exports reached $1.3bn in
+#     2025, with a $6bn 2030 target and a plan to double the economy to $90bn
+#     in a decade.
+#
+#   Bolivia (bo): Accession-completion play. Full Mercosur membership targeted
+#     before 2028, with ~500 laws being harmonized.
+#
+# The EU-Mercosur agreement was ratified by all four founding members by March
+# 2026, with provisional application from May 2026 and tangible effects from
+# 2027–28. The bloc is the primary beneficiary of the EU deal because Brazil's
+# scale dilutes the per-country effect in a combined calendar.
+#
+# W1 (2027–2029): Argentina election hinge; EU deal implementation; Bolivia
+#   accession completion.
+# W2 (2030–2032): Argentina investment acceleration; Uruguay tech scale;
+#   Paraguay maquila $6bn target.
+# W3 (2033–2035): Argentina resource maturity; Uruguay tech maturity;
+#   Paraguay industrial doubling underway.
+# W4 (2036–2038): Post-reform equilibrium; integration dividend fully priced.
+
+# ═══ W1  2027Q1–2029Q4  ARGENTINA ELECTION HINGE / EU IMPLEMENTATION ═══
+
+[2027Q1]
+ar | listed | none | favor_long | AR_ELECTION_HINGE_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_HARMONIZATION
+
+[2027Q2]
+ar | listed | none | favor_long | AR_ELECTION_HINGE_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_HARMONIZATION
+
+[2027Q3]
+ar | listed | none | favor_long | AR_ELECTION_HINGE_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_HARMONIZATION
+
+[2027Q4]
+ar | listed | none | favor_long | AR_ELECTION_HINGE_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_HARMONIZATION
+
+[2028Q1]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_FULL_ACCESSION_2028
+
+[2028Q2]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_FULL_ACCESSION_2028
+
+[2028Q3]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_FULL_ACCESSION_2028
+
+[2028Q4]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_FULL_ACCESSION_2028
+
+[2029Q1]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+ar | consumer | none | favor_long | AR_INFLATION_SINGLE_DIGIT_2029
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_COMPLETE
+
+[2029Q2]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+ar | consumer | none | favor_long | AR_INFLATION_SINGLE_DIGIT_2029
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_COMPLETE
+
+[2029Q3]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+ar | consumer | none | favor_long | AR_INFLATION_SINGLE_DIGIT_2029
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_COMPLETE
+
+[2029Q4]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_IP
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_TECH
+ar | consumer | none | favor_long | AR_INFLATION_SINGLE_DIGIT_2029
+uy | tech | none | favor_long | UY_SOFTWARE_HUB
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_EXPORT_MODEL
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_COMPLETE
+
+# ═══ W2  2030Q1–2032Q4  ARGENTINA ACCELERATION / PARAGUAY $6BN TARGET ═══
+
+[2030Q1]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2030Q2]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2030Q3]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2030Q4]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2031Q1]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2031Q2]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2031Q3]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2031Q4]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2032Q1]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2032Q2]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2032Q3]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+[2032Q4]
+ar | listed | none | favor_long | AR_REFORM_CONTINUITY_LISTED
+ar | ip | none | favor_long | AR_VACA_MUERTA_SCALE
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_SCALE
+uy | tech | none | favor_long | UY_SOFTWARE_10PCT_GDP_2030
+uy | listed | none | favor_long | UY_INSTITUTIONAL_ANCHOR
+py | consumer | none | favor_long | PY_MAQUILA_6BN_2030
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | favor_long | BO_ACCESSION_DIVIDEND
+
+# ═══ W3  2033Q1–2035Q4  ARGENTINA RESOURCE MATURITY / PARAGUAY INDUSTRIAL DOUBLING ═══
+
+[2033Q1]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2033Q2]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2033Q3]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2033Q4]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2034Q1]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2034Q2]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2034Q3]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2034Q4]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2035Q1]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2035Q2]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2035Q3]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+[2035Q4]
+ar | listed | none | favor_long | AR_RESOURCE_MATURITY
+ar | ip | none | favor_long | AR_VACA_MUERTA_MATURITY
+ar | tech | none | favor_long | AR_LITHIUM_COPPER_MATURITY
+uy | tech | none | favor_long | UY_SOFTWARE_MATURITY
+uy | listed | none | dampen_long | UY_INSTITUTIONAL_MATURITY
+py | consumer | none | favor_long | PY_INDUSTRIAL_DOUBLING
+py | listed | none | favor_long | PY_INDUSTRIAL_DOUBLING
+bo | ip | none | dampen_long | BO_ACCESSION_MATURITY
+
+# ═══ W4  2036Q1–2038Q4  POST-REFORM EQUILIBRIUM ═══
+
+[2036Q1]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2036Q2]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2036Q3]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2036Q4]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2037Q1]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2037Q2]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2037Q3]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2037Q4]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2038Q1]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2038Q2]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2038Q3]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY
+
+[2038Q4]
+ar | listed | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | ip | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+ar | tech | none | dampen_long | AR_POST_REFORM_EQUILIBRIUM
+uy | tech | none | dampen_long | UY_POST_TECH_MATURITY
+uy | listed | none | dampen_long | UY_POST_TECH_MATURITY
+py | consumer | none | dampen_long | PY_POST_MAQUILA_MATURITY
+py | listed | none | dampen_long | PY_POST_MAQUILA_MATURITY
+bo | ip | none | dampen_long | BO_POST_ACCESSION_MATURITY

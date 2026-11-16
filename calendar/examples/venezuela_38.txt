@@ -1,0 +1,606 @@
+# Venezuela — trend calendar 2027Q1–2038Q4
+# OIL + NON-OIL INTEGRATED
+#
+# Thesis: Venezuela is a dual-track recovery. The oil well-restart is the
+# near-term FX engine, but the non-oil economy is the medium-term
+# diversification thesis. The government's own Plan Económico 2026–2040
+# explicitly targets reducing oil-rent dependence, and the industrial
+# recovery target is "100% installed capacity within five years" (i.e. by
+# ~2031), backed by USD 17 billion in multilateral financing[reference:0].
+# Agriculture, responsible mining, tourism, and technology are the four
+# non-oil pillars identified in the current policy debate[reference:1].
+#
+# OIL TRACK (well-restart analogue): Kuwait 1991–93 / Iran 1980–83.
+#   Emergency reactivation (2027–29) → workover/infill peak (2030–32) →
+#   capacity rebuild (2033–35) → plateau (2036–38). Rig-constrained and
+#   license-paced, not election-paced, near-term.
+#
+# NON-OIL TRACK (diversification):
+#   Agriculture: cacao and specialty coffee are already exporting; agroindustry
+#     is the value-chain multiplier. "Hambre Cero" target is 2027–28, which is
+#     a political commitment, not a production forecast, but it signals the
+#     policy priority[reference:2].
+#   Mining: gold is the near-term FX diversifier. 544 pieces of heavy
+#     equipment are being procured, with 41 already delivered to the Chocó
+#     plant and the government explicitly projecting "more gold production in
+#     2027"[reference:3]. Responsible-mining legislation (international
+#     arbitration, environmental standards) is the gating item for major
+#     operators[reference:4].
+#   Manufacturing: the five-year industrial-capacity target is the core
+#     medium-term play; import substitution (finished-goods imports already
+#     down 31%) is the near-term signal[reference:5].
+#   Tourism: the near-term catalyst is airline return (Avianca, Turkish,
+#     American), with ecotourism/adventure running above non-oil occupancy
+#     averages[reference:6]. Tourism revenue is projected at ~USD 3.17bn by
+#     2028[reference:7]. The long-term upside (20–30 million visitors) is
+#     infrastructure-gated, not demand-gated[reference:8].
+#   Technology: AI/high-performance computing is an aspirational pillar
+#     leveraging surplus hydroelectric capacity; it is a post-2030 story[reference:9].
+#
+# W1 (2027–2029): OIL EMERGENCY + NON-OIL REACTIVATION.
+#   Oil: shut-in restarts; rig count 2 → 50.
+#   Agri: cacao/coffee export scale; agroindustry chain build.
+#   Mining: gold equipment deployment; 2027 production step-up.
+#   Manufacturing: import-substitution ramp; 100% capacity target begins.
+#   Tourism: airline-return volume; ~USD 3bn revenue by 2028.
+#
+# W2 (2030–2032): OIL WORKOVER PEAK + NON-OIL SCALE.
+#   Oil: old-field infill peak (~680–740k b/d); rig count toward 80.
+#   Agri: agroindustrial value chains mature; export diversification.
+#   Mining: responsible-mining framework; mid-tier operator entry.
+#   Manufacturing: industrial capacity approaches 100%.
+#   Tourism: infrastructure upgrade cycle; revenue scales beyond $3bn.
+#
+# W3 (2033–2035): OIL CAPACITY REBUILD + NON-OIL MATURITY.
+#   Oil: greenfield Orinoco adds; brownfield matures.
+#   Agri: export maturity; cacao/coffee niche consolidation.
+#   Mining: gold plateau; critical-minerals (coltan) optionality.
+#   Manufacturing: industrial maturity; non-oil export consolidation.
+#   Tourism: infrastructure-gated scale; ecotourism brand established.
+#   Tech: AI/HPC pilot phase.
+#
+# W4 (2036–2038): POST-RESTART PLATEAU + DIVERSIFIED EQUILIBRIUM.
+#   Oil: plateau; greenfield carries the line.
+#   Non-oil: diversified export base; no single sector dominates.
+#   The thesis does not return to the pre-Chávez oil peak inside the window;
+#   the non-oil share of the economy rises structurally.
+
+# ═══ W1  2027Q1–2029Q4  OIL EMERGENCY + NON-OIL REACTIVATION ═══
+
+[2027Q1]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2027Q2]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2027Q3]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2027Q4]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2028Q1]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+ve | listed | none | favor_long | VE_ELECTION_HINGE_2028
+
+[2028Q2]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+ve | listed | none | favor_long | VE_ELECTION_HINGE_2028
+
+[2028Q3]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+ve | listed | none | favor_long | VE_ELECTION_HINGE_2028
+
+[2028Q4]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+ve | listed | none | favor_long | VE_ELECTION_HINGE_2028
+
+[2029Q1]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2029Q2]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2029Q3]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+[2029Q4]
+ve | listed | none | favor_long | VE_OIL_WELL_REACTIVATION
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_SCALE
+ve | ip | none | favor_long | VE_OFAC_GL49_CONTRACT_FRAMEWORK
+ve | consumer | none | favor_long | VE_AGRI_CACAO_COFFEE_EXPORT
+ve | listed | none | favor_long | VE_AGROINDUSTRY_CHAIN
+ve | listed | none | favor_long | VE_GOLD_PRODUCTION_STEPUP
+ve | tech | none | favor_long | VE_GOLD_EQUIPMENT_DEPLOYMENT
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_RAMP
+ve | consumer | none | favor_long | VE_TOURISM_AIRLINE_RETURN
+
+# ═══ W2  2030Q1–2032Q4  OIL WORKOVER PEAK + NON-OIL SCALE ═══
+
+[2030Q1]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+
+[2030Q2]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+
+[2030Q3]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+
+[2030Q4]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+
+[2031Q1]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2031Q2]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2031Q3]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2031Q4]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2032Q1]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2032Q2]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2032Q3]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+[2032Q4]
+ve | listed | none | favor_long | VE_OIL_OLD_FIELD_INFILL
+ve | tech | none | favor_long | VE_OIL_RIG_COUNT_TO_80
+ve | ip | none | favor_long | VE_GL50A_JV_EXPANSION
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_DIVERSIFICATION
+ve | listed | none | favor_long | VE_AGROINDUSTRY_MATURITY
+ve | listed | none | favor_long | VE_RESPONSIBLE_MINING_FRAMEWORK
+ve | listed | none | favor_long | VE_INDUSTRIAL_CAPACITY_100
+ve | consumer | none | favor_long | VE_TOURISM_INFRA_UPGRADE
+ve | listed | none | favor_long | VE_OIL_BROWNFIELD_PEAK_740K
+
+# ═══ W3  2033Q1–2035Q4  OIL CAPACITY REBUILD + NON-OIL MATURITY ═══
+
+[2033Q1]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2033Q2]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2033Q3]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2033Q4]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2034Q1]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2034Q2]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2034Q3]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2034Q4]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+
+[2035Q1]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+ve | listed | none | favor_long | VE_OIL_2580K_OPTIMISTIC_PEAK
+
+[2035Q2]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+ve | listed | none | favor_long | VE_OIL_2580K_OPTIMISTIC_PEAK
+
+[2035Q3]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+ve | listed | none | favor_long | VE_OIL_2580K_OPTIMISTIC_PEAK
+
+[2035Q4]
+ve | listed | none | favor_long | VE_OIL_GREENFIELD_ORINOCO
+ve | tech | none | favor_long | VE_OIL_DRILLING_SERVICES_SCALE
+ve | ip | none | favor_long | VE_OIL_25YR_CONTRACT_FRAMEWORK
+ve | listed | none | dampen_long | VE_OIL_BROWNFIELD_MATURITY
+ve | consumer | none | favor_long | VE_AGRI_EXPORT_MATURITY
+ve | listed | none | favor_long | VE_MINING_GOLD_PLATEAU
+ve | listed | none | favor_long | VE_MINING_CRITICAL_MINERALS_OPTIONALITY
+ve | listed | none | favor_long | VE_INDUSTRIAL_NON_OIL_EXPORT_CONSOLIDATION
+ve | consumer | none | favor_long | VE_TOURISM_ECOTOURISM_BRAND
+ve | tech | none | favor_long | VE_TECH_AI_HPC_PILOT
+ve | listed | none | favor_long | VE_OIL_2580K_OPTIMISTIC_PEAK
+
+# ═══ W4  2036Q1–2038Q4  POST-RESTART PLATEAU + DIVERSIFIED EQUILIBRIUM ═══
+
+[2036Q1]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2036Q2]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2036Q3]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2036Q4]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2037Q1]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2037Q2]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2037Q3]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2037Q4]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2038Q1]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2038Q2]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2038Q3]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
+
+[2038Q4]
+ve | listed | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | tech | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | ip | none | dampen_long | VE_OIL_POST_RESTART_PLATEAU
+ve | consumer | none | favor_long | VE_AGRI_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MINING_DIVERSIFIED_EQUILIBRIUM
+ve | listed | none | favor_long | VE_MANUFACTURING_DIVERSIFIED_EQUILIBRIUM
+ve | consumer | none | favor_long | VE_TOURISM_DIVERSIFIED_EQUILIBRIUM
+ve | tech | none | favor_long | VE_TECH_DIVERSIFIED_EQUILIBRIUM
