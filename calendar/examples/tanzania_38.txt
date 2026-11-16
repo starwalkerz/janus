@@ -1,0 +1,306 @@
+# Tanzania — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Tanzania is the EAC's LNG and corridor state. The USD 42 billion
+# Lindi LNG project FID has slipped into 2026-2027, with first cargo targeted
+# for 2030. Fiscal flows ramp from 2029 (cost recovery) to USD 1.2 billion by
+# 2032 and USD 3 billion by 2035 (~3% of 2024 GDP). Growth is 6.0-6.5% in
+# 2026-27. The TAZARA rehabilitation and port infrastructure are the corridor
+# plays. This is the EAC's largest and most diversified economy — a
+# multi-engine growth story, not a single-commodity bet.
+#
+# W1 (2027–2029): LNG FID; TAZARA rehabilitation; corridor build-out.
+# W2 (2030–2032): First LNG cargo; fiscal ramp begins; port scale.
+# W3 (2033–2035): LNG revenue peak; corridor maturity.
+# W4 (2036–2038): Post-LNG-peak equilibrium; diversified growth.
+
+# ═══ W1  2027Q1–2029Q4  LNG FID / CORRIDOR BUILD-OUT ═══
+
+[2027Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2027Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2027Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2027Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2028Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2028Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2028Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2028Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2029Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2029Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2029Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+[2029Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+
+# ═══ W2  2030Q1–2032Q4  FIRST LNG CARGO / FISCAL RAMP ═══
+
+[2030Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+
+[2030Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+
+[2030Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+
+[2030Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+
+[2031Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2031Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2031Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2031Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2032Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2032Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2032Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+[2032Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FIRST_LNG_CARGO_2030
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+
+# ═══ W3  2033Q1–2035Q4  LNG REVENUE PEAK / CORRIDOR MATURITY ═══
+
+[2033Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2033Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2033Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2033Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2034Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2034Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2034Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2034Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2035Q1]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2035Q2]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2035Q3]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+[2035Q4]
+tz | ip | none | favor_long | TZ_LNG_FID_IP
+tz | listed | none | favor_long | TZ_TAZARA_CORRIDOR_LISTED
+tz | tech | none | favor_long | TZ_PORT_INFRA_TECH
+tz | listed | none | favor_long | TZ_FISCAL_RAMP_2031
+tz | listed | none | favor_long | TZ_LNG_REVENUE_PEAK_2035
+
+# ═══ W4  2036Q1–2038Q4  POST-LNG-PEAK EQUILIBRIUM ═══
+
+[2036Q1]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2036Q2]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2036Q3]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2036Q4]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2037Q1]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2037Q2]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2037Q3]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2037Q4]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2038Q1]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2038Q2]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2038Q3]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY
+
+[2038Q4]
+tz | ip | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | listed | none | dampen_long | TZ_POST_LNG_MATURITY
+tz | tech | none | dampen_long | TZ_POST_LNG_MATURITY

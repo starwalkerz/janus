@@ -1,0 +1,293 @@
+# Kenya — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Kenya is the EAC's logistics, services, and financial hub. Growth is
+# steady but fiscally constrained — the binding constraint is the deficit and
+# debt path, not demand. The IMF projects 4.7–5.3% growth through 2027-28, with
+# the fiscal deficit declining from 5.9% of GDP in FY2027/28 to 5.4% in
+# FY2028/29. Kenya is the "steady state" of the EAC — no oil shock, no LNG
+# bonanza, but the deepest capital market and the most diversified economy.
+#
+# W1 (2027–2029): Fiscal consolidation; logistics corridor upgrades.
+# W2 (2030–2032): Single-currency convergence; financial hub deepens.
+# W3 (2033–2035): EAMU institutional build-out; services maturity.
+# W4 (2036–2038): Stable-growth equilibrium; regional financial anchor.
+
+# ═══ W1  2027Q1–2029Q4  FISCAL CONSOLIDATION / CORRIDOR UPGRADE ═══
+
+[2027Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2027Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2027Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2027Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2028Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2028Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2028Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2028Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2029Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2029Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2029Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+[2029Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+
+# ═══ W2  2030Q1–2032Q4  EAMU CONVERGENCE / FINANCIAL HUB ═══
+
+[2030Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+
+[2030Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+
+[2030Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+
+[2030Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+
+[2031Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2031Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2031Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2031Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2032Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2032Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2032Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+[2032Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_CONVERGENCE
+ke | listed | none | favor_long | KE_SINGLE_CURRENCY_2031
+
+# ═══ W3  2033Q1–2035Q4  EAMU INSTITUTIONAL BUILD-OUT ═══
+
+[2033Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2033Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2033Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2033Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2034Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2034Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2034Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2034Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2035Q1]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2035Q2]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2035Q3]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+[2035Q4]
+ke | tech | none | favor_long | KE_LOGISTICS_CORRIDOR_TECH
+ke | listed | none | favor_long | KE_NSE_FINANCIAL_DEEPENING
+ke | consumer | none | favor_long | KE_SERVICES_CONSUMER
+ke | listed | none | favor_long | KE_EAMU_INSTITUTIONS
+
+# ═══ W4  2036Q1–2038Q4  STABLE-GROWTH EQUILIBRIUM ═══
+
+[2036Q1]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2036Q2]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2036Q3]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2036Q4]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2037Q1]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2037Q2]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2037Q3]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2037Q4]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2038Q1]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2038Q2]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2038Q3]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY
+
+[2038Q4]
+ke | tech | none | dampen_long | KE_LOGISTICS_MATURITY
+ke | listed | none | dampen_long | KE_FINANCIAL_MATURITY
+ke | consumer | none | dampen_long | KE_SERVICES_MATURITY

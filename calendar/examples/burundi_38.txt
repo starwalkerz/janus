@@ -1,0 +1,285 @@
+# Burundi — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Burundi is the EAC's frontier recovery state — the smallest, poorest,
+# and most fragile. Growth averages 4.3% over 2027-2031, driven by coffee,
+# gold, and electrification. Public debt is declining (42% of GDP in 2025 from
+# 53% in 2024), but reserves cover only 1.6 months of imports and the exchange
+# rate is overvalued. The 2027 elections are a near-term risk. This is a
+# frontier-recovery trade, not a structural growth story.
+#
+# W1 (2027–2029): Stabilization; coffee/gold export recovery.
+# W2 (2030–2032): Electrification; mining scale; debt decline.
+# W3 (2033–2035): Frontier recovery matures; reserves rebuild.
+# W4 (2036–2038): Stable frontier equilibrium; no structural unlock.
+
+# ═══ W1  2027Q1–2029Q4  STABILIZATION / EXPORT RECOVERY ═══
+
+[2027Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2027Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2027Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2027Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2028Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2028Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2028Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2028Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2029Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2029Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2029Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+[2029Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+
+# ═══ W2  2030Q1–2032Q4  ELECTRIFICATION / MINING SCALE ═══
+
+[2030Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2030Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2030Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2030Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2031Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2031Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2031Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2031Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2032Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2032Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2032Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+[2032Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | favor_long | BI_DEBT_DECLINE
+
+# ═══ W3  2033Q1–2035Q4  FRONTIER RECOVERY MATURES ═══
+
+[2033Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2033Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2033Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2033Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2034Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2034Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2034Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2034Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2035Q1]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2035Q2]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2035Q3]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+[2035Q4]
+bi | ip | none | favor_long | BI_COFFEE_GOLD_IP
+bi | listed | none | favor_long | BI_FRONTIER_LISTED
+bi | tech | none | favor_long | BI_ELECTRIFICATION_TECH
+bi | listed | none | dampen_long | BI_RECOVERY_MATURITY
+
+# ═══ W4  2036Q1–2038Q4  STABLE FRONTIER EQUILIBRIUM ═══
+
+[2036Q1]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2036Q2]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2036Q3]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2036Q4]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2037Q1]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2037Q2]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2037Q3]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2037Q4]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2038Q1]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2038Q2]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2038Q3]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY
+
+[2038Q4]
+bi | ip | none | dampen_long | BI_FRONTIER_MATURITY
+bi | listed | none | dampen_long | BI_FRONTIER_MATURITY
+bi | tech | none | dampen_long | BI_FRONTIER_MATURITY

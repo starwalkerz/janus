@@ -1,0 +1,298 @@
+# Uganda — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Uganda is the EAC's oil frontier. First commercial oil was delayed to
+# June 2027, but the trajectory is intact: output rises to 145,000 b/d in 2027
+# and peaks at 219,000–230,000 b/d by 2029. IMF estimates oil revenues at ~2%
+# of GDP per year over the next decade. S&P cut the outlook to stable on oil
+# delays and a widening fiscal deficit — growth decelerates to 5.8% in FY2027
+# before the oil ramp. Debt-to-GDP is 52%, above the EAC convergence ceiling.
+# The thesis is a delayed but powerful oil-cycle trade.
+#
+# W1 (2027–2029): Oil first, ramp-up, revenue inflection.
+# W2 (2030–2032): Peak production; revenue consolidation.
+# W3 (2033–2035): Oil revenue maturity; diversification begins.
+# W4 (2036–2038): Post-oil-peak equilibrium; fiscal consolidation.
+
+# ═══ W1  2027Q1–2029Q4  OIL FIRST / RAMP-UP ═══
+
+[2027Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2027Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2027Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2027Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2028Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2028Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2028Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2028Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2029Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2029Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2029Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+[2029Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+
+# ═══ W2  2030Q1–2032Q4  PEAK PRODUCTION ═══
+
+[2030Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2030Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2030Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2030Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2031Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2031Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2031Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2031Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2032Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2032Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2032Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+[2032Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | favor_long | UG_OIL_REVENUE_INFLECTION
+
+# ═══ W3  2033Q1–2035Q4  OIL REVENUE MATURITY ═══
+
+[2033Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2033Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2033Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2033Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2034Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2034Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2034Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2034Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2035Q1]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2035Q2]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2035Q3]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+[2035Q4]
+ug | ip | none | favor_long | UG_OIL_FIRST_IP
+ug | listed | none | favor_long | UG_EACOP_LISTED
+ug | tech | none | favor_long | UG_OIL_SERVICES_TECH
+ug | listed | none | dampen_long | UG_OIL_PEAK_MATURITY
+ug | listed | none | favor_long | UG_DIVERSIFICATION_START
+
+# ═══ W4  2036Q1–2038Q4  POST-OIL-PEAK EQUILIBRIUM ═══
+
+[2036Q1]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2036Q2]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2036Q3]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2036Q4]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2037Q1]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2037Q2]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2037Q3]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2037Q4]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2038Q1]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2038Q2]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2038Q3]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY
+
+[2038Q4]
+ug | ip | none | dampen_long | UG_POST_OIL_MATURITY
+ug | listed | none | dampen_long | UG_POST_OIL_MATURITY
+ug | tech | none | dampen_long | UG_POST_OIL_MATURITY

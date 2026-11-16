@@ -1,0 +1,311 @@
+# Morocco — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Morocco is a trade-oriented nearshoring NODE, not an anchor. Its
+# growth is EU-FDI-transmitted. The 2030 co-production milestone is the peak
+# of the dependency, not an escape from it. The EU's "Made in Europe" push
+# (20% manufacturing share by 2035; 80% car production within Europe) is the
+# structural threat to the nearshoring rent. The calendar encodes a defined
+# horizon: accumulate through the 2030 peak, dampen as EU industrial policy
+# bites in the mid-2030s.
+#
+# W1 (2027–2029): Nearshoring deepens; aerospace/EV ramp.
+# W2 (2030–2032): 2030 peak — 2M vehicles, FIFA World Cup, co-production hub.
+# W3 (2033–2035): "Made in Europe" challenge peaks; nearshoring rent erodes.
+# W4 (2036–2038): Consolidation as a compliant nearshore extension, not a
+#   low-cost base.
+
+# ═══ W1  2027Q1–2029Q4  NEARSHORING DEEPENS ═══
+
+[2027Q1]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2027Q2]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2027Q3]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2027Q4]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2028Q1]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2028Q2]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2028Q3]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2028Q4]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2029Q1]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2029Q2]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2029Q3]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+[2029Q4]
+ma | tech | none | favor_long | MA_AEROSPACE_ENGINE_RAMP
+ma | consumer | none | favor_long | MA_EV_SUPPLY_CHAIN
+ma | listed | none | favor_long | MA_TANGIER_MED_EXPANSION
+
+# ═══ W2  2030Q1–2032Q4  2030 PEAK ═══
+
+[2030Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+
+[2030Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+
+[2030Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+
+[2030Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+
+[2031Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2031Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2031Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2031Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2032Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2032Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2032Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+[2032Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | favor_long | MA_AEROSPACE_FULL_CAPACITY
+ma | listed | none | favor_long | MA_PRIVATE_INVESTMENT_2_3_SHARE
+
+# ═══ W3  2033Q1–2035Q4  MADE IN EUROPE CHALLENGE ═══
+
+[2033Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2033Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2033Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2033Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2034Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2034Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2034Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2034Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+
+[2035Q1]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+ma | tech | none | dampen_long | MA_MADE_IN_EUROPE_2035_PEAK
+
+[2035Q2]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+ma | tech | none | dampen_long | MA_MADE_IN_EUROPE_2035_PEAK
+
+[2035Q3]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+ma | tech | none | dampen_long | MA_MADE_IN_EUROPE_2035_PEAK
+
+[2035Q4]
+ma | tech | none | favor_long | MA_2030_COPRODUCTION_HUB
+ma | consumer | none | favor_long | MA_2M_VEHICLES_MILESTONE
+ma | listed | none | favor_long | MA_FIFA_2030_INFRA
+ma | listed | none | dampen_long | MA_EU_RESHORING_PRESSURE
+ma | tech | none | dampen_long | MA_NEARSHORING_RENT_EROSION
+ma | tech | none | dampen_long | MA_MADE_IN_EUROPE_2035_PEAK
+
+# ═══ W4  2036Q1–2038Q4  COMPLIANT NEARSHORE EXTENSION ═══
+
+[2036Q1]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2036Q2]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2036Q3]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2036Q4]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2037Q1]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2037Q2]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2037Q3]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2037Q4]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2038Q1]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2038Q2]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2038Q3]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY
+
+[2038Q4]
+ma | tech | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | consumer | none | dampen_long | MA_NEARSHORING_MATURITY
+ma | listed | none | dampen_long | MA_NEARSHORING_MATURITY

@@ -1,0 +1,313 @@
+# Turkey — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Turkey is a nearshoring node WITH A POLITICAL CLOCK. The 2027–2029
+# Medium-Term Program is an electoral-cycle document: benefits front-loaded,
+# costs deferred through inflation, debt, and lira depreciation. Elections
+# likely 2028. The mid-2030s nationalist-conservative-militaristic pivot is a
+# SCHEDULED regime-model reset, not a shock. The dampen is the most
+# forecastable of the four states.
+#
+# W1 (2027–2029): Electoral high-beta; MTP populism; defense ramp.
+# W2 (2030–2032): Reform dividend narrative; top-15 economy milestone.
+# W3 (2033–2035): Scheduled political-cycle pivot; high-beta phase matures.
+# W4 (2036–2038): Stable-growth equilibrium; defense/industrial autonomy.
+
+# ═══ W1  2027Q1–2029Q4  ELECTORAL HIGH-BETA ═══
+
+[2027Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2027Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2027Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2027Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2028Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | favor_long | TR_2028_ELECTION_EVENT
+
+[2028Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | favor_long | TR_2028_ELECTION_EVENT
+
+[2028Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | favor_long | TR_2028_ELECTION_EVENT
+
+[2028Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | favor_long | TR_2028_ELECTION_EVENT
+
+[2029Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2029Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2029Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+[2029Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_ELECTION_CYCLE_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+
+# ═══ W2  2030Q1–2032Q4  REFORM DIVIDEND NARRATIVE ═══
+
+[2030Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+
+[2030Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+
+[2030Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+
+[2030Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+
+[2031Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2031Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2031Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2031Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2032Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2032Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2032Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+[2032Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | favor_long | TR_FINANCIAL_HUB_LISTED
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | ip | none | favor_long | TR_DEFENSE_5PCT_GDP_2030
+tr | listed | none | favor_long | TR_TOP15_ECONOMY_MILESTONE
+
+# ═══ W3  2033Q1–2035Q4  SCHEDULED POLITICAL-CYCLE PIVOT ═══
+
+[2033Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2033Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2033Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2033Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2034Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2034Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2034Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2034Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+
+[2035Q1]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+tr | ip | none | favor_long | TR_TUSAS_2035_DEFENSE_GOAL
+
+[2035Q2]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+tr | ip | none | favor_long | TR_TUSAS_2035_DEFENSE_GOAL
+
+[2035Q3]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+tr | ip | none | favor_long | TR_TUSAS_2035_DEFENSE_GOAL
+
+[2035Q4]
+tr | tech | none | favor_long | TR_MTP_POPULISM_TECH
+tr | listed | none | dampen_long | TR_HIGH_BETA_MATURITY
+tr | ip | none | favor_long | TR_DEFENSE_INDUSTRIAL_IP
+tr | listed | none | dampen_long | TR_SCHEDULED_PIVOT_2033
+tr | ip | none | favor_long | TR_NATIONALIST_CONSERVATIVE_PIVOT
+tr | ip | none | favor_long | TR_TUSAS_2035_DEFENSE_GOAL
+
+# ═══ W4  2036Q1–2038Q4  STABLE-GROWTH EQUILIBRIUM ═══
+
+[2036Q1]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2036Q2]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2036Q3]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2036Q4]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2037Q1]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2037Q2]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2037Q3]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2037Q4]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2038Q1]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2038Q2]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2038Q3]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM
+
+[2038Q4]
+tr | tech | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | listed | none | dampen_long | TR_STABLE_GROWTH_MATURITY
+tr | ip | none | dampen_long | TR_DEFENSE_AUTONOMY_EQUILIBRIUM

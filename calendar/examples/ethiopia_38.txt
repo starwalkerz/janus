@@ -1,0 +1,423 @@
+# Ethiopia + EAC — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Ethiopia is the only structural (non-cyclic) line in the swing-state
+# set. EAC accession is ruled out near-term (AfCFTA is the immediate priority),
+# but functional integration deepens through capital markets, trade corridors,
+# and legal harmonization. The ESX listing pipeline is the transmission channel:
+# 50 IPOs targeted by 2030, 90 within a decade. Berbera is the near-term port
+# hedge; Lamu/LAPSSET is the long-term deep-water alternative. Regional
+# conflicts are a persistent valuation discount (priced), not a continuity
+# break — no dampen override is applied.
+#
+# W1 (2027–2029): AfCFTA operationalization; ESX ramp; Berbera access.
+# W2 (2030–2032): EAC candidacy advances; ESX 50-IPO milestone; Lamu corridor.
+# W3 (2033–2035): EAC convergence; private-sector-led growth consolidates.
+# W4 (2036–2038): 2036 top-economy goal; structural hold continues.
+
+# ═══ W1  2027Q1–2029Q4  FOUNDATIONAL / AfCFTA FIRST ═══
+
+[2027Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2027Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2027Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2027Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2028Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2028Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2028Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2028Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2029Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2029Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2029Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2029Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_RAMP
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+# ═══ W2  2030Q1–2032Q4  EAC CANDIDACY / SCALE ═══
+
+[2030Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2030Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2030Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2030Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2031Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2031Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2031Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2031Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2032Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2032Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2032Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2032Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CANDIDACY_ADVANCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+# ═══ W3  2033Q1–2035Q4  EAC CONVERGENCE / CONSOLIDATION ═══
+
+[2033Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2033Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2033Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2033Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2034Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2034Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2034Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2034Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2035Q1]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2035Q2]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2035Q3]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2035Q4]
+et | ip | none | favor_long | ET_REFORM_IP
+et | listed | none | favor_long | ET_ESX_50_IPO_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+# ═══ W4  2036Q1–2038Q4  STRUCTURAL HOLD / 2036 GOAL ═══
+
+[2036Q1]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2036Q2]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2036Q3]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2036Q4]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2037Q1]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2037Q2]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2037Q3]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2037Q4]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2038Q1]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2038Q2]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2038Q3]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
+
+[2038Q4]
+et | ip | none | favor_long | ET_2036_GOAL_REALIZED
+et | listed | none | favor_long | ET_ESX_DECADE_MILESTONE
+et | tech | none | favor_long | ET_DIGITAL_INFRA
+et | listed | none | favor_long | ET_BERBERA_ACCESS
+et | listed | none | favor_long | ET_LAMU_CORRIDOR
+et | listed | none | favor_long | ET_EAC_CONVERGENCE
+ke | tech | none | favor_long | EAC_KE_LOGISTICS_LINK
