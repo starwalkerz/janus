@@ -1,0 +1,509 @@
+# European Spring Assets & Emerging Market Export — trend calendar 2027Q1–2038Q4
+#
+# Thesis: Europe (esp. Nordics/Finland) is in late autumn/winter as of
+# November 2026. Society focuses on winter themes (defense, energy security,
+# aging, austerity). This creates undervaluation in spring assets: new
+# technology, intellectual property, post-IPO trough companies, listed
+# startups. Accumulate in winter. Harvest in spring. Export to emerging
+# markets for maximum value capture.
+#
+# W1 DEEP WINTER (2027–2029): Spring assets deeply undervalued. Maximum
+#   accumulation. No export yet.
+# W2 LATE WINTER (2030–2032): Still undervalued. Export channels begin
+#   to open (India, Singapore, UAE).
+# W3 EARLY SPRING (2033–2035): Spring assets bloom. Export accelerates
+#   (Brazil, Indonesia, Vietnam added).
+# W4 FULL SPRING (2036–2038): Harvest. Spring assets overvalued. Export
+#   peaks. Take profits.
+
+# ═══ W1  2027Q1–2029Q4  DEEP WINTER ═══
+
+[2027Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2027Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2027Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2027Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2028Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2028Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2028Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2028Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2029Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2029Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2029Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+[2029Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+
+# ═══ W2  2030Q1–2032Q4  LATE WINTER ═══
+
+[2030Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2030Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2030Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2030Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2031Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2031Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2031Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2031Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2032Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2032Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2032Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+[2032Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_WINTER
+se | tech | none | favor_long | SE_FINTECH_WINTER
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_WINTER
+uk | ip | none | favor_long | UK_PHARMA_IP_WINTER
+fi | listed | none | favor_long | FI_POST_IPO_WINTER
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+
+# ═══ W3  2033Q1–2035Q4  EARLY SPRING ═══
+
+[2033Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2033Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2033Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2033Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2034Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2034Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2034Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2034Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2035Q1]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2035Q2]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2035Q3]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2035Q4]
+fi | tech | none | favor_long | FI_DEEP_TECH_SPRING
+se | tech | none | favor_long | SE_FINTECH_SPRING
+de | ip | none | favor_long | DE_INDUSTRIAL_IP_SPRING
+uk | ip | none | favor_long | UK_PHARMA_IP_SPRING
+fi | listed | none | favor_long | FI_POST_IPO_SPRING
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+# ═══ W4  2036Q1–2038Q4  FULL SPRING ═══
+
+[2036Q1]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2036Q2]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2036Q3]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2036Q4]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2037Q1]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2037Q2]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2037Q3]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2037Q4]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2038Q1]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none | dampen_long | FI_POST_IPO_HARVEST
+in | tech | none | favor_long | IN_DEPLOY_EU_TECH
+sg | tech | none | favor_long | SG_DEPLOY_EU_TECH
+ae | tech | none | favor_long | AE_DEPLOY_EU_TECH
+br | tech | none | favor_long | BR_DEPLOY_EU_TECH
+id | tech | none | favor_long | ID_DEPLOY_EU_TECH
+vn | tech | none | favor_long | VN_DEPLOY_EU_TECH
+
+[2038Q2]
+fi | tech | none | dampen_long | FI_DEEP_TECH_HARVEST
+se | tech | none | dampen_long | SE_FINTECH_HARVEST
+de | ip | none | dampen_long | DE_INDUSTRIAL_IP_HARVEST
+uk | ip | none | dampen_long | UK_PHARMA_IP_HARVEST
+fi | listed | none
