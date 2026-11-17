@@ -1,0 +1,121 @@
+# config.example.toml
+#
+# JANUS configuration example.
+
+[strategy]
+# "conservative" | "aggressive" | "opportunity"
+name = "opportunity"
+
+[agop]
+mode = "legacy"
+local_path = "."
+http_url = ""
+
+[kairos]
+local_path = ""
+http_url = ""
+quantum = false
+
+[causality]
+local_path = ""
+http_url = ""
+
+[quantum]
+iqm_token = ""
+iqm_server = "https://resonance.iqm.tech"
+iqm_backend = ""
+tunneling_qubits = 4
+tunneling_time = 3.0
+tunneling_trotter_steps = 3
+herding_qubits = 4
+herding_layers = 1
+herding_shots = 4000
+
+# Event gating: when enabled, IQM hardware is only used when KAIROS
+# flags an anomaly or Causalitybot detects a horizon above threshold.
+# Baseline ticks run on Aer/classical with zero credit burn.
+gate_enabled = true
+gate_on_kairos = true
+gate_on_causality = true
+gate_kairos_threshold = 0.05
+gate_causality_threshold = 0.20
+
+[stirpes]
+enabled = false
+chain_type = "mock"
+tezos_rpc_url = ""
+tezos_contract_address = ""
+tezos_private_key_env = "STIRPES_PRIVATE_KEY"
+cipher_seed = "stirpes-default-seed"
+tree_method = "neighbor_joining"
+flush_threshold = 100
+session_id = "default-session"
+
+[llm]
+base_url = "http://localhost:11434/v1"
+model = "qwen2.5:7b-instruct"
+api_key = "ollama"
+temperature = 0.0
+timeout_s = 30.0
+
+[skills]
+directory = "skills"
+active = [
+  "toxic-flow-gate",
+  "regime-classifier",
+  "sizing-discipline",
+  "econophysics-analyst",
+  "opportunity-analyst",
+  "biophysical-regime",
+  "civilizational-cycle",
+  "climate-yardstick",
+  "maritime-chokepoint",
+  "volcanic-quarter",
+  "institutional-sclerosis-yardstick",
+  "container-spot-rate",
+]
+
+[risk]
+equity = 100000.0
+seed = 42
+
+[modules]
+imports = []
+
+[modules.kairos]
+enabled = false
+on_error = "fail_open"
+
+[modules.causality]
+enabled = false
+on_error = "fail_open"
+
+[modules.regime]
+enabled = true
+
+[modules.sentiment]
+enabled = false
+
+[modules.econophysics_tunneling]
+enabled = true
+on_error = "fail_open"
+
+[modules.econophysics_herding]
+enabled = true
+on_error = "fail_open"
+
+[modules.agop_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.causality_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.kairos_opportunity]
+enabled = true
+on_error = "fail_open"
+
+[modules.opportunity_synthesizer]
+enabled = true
+on_error = "fail_open"
