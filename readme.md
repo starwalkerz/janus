@@ -21,7 +21,7 @@ JANUS consumes four tools, each optional and each behind a stable adapter:
 JANUS never trades without AGOP. The LLM is advisory: it may downsize or
 veto a ranked action, never upsize it, never invent one.
 
-A 32B parameter model is sufficient to run the full stack well enough for ordinary purposes.
+A 32B parameter model is sufficient to run the full stack well enough for ordinary purposes. See 6.5.1.
 
 The stack also includes two optional quantum econophysics modules that run
 on IQM Resonance when configured, fall back to Qiskit Aer when Qiskit is
@@ -519,6 +519,31 @@ timeout_s = 30.0
 
 vLLM, llama.cpp server, DeepSeek, and Qwen all expose the same
 `/v1/chat/completions` shape and work identically.
+
+### 6.5.1. The LLM for full, comprehensive use:
+
+Any OpenAI-compatible endpoint works. A **32B parameter instruct model** (~20 GB VRAM / 32 GB unified RAM) handles full-stack multi-skill synthesis, while **7B–14B** models suit lighter setups.
+
+Ollama is the recommended local host:
+
+```bash
+ollama pull qwen2.5:32b-instruct
+ollama serve
+```
+
+Configure `config.toml` (adjust `timeout_s` to `60.0` for 32B models):
+
+```toml
+[llm]
+base_url = "http://localhost:11434/v1"
+model = "qwen2.5:32b-instruct"
+api_key = "ollama"
+temperature = 0.0
+timeout_s = 60.0
+```
+
+Alternative `/v1/chat/completions` providers like vLLM, llama.cpp, DeepSeek, Qwen, and OpenRouter work identically.
+
 
 ### 6.6 Verification
 
