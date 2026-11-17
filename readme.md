@@ -21,6 +21,8 @@ JANUS consumes four tools, each optional and each behind a stable adapter:
 JANUS never trades without AGOP. The LLM is advisory: it may downsize or
 veto a ranked action, never upsize it, never invent one.
 
+A 32B parameter model is sufficient to run the full stack well enough for ordinary purposes.
+
 The stack also includes two optional quantum econophysics modules that run
 on IQM Resonance when configured, fall back to Qiskit Aer when Qiskit is
 installed, and fall back to exact classical evolution otherwise.
