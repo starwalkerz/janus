@@ -90,6 +90,19 @@ jp, ke, rw, in, or global_baseline) supplies: 
   permitting/tax friction from `institutional-sclerosis-yardstick` and
   `special-economic-zone-arbitrage-yardstick` (`0` = pure direct
   ownership culture; `100` = total subscription/rental captivity).
+- `outright_asset_ownership_pct`: percentage (`0.0` to `100.0`) of
+  residential and small-business technical asset deployments (home
+  batteries, solar/heat pumps, networking hardware, vehicles) acquired
+  via outright unencumbered purchase rather than utility/corporate
+  rental or multi-year service leases.
+- `upfront_tax_and_permitting_wedge_pct`: combined upfront VAT,
+  installation/permitting friction, and financing spread (`0.0%` to
+  `60.0%`) penalizing direct household hardware purchase relative to
+  utility-bundled `OPEX` subscriptions.
+- `consecutive_wrapper_captivity_years`: integer (`0` to `25`) counting
+  consecutive settled years in which
+  `composite_wrapper_captivity_index >= 65` OR
+  `outright_asset_ownership_pct < 45.0`.
 
 If snapshot.external_data["consumer_rent_vs_own"] is absent or empty,
 treat the polity as **unmonitored**, record state
