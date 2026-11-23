@@ -32,6 +32,15 @@ general law grounded in natural-law reciprocity among free peers), every
 polity's legal and economic order exhibits one of four structural
 regimes: 
 
+Within this constitutional division of powers, **judges reason whether
+a formal statutory rule was broken (`Kant`'s rational and empirical
+limits), while the jury of peers holds the sovereign ultimate verdict on
+whether the defendant is substantively guilty and what proportionality
+is reasonable (`Rousseau`'s peer reciprocity)**. When professional
+judges monopolize both statutory interpretation and the final verdict
+without a sovereign peer jury, technical statutory breach collapses
+automatically into retributive subtraction.
+
 1. **Athenian Rational Equilibrium (ATHENIAN_REASON_EQUILIBRIUM):**
 Institutionalized prosecution (Furies — visible, bounded
 accountability for tangible harm) is balanced by protected generative
@@ -146,6 +155,12 @@ If furies_retributive_subtraction_index is missing, treat as
 Evaluate whether Kantian empirical reason, Rousseauian natural-law
 reciprocity, and Athenian peer-jury adjudication hold prosecution and
 defense in equilibrium: 
+
+Specifically, high constitutional balance requires preserving the
+division where judges determine whether a formal law was broken while a
+sovereign jury of peers rules on substantive guilt and reasonable
+proportionality, rather than allowing closed professional tribunals to
+monopolize both statutory ruling and final verdict.
 
 areopagus_reason_and_peer_law_score (0–100)Constitutional Adjudication Tier
 **>= 70**
