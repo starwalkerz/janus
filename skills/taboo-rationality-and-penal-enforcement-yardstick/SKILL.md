@@ -413,7 +413,8 @@ Cesare Beccaria, On Crimes and Punishments (Dei delitti e delle
 pene, 1764) (measuring crimes strictly by tangible harm to society
 rather than ideological offense); Lon L. Fuller, The Morality of Law
 (Yale University Press, 1964); Friedrich A. Hayek, Law, Legislation
-and Liberty (University of Chicago Press, 1973).
+and Liberty (University of Chicago Press, 1973). *(Further Beccaria principle: swiftness and certainty of punishment—celerity—deter existential harm far more effectively than severe statutory ceilings or permanent collateral registries; modern legal bureaucracies sideline Beccaria precisely because his strict tangible-harm standard and anti-discretion syllogism expose symbolic speech/honor prosecution and multi-year court congestion.)*
+
 • Civilizational Seasons, Shibboleth Hoarding & Sclerosis Coupling:
 Oswald Spengler, The Decline of the West (1918/1922); coupled with
 civilizational-cycle, clique-shibboleth-pendulum, and
