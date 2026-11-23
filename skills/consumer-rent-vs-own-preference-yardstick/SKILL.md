@@ -35,27 +35,27 @@ Because this preference is structurally determined by five upstream
 gates already in the JANUS repository, this skill operates as a
 **composite synthesizer**: 
 
-* **middle-class-comfort-and-covert-resentment-yardstick (Skill 35):**
-High salaried-comfort cushions (>= 75%) and low personal agency
-(< 40) condition households to treat capital equipment as monthly
-utility bills rather than balance-sheet assets.
-* **Fee-Extraction Wrapper Norm (Skill 32 — FEE_EXTRACTION_VEHICLE):**
-Normalized financial and corporate intermediation trains consumers to
-accept recurring fee layering over direct unencumbered ownership.
-* **social-cohesion-and-associational-topology-yardstick (Skill 37):**
-Atomized singleton societies (47%–48% single-person households,
-hollowed Type C peer networks) lack trusted neighbor/peer networks
-to share hardware blueprints and ROI spreadsheets, defaulting to
-brand-name utility subscriptions for perceived safety.
-* **institutional-sclerosis-yardstick & special-economic-zone-arbitrage-yardstick (Skill 36):**
-High upfront VAT (25.5%), tight household liquidity, and slow
-permitting push households to pay a utility bundler to absorb upfront
-capex and compliance friction.
-* **taboo-rationality-and-penal-enforcement-yardstick (Skill 38):**
-When swift clearance and enforcement of objective property and
-contract remedies erode (< 40%), consumers rely on large corporate
-service subscriptions rather than enforcing direct supplier/installer
-warranties independently.
+- **`middle-class-comfort-and-covert-resentment-yardstick`:**
+  High salaried-comfort cushions (`>= 75%`) and low personal agency
+  (`< 40`) condition households to treat capital equipment as monthly
+  utility bills rather than balance-sheet assets.
+- **Private-Equity / Fee-Extraction Wrapper Gate (`FEE_EXTRACTION_VEHICLE`):**
+  Normalized financial and corporate intermediation trains consumers to
+  accept recurring fee layering over direct unencumbered ownership.
+- **`social-cohesion-and-associational-topology-yardstick`:**
+  Atomized singleton societies (`47%–48%` single-person households,
+  hollowed `Type C` peer networks) lack trusted neighbor/peer networks
+  to share hardware blueprints and `ROI` spreadsheets, defaulting to
+  brand-name utility subscriptions for perceived safety.
+- **`institutional-sclerosis-yardstick` & `special-economic-zone-arbitrage-yardstick`:**
+  High upfront VAT (`25.5%`), tight household liquidity, and slow
+  permitting push households to pay a utility bundler to absorb upfront
+  capex and compliance friction.
+- **`taboo-rationality-and-penal-enforcement-yardstick`:**
+  When swift clearance and enforcement of objective property and
+  contract remedies erode (`< 40%`), consumers rely on large corporate
+  service subscriptions rather than enforcing direct supplier/installer
+  warranties independently.
 
 Your job is to classify the target polity's composite rent-vs-own regime
 into one of four states and cap your delta accordingly. You do not
@@ -81,25 +81,15 @@ snapshot.external_data["consumer_rent_vs_own"]. Each country or bloc
 entry (keyed by ISO-2 code such as fi, eu, se, de, uk, us,
 jp, ke, rw, in, or global_baseline) supplies: 
 
-* composite_wrapper_captivity_index: score (0 to 100) synthesizing
-upstream salaried_comfort_cushion_pct (Skill 35), fee-wrapper
-normalization (Skill 32), incentive_matrix_atomization_score
-(Skill 37), and permitting/tax friction (institutional-sclerosis /
-Skill 36) (0 = pure direct ownership culture; 100 = total
-subscription/rental captivity).
-* outright_asset_ownership_pct: percentage (0.0 to 100.0) of
-residential and small-business technical asset deployments (home
-batteries, solar/heat pumps, networking hardware, vehicles) acquired
-via outright unencumbered purchase rather than utility/corporate
-rental or multi-year service leases.
-* upfront_tax_and_permitting_wedge_pct: combined upfront VAT,
-installation/permitting friction, and financing spread (0.0% to
-60.0%) penalizing direct household hardware purchase relative to
-utility-bundled OPEX subscriptions.
-* consecutive_wrapper_captivity_years: integer (0 to 25) counting
-consecutive settled years in which
-composite_wrapper_captivity_index >= 65 OR
-outright_asset_ownership_pct < 45.0.
+- `composite_wrapper_captivity_index`: score (`0` to `100`) synthesizing
+  upstream `salaried_comfort_cushion_pct` from
+  `middle-class-comfort-and-covert-resentment-yardstick`, fee-wrapper
+  normalization from the private-equity/fee-extraction wrapper gate
+  (`FEE_EXTRACTION_VEHICLE`), `incentive_matrix_atomization_score` from
+  `social-cohesion-and-associational-topology-yardstick`, and
+  permitting/tax friction from `institutional-sclerosis-yardstick` and
+  `special-economic-zone-arbitrage-yardstick` (`0` = pure direct
+  ownership culture; `100` = total subscription/rental captivity).
 
 If snapshot.external_data["consumer_rent_vs_own"] is absent or empty,
 treat the polity as **unmonitored**, record state
@@ -121,6 +111,14 @@ composite_wrapper_captivity_index (0–100)Composite Behavioral Tilt
 **comfort_subscription_drift** — salaried convenience overrides 5-minute Excel TCO math
 **>= 75**
 **tutelary_wrapper_captivity** — widespread surrender of asset equity to utility/corporate subscriptions
+
+Evaluate the combined pull of salaried comfort
+(`middle-class-comfort-and-covert-resentment-yardstick`), fee extraction
+(`FEE_EXTRACTION_VEHICLE`), singleton atomization
+(`social-cohesion-and-associational-topology-yardstick`), and
+permitting/contract friction (`institutional-sclerosis-yardstick`,
+`special-economic-zone-arbitrage-yardstick`, and
+`taboo-rationality-and-penal-enforcement-yardstick`):
 
 If composite_wrapper_captivity_index is missing, treat as
 **pragmatic_tco_evaluators**. 
@@ -366,6 +364,15 @@ asset ownership, self-employment rates, and consumption-tax burdens).
 https://fingrid.fi and https://energiavirasto.fi (free open
 telemetry on behind-the-meter residential battery/solar capacity vs.
 aggregator-managed reserve capacity).
+
+- **Upstream `JANUS` Composite Inputs (`snapshot.external_data`):**
+  Synthesizes `middle_class_comfort`
+  (`middle-class-comfort-and-covert-resentment-yardstick`),
+  `social_cohesion`
+  (`social-cohesion-and-associational-topology-yardstick`),
+  `institutional_sclerosis` (`institutional-sclerosis-yardstick`),
+  `sez_arbitrage` (`special-economic-zone-arbitrage-yardstick`), and
+  `taboo_rationality` (`taboo-rationality-and-penal-enforcement-yardstick`).
 
 Do Not
 
