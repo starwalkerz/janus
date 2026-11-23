@@ -98,9 +98,9 @@ telemetry was available, and do not cite this skill. 
 
 #### Reading 1 — Upstream Composite Wrapper Captivity (composite_wrapper_captivity_index)
 
-Evaluate the combined pull of salaried comfort (Skill 35), fee
-extraction (Skill 32), singleton atomization (Skill 37), and
-permitting/contract friction (Skill 36 & Skill 38): 
+Evaluate the combined pull of salaried comfort, fee
+extraction, singleton atomization, and
+permitting/contract friction: 
 
 composite_wrapper_captivity_index (0–100)Composite Behavioral Tilt
 **< 35**
