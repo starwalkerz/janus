@@ -138,6 +138,14 @@ symbolic_to_existential_enforcement_ratioTaboo Coherence Tier
 If symbolic_to_existential_enforcement_ratio is missing, treat as
 **creeping_symbolic_policing**. 
 
+   - **Criminalizing ritual contact via pollution etymology (`kajoaminen` —
+     from Finnish *kajota*, "to touch or tamper with a forbidden/sacred
+     object")**—substituting Mary Douglas's archaic ritual-pollution logic
+     for Cesare Beccaria's tangible physical-harm standard, flooding dockets
+     with low-threshold harassment and groping disputes while violent
+     physical rape and coercion cases sit in multi-year backlogs.
+
+
 #### Reading 3 — Coupled Civilizational & Sclerosis Alignment (coupled_cycle_and_sclerosis_stage)
 
 Cross-check civilizational-cycle, clique-shibboleth-pendulum, and
@@ -384,13 +392,22 @@ comparison tables.
 • Do not cite "taboo-rationality-and-penal-enforcement-yardstick" when
 the cap did not bind (intended delta <= delta_cap).
 
+- Do not treat high prosecution counts on ritual-contact (*kajoaminen*),
+  harassment, speech, or etiquette infractions as evidence of strong law
+  and order when swift clearance of violent physical coercion, homicide,
+  and property theft is falling.
+
+
 Citation Mapping
 
 • Taboo Systems, Symbolic Pollution & Boundary Maintenance: Mary
 Douglas, Purity and Danger: An Analysis of Concepts of Pollution and
 Taboo (Routledge, 1966); Émile Durkheim, The Division of Labour in
 Society (1893) (repressive vs. restitutive law and collective
-conscience).
+conscience). *(Etymological note: Finnish statutory `kajoaminen` derives directly
+  from `kajota`—"to touch a forbidden object"—illustrating Douglas's
+  ritual-pollution taboo replacing Beccaria's tangible-harm test.)*
+
 • Proportionality, Rational Deterrence & Inner Morality of Law:
 Cesare Beccaria, On Crimes and Punishments (Dei delitti e delle
 pene, 1764) (measuring crimes strictly by tangible harm to society
