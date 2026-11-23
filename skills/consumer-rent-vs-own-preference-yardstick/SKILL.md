@@ -350,9 +350,7 @@ by synthesizing upstream JANUS external-data dictionaries alongside
 free public household-balance-sheet, energy-storage, and leasing
 registries:
 • Upstream JANUS Composite Inputs (snapshot.external_data):
-Synthesizes middle_class_comfort (Skill 35), social_cohesion
-(Skill 37), sez_arbitrage (Skill 36), and taboo_rationality
-(Skill 38).
+Synthesizes middle_class_comfort, social_cohesion, sez_arbitrage, and taboo_rationality.
 • Eurostat Household Budget Survey (HBS) & National Accounts Household Balance Sheets (nasa_10_f_bs / hbs_str_t211):
 https://europa.eu (free JSON/TSV API tracking durable
 goods ownership vs. recurring utility/rental service expenditure and
