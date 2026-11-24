@@ -57,7 +57,7 @@ An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel on
 
 An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel for solar installing underwriting: https://github.com/starwalkerz/janus/blob/main/janus/geo_tsi_underwriting.py
 
-An adapter to estimate the conditions for growing and the yield in the ballpark for key agri commodities; wheat, rice, maize, soy, coffee, cocoa for a 500 x 500 meter parcel: https://github.com/starwalkerz/janus/blob/main/janus/geo_agri_underwriting.py 
+An adapter to estimate the conditions for growing and the yield in the ballpark for key agri commodities; wheat, rice, maize, soy, coffee, cocoa for a 500 x 500 meter parcel for underwriting: https://github.com/starwalkerz/janus/blob/main/janus/geo_agri_underwriting.py 
 
 Geo Probe is completely experimental software.
 
