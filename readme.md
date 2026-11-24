@@ -51,6 +51,10 @@ Added and implemented skills open sourced by Goldman Sachs as of 24th November 2
 
 A new thing on November 24th 2026: A Geo Probe. It is a zero-account, zero-API-key planetary Earth-observation probe that validates any WGS84 coordinate on Earth, dynamically queries unauthenticated ESA Copernicus and Element84 Earth Search Sentinel-2 Cloud-Optimized GeoTIFFs up to the current UTC timestamp, and computes cloud-masked spectral indices (NDVI, NDMI, NDRE), spatial GLCM canopy texture, post-31 December 2020 EUDR deforestation loss, and deterministic IPCC Tier-1 agroforestry net carbon flux (tCO₂e/ha/yr) directly into JANUS supervisory gates—with graceful stdlib-only fallbacks when optional raster libraries are absent. https://github.com/starwalkerz/janus/blob/main/janus/geo_probe_updated_again.py 
 
+An adapter to use open weight transformers with the Geo Probe: https://github.com/starwalkerz/janus/blob/main/janus/geo_vit_adapter.py
+
+Geo Probe is completely experimental software.
+
 ---
 
 ## Table of Contents
