@@ -53,6 +53,8 @@ A new thing on November 24th 2026: A Geo Probe. It is a zero-account, zero-API-k
 
 An adapter to use open weight transformers with the Geo Probe: https://github.com/starwalkerz/janus/blob/main/janus/geo_vit_adapter.py
 
+An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel on a five-day interval: https://github.com/starwalkerz/janus/blob/main/janus/geo_tsi_adapter.py
+
 Geo Probe is completely experimental software.
 
 ---
