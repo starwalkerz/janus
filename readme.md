@@ -55,6 +55,8 @@ An adapter to use open weight transformers with the Geo Probe: https://github.co
 
 An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel on a five-day interval: https://github.com/starwalkerz/janus/blob/main/janus/geo_tsi_adapter.py
 
+An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel for solar installing underwriting: https://github.com/starwalkerz/janus/blob/main/janus/geo_tsi_underwriting.py
+
 Geo Probe is completely experimental software.
 
 ---
