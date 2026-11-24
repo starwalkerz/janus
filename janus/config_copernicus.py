@@ -273,6 +273,7 @@ class Config:
             "stereoscopic-sheaf-and-synergistic-deduction-yardstick"
             "old-growth-forest-and-tonewood-standard-yardstick"
             "eu-deforestation-and-tropical-carbon-directive-yardstick"
+            "cacao-and-coffee-agroforestry-carbon-balance-yardstick"
         ]
     )
 
