@@ -47,7 +47,7 @@ The trading skills and the econophysics skill are custom domain
 instructions structured using the SKILL.md specification from:
 [https://github.com/janestreet/agent_skills](https://github.com/janestreet/agent_skills)
 
-Added and implemented skills open sourced by Goldman Sachs. https://github.com/goldmansachs/gs-quant/tree/master/gs_quant/skills/gs-quant-overview
+Added and implemented skills open sourced by Goldman Sachs as of 24th November 2026. https://github.com/goldmansachs/gs-quant/tree/master/gs_quant/skills/gs-quant-overview
 
 ---
 
