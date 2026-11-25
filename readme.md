@@ -81,6 +81,11 @@ Leak rate	SNR per pass	Passes for SNR ≈ 2
 2,000 kg/h	2.0	1 pass
 5,000 kg/h	5.0	1 pass
 
+This is civilian software, but if YOU use it for following the geopolitical situation of the late 2020's, a friendly note:
+
+• Water Absorption in SWIR: Open ocean water has near-zero reflectance in B11 (1610 nm) and B12 (2190 nm). Your surface mask ((b11 > 0.05) & (b12 > 0.02) & (nir > 0.05)) will deliberately drop open water pixels. That makes it rock-solid for coastal refineries, LNG terminals, pipelines, and tank farms, though detecting plumes over open water requires sun-glint geometry (which occasionally flips b11/b12 above 0.05).
+• Active Fires vs. Cold Venting: Burning ships or active flares emit intense thermal radiance in B12 (2190 nm), which drives the b12 / b11 ratio up (opposite of cold methane absorption, where b12 drops relative to b11). Checking both tails of dr (dr < -threshold for methane absorption vs. dr > +threshold for thermal fire/flare anomalies) would let you distinguish a cold gas leak from an active fire in the exact same pass.
+
 Geo Probe is completely experimental software.
 
 ---
