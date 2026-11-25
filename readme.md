@@ -59,6 +59,28 @@ An adapter to estimate the total solar irradiance of a 500 x 500 meter parcel fo
 
 An adapter to estimate the conditions for growing and the yield in the ballpark for key agri commodities; wheat, rice, maize, soy, coffee, cocoa for a 500 x 500 meter parcel for underwriting: https://github.com/starwalkerz/janus/blob/main/janus/geo_agri_underwriting.py 
 
+November 25th 2026:
+
+An adapter to detect methane plumes, such as natural gas leaks from natural gas production sites, pipelines, pumping stations, the Arctic Ocean and other large sites: https://github.com/starwalkerz/janus/blob/main/janus/geo_methane_plume_underwriting.py
+
+An adapter to underwrite methane emissions for districts, such as rice farming districts, contiguous urban corridors and tundra or tropical wetland areas: https://github.com/starwalkerz/janus/blob/main/janus/geo_district__methane_emissions_underwriting.py
+
+How fast can the district underwriter see?
+
+Distributed sources (rice), at 0.125 kg/ha/h density:
+District size	Total Q	SNR per pass	Passes for SNR ≈ 2	Time at 5-day / 25% clear
+2,000 ha	250 kg/h	0.25	64	~9 months
+8,000 ha	1,000 kg/h	1.0	4	~3 weeks
+16,000 ha	2,000 kg/h	2.0	1	1 pass
+32,000 ha	4,000 kg/h	4.0	1	1 pass
+
+Point sources (landfill, gas leak, flare failure):
+Leak rate	SNR per pass	Passes for SNR ≈ 2
+500 kg/h	0.5	16 (~3 months)
+1,000 kg/h	1.0	4 (~3 weeks)
+2,000 kg/h	2.0	1 pass
+5,000 kg/h	5.0	1 pass
+
 Geo Probe is completely experimental software.
 
 ---
