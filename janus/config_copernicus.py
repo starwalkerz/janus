@@ -274,6 +274,7 @@ class Config:
             "old-growth-forest-and-tonewood-standard-yardstick"
             "eu-deforestation-and-tropical-carbon-directive-yardstick"
             "cacao-and-coffee-agroforestry-carbon-balance-yardstick"
+            "orthodoxy-flywheel-yardstick"
         ]
     )
 
