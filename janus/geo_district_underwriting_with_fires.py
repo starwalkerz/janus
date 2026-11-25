@@ -48,7 +48,8 @@ except ImportError:
 S2_PIXEL_M = 20.0
 PIXEL_AREA_M2 = S2_PIXEL_M * S2_PIXEL_M
 DEFAULT_METHANE_THRESHOLD_KG_H = 2000.0
-DEFAULT_THERMAL_TAI_THRESHOLD = 0.01   # lenient TAI gate from Borneo study
+DEFAULT_THERMAL_TAI_THRESHOLD = 0.15  # paired with B12 floor to reject bare soil/sand
+DEFAULT_THERMAL_B12_MIN = 0.15
 IME_FLUX_COEFF = 0.133
 DEFAULT_WIND_SPEED_MS = 3.0
 MIN_PLUME_PIXELS = 4
@@ -136,7 +137,7 @@ def _polygon_area_ha(vertices: list[tuple[float, float]]) -> float:
 
 
 # ---------------------------------------------------------------------------
-# District-scale band read (adds B08 for TAI)
+# District-scale band read (adds B08 for TAI + DN reflectance scaling)
 # ---------------------------------------------------------------------------
 def _read_district_bands(
     scene_feature: dict[str, Any],
@@ -153,6 +154,14 @@ def _read_district_bands(
     needed = ("swir16", "swir22", "nir", "red", "rededge1", "scl", "nir08")
     if not all(k in assets and "href" in assets[k] for k in needed):
         return None
+
+    # ESA processing baseline >= 04.00 adds a +1000 DN radiometric offset
+    props = scene_feature.get("properties", {})
+    try:
+        baseline = float(props.get("s2:processing_baseline", "04.00"))
+    except (ValueError, TypeError):
+        baseline = 4.0
+    dn_offset = 1000.0 if baseline >= 4.0 else 0.0
 
     side = max(64, min(1024, out_side))
     try:
@@ -175,7 +184,10 @@ def _read_district_bands(
                         1, window=w, out_shape=(side, side),
                         resampling=resamp,
                     )
-                return arr.astype(np.int32) if is_mask else arr.astype(np.float32)
+                if is_mask:
+                    return arr.astype(np.int32)
+                refl = (arr.astype(np.float32) - dn_offset) / 10000.0
+                return np.clip(refl, 0.0, None)
 
             return {
                 "swir16": _band("swir16"),
