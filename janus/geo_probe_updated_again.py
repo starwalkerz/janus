@@ -12,7 +12,7 @@ Design principles:
   baseline (2019-01-01 through 2020-12-31, Regulation (EU) 2023/1115).
 * Queries unauthenticated STAC endpoints:
 
-  1. ESA Copernicus Data Space Ecosystem (catalogue.dataspace.copernicus.eu/stac/search)
+  1.  ESA Copernicus Data Space Ecosystem (stac.dataspace.copernicus.eu/v1/search)
   2. Element84 Earth Search AWS Open Data (earth-search.aws.element84.com/v1/search)
 * When rasterio and numpy are installed, performs HTTP range-request windowed
   reads directly on public Sentinel-2 L2A Cloud-Optimized GeoTIFFs (COGs) to compute:
@@ -44,7 +44,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-COPERNICUS_STAC_SEARCH_URL = "https://catalogue.dataspace.copernicus.eu/stac/search"
+COPERNICUS_STAC_SEARCH_URL = "https://stac.dataspace.copernicus.eu/v1/search"
 ELEMENT84_STAC_SEARCH_URL = "https://earth-search.aws.element84.com/v1/search"
 
 # Statutory EUDR (Regulation (EU) 2023/1115) baseline window prior to 31 Dec 2020
@@ -127,7 +127,7 @@ def _post_json(
 
 def query_copernicus_stac_scenes(
     coord: GeoCoordinate,
-    collections: tuple[str, ...] = ("SENTINEL-2", "SENTINEL-1"),
+    collections: tuple[str, ...] = ("sentinel-2-l2a", "sentinel-1-grd"),
     lookback_days: int = 90,
     limit: int = 6,
     timeout_s: float = 8.0,
