@@ -280,6 +280,7 @@ class Config:
             "epistemic-cohort-role-inversion"
             "crypto-ticker-cohort-inversion"
             "costly-vitality-survivor-yardstick"
+            "sanction-expungement-capitulation-yardstick"
         ]
     )
 
