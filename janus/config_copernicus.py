@@ -275,6 +275,7 @@ class Config:
             "eu-deforestation-and-tropical-carbon-directive-yardstick"
             "cacao-and-coffee-agroforestry-carbon-balance-yardstick"
             "orthodoxy-flywheel-yardstick"
+            "liminal-pendulum-yardstick"
         ]
     )
 
