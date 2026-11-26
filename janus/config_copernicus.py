@@ -279,6 +279,7 @@ class Config:
             "shibboleth-panic-yardstick"
             "epistemic-cohort-role-inversion"
             "crypto-ticker-cohort-inversion"
+            "costly-vitality-survivor-yardstick"
         ]
     )
 
