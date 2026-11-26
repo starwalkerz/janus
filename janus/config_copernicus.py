@@ -277,6 +277,7 @@ class Config:
             "orthodoxy-flywheel-yardstick"
             "liminal-pendulum-yardstick"
             "shibboleth-panic-yardstick"
+            "epistemic-cohort-role-inversion"
         ]
     )
 
