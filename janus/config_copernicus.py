@@ -276,6 +276,7 @@ class Config:
             "cacao-and-coffee-agroforestry-carbon-balance-yardstick"
             "orthodoxy-flywheel-yardstick"
             "liminal-pendulum-yardstick"
+            "shibboleth-panic-yardstick"
         ]
     )
 
