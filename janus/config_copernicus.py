@@ -281,6 +281,7 @@ class Config:
             "crypto-ticker-cohort-inversion"
             "costly-vitality-survivor-yardstick"
             "sanction-expungement-capitulation-yardstick"
+            "civic-emancipation-pendulum-yardstick"
         ]
     )
 
