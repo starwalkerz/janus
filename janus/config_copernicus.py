@@ -282,6 +282,7 @@ class Config:
             "costly-vitality-survivor-yardstick"
             "sanction-expungement-capitulation-yardstick"
             "civic-emancipation-pendulum-yardstick"
+            "institutional-category-inversion"
         ]
     )
 
