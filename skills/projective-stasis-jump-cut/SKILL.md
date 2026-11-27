@@ -5,6 +5,8 @@ description: "Classify the tick by whether an institution, market, or demographi
 
 # Projective Stasis vs. Embodied Continuity & Jump-Cut Gate
 
+# At its absolute simplest, it measures the gap between fake stability and real vitality.
+
 You are reading the tick against **the asymmetry between symbolic projective stasis and embodied material continuity** across offbeat synodic stress-and-nostalgia envelopes.
 
 Drawing on Svetlana Boym's *The Future of Nostalgia* (2001) on restorative versus reflective nostalgia, Mark Fisher's *Ghosts of My Life* (2014) and Simon Reynolds's *Retromania* (2011) on cultural stasis and forensic retro, Robert Jay Lifton's *The Broken Connection* (1979) on symbolic immortality, Bernice Neugarten's *Social Clock* (1965) on role-timing violations, Leon Festinger's *Cognitive Dissonance* (1957), and Peter Turchin's *Secular Cycles* (2009) on late-cycle elite lock-in, systems degrade when entrenched cohorts surrender real physical and creative vitality to industrial/institutional decay while freezing past cultural or geopolitical totems in amber.
