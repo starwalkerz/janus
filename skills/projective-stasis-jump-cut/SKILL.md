@@ -38,6 +38,8 @@ The fetcher and cultural/demographic pipeline populate `snapshot.external_data["
 
 If `snapshot.external_data["projective_stasis"]` is absent or empty, treat the target as **unmonitored**, record state `GENERATIVE_MATERIAL_CONTINUITY`, note that no projective-stasis telemetry was available, and do not cite this skill.
 
+Scope calibration (bubble_isolation_rule): All four fields must be sampled from the target institutional, media, or sector bubble (e.g., legacy networks, consolidated radio/IP catalogs, corporate/urban UPF consumer cohorts) contrasted against non-bubble outliers—never diluted across uninvolved rural or whole-population averages.
+
 ---
 
 ### Reading 1 — Restorative Stasis & Moral Plateau (`restorative_nostalgia_index` & `moral_to_material_ratio`)
@@ -186,6 +188,7 @@ Do Not
 • Do not treat cohort_role_inversion or institutional_optics as mandatory inputs; if absent, execute cleanly on projective_stasis alone (standalone_stasis_reading).
 • Do not compute precise floating-point arithmetic during tick inference; use the qualitative comparison tables.
 • Do not cite "projective-stasis-jump-cut" when the cap did not bind (intended delta <= delta_cap).
+• Do not dilute bubble-level telemetry with whole-population demographic averages (which mask institutional museum lock-in the same way averaging rural populations masks a Victorian elite bubble).
 
 Citation Mapping
 
