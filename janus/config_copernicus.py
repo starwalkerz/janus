@@ -283,6 +283,7 @@ class Config:
             "sanction-expungement-capitulation-yardstick"
             "civic-emancipation-pendulum-yardstick"
             "institutional-category-inversion"
+            "projective-stasis-jump-cut"
         ]
     )
 
